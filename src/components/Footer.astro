@@ -1,40 +1,67 @@
----
----
-<footer style="margin-top:100px; padding:64px 0 28px; background:var(--deep); color:white;">
+<footer class="site-footer">
   <div class="container">
-    <div style="display:grid; grid-template-columns:1.5fr repeat(3,1fr); gap:40px;">
+    <div class="footer-grid">
       <div>
-        <div style="font-size:1.1rem; font-weight:700;">TERAPEUTA <span style="color:var(--lavender)">AI</span></div>
-        <p style="max-width:360px; color:#e9ddff;">Conhecimento para quem cuida de pessoas.</p>
+        <div class="footer-brand">TERAPEUTA <span>AI</span></div>
+        <p>Conhecimento para quem cuida de pessoas.</p>
       </div>
+
       <div>
         <strong>Conteúdo</strong>
-        <p><a href="/inteligencia-artificial">Inteligência Artificial</a></p>
-        <p><a href="#">Gestão Clínica</a></p>
-        <p><a href="#">Prontuário</a></p>
+        <a href="/inteligencia-artificial">Inteligência Artificial</a>
+        <a href="/gestao-clinica">Gestão Clínica</a>
+        <a href="/prontuario">Prontuário</a>
       </div>
+
       <div>
         <strong>Profissional</strong>
-        <p><a href="#">Carreira</a></p>
-        <p><a href="#">Marketing</a></p>
-        <p><a href="#">Ética & LGPD</a></p>
+        <a href="/carreira-e-negocios">Carreira e Negócios</a>
+        <a href="/marketing">Marketing</a>
+        <a href="/etica-e-lgpd">Ética & LGPD</a>
       </div>
+
       <div>
         <strong>Terapeuta AI</strong>
-        <p><a href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">Conheça o Hub</a></p>
-        <p><a href="#">Sobre</a></p>
-        <p><a href="#">Contato</a></p>
+        <a href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">Conheça o Hub</a>
+        <a href="/admin/">Área editorial</a>
       </div>
     </div>
-    <div style="margin-top:48px; padding-top:20px; border-top:1px solid rgba(255,255,255,.18); font-size:.8rem; color:#e9ddff;">
+
+    <div class="footer-bottom">
       © 2026 Terapeuta AI. Todos os direitos reservados.
     </div>
   </div>
 </footer>
+
 <style>
-footer a { color:inherit; text-decoration:none; }
-footer p { margin:.55rem 0; }
+.site-footer {
+  margin-top:100px;
+  padding:64px 0 28px;
+  background:var(--deep);
+  color:white;
+}
+.footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr repeat(3,1fr);
+  gap:40px;
+}
+.footer-brand { font-size:1.1rem; font-weight:700; }
+.footer-brand span { color:var(--lavender); }
+.footer-grid p { max-width:360px; color:#e9ddff; }
+.footer-grid strong { display:block; margin-bottom:14px; }
+.footer-grid a { display:block; width:max-content; margin:.6rem 0; color:#e9ddff; text-decoration:none; font-size:.88rem; }
+.footer-grid a:hover { color:white; }
+.footer-bottom {
+  margin-top:48px;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.18);
+  font-size:.8rem;
+  color:#e9ddff;
+}
 @media (max-width:720px) {
-  footer > div > div:first-child { grid-template-columns:1fr !important; }
+  .footer-grid { grid-template-columns:1fr 1fr; gap:28px; }
+}
+@media (max-width:480px) {
+  .footer-grid { grid-template-columns:1fr; }
 }
 </style>
