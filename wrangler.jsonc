@@ -5,5 +5,11 @@
   "workers_dev": false,
   "assets": {
     "directory": "./dist"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "blog.terapeutaai.com.br",
+      "custom_domain": true
+    }
+  ]
 }
