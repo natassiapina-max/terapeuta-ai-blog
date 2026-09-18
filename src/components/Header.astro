@@ -1,0 +1,29 @@
+---
+const links = [
+  ['Inteligência Artificial', '/inteligencia-artificial'],
+  ['Gestão Clínica', '#'],
+  ['Prontuário', '#'],
+  ['Marketing', '#'],
+  ['Carreira', '#'],
+  ['Ética & LGPD', '#']
+];
+---
+<header style="border-bottom:1px solid var(--border); background:rgba(255,255,255,.96); position:sticky; top:0; z-index:50;">
+  <div class="container" style="min-height:74px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+    <a href="/" aria-label="Terapeuta AI — início" style="text-decoration:none; font-weight:700; font-size:1.05rem;">
+      <span style="color:var(--deep)">TERAPEUTA</span> <span style="color:var(--purple)">AI</span>
+    </a>
+    <nav aria-label="Navegação principal" style="display:flex; align-items:center; gap:22px; font-size:.86rem;">
+      {links.map(([label, href]) => (
+        <a href={href} style="text-decoration:none; color:var(--deep);">{label}</a>
+      ))}
+    </nav>
+    <a class="btn btn-primary" href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">Conheça o Hub</a>
+  </div>
+</header>
+
+<style>
+@media (max-width: 980px) {
+  nav { display: none !important; }
+}
+</style>
