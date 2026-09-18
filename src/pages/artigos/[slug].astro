@@ -23,6 +23,10 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
   title={`${data.title} | Terapeuta AI`}
   description={data.description}
   canonical={canonical}
+  type="article"
+  image={data.image}
+  publishedTime={data.pubDate.toISOString()}
+  modifiedTime={(data.updatedDate ?? data.pubDate).toISOString()}
 >
   <article class="article-page">
     <header class="article-header container-narrow">
