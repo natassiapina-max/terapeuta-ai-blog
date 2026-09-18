@@ -1,0 +1,52 @@
+backend:
+  name: github
+  repo: natassiapina-max/terapeuta-ai-blog
+  branch: main
+  use_graphql: true
+
+publish_mode: editorial_workflow
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "articles"
+    label: "Artigos"
+    folder: "src/content/articles"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "artigos/{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - label: "Categoria"
+        name: "category"
+        widget: "select"
+        options:
+          - "Inteligência Artificial"
+          - "Gestão Clínica"
+          - "Prontuário"
+          - "Marketing"
+          - "Carreira e Negócios"
+          - "Ética e LGPD"
+      - label: "Slug da categoria"
+        name: "categorySlug"
+        widget: "select"
+        options:
+          - "inteligencia-artificial"
+          - "gestao-clinica"
+          - "prontuario"
+          - "marketing"
+          - "carreira-e-negocios"
+          - "etica-e-lgpd"
+      - { label: "Data de publicação", name: "pubDate", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Data de atualização", name: "updatedDate", widget: "datetime", required: false, format: "YYYY-MM-DD" }
+      - { label: "Autor", name: "author", widget: "string", default: "Equipe Terapeuta AI" }
+      - { label: "Revisor", name: "reviewer", widget: "string", required: false }
+      - { label: "Tempo de leitura (min)", name: "readTime", widget: "number", value_type: "int", min: 1, default: 6 }
+      - { label: "Destaque", name: "featured", widget: "boolean", default: false }
+      - { label: "Rascunho", name: "draft", widget: "boolean", default: false }
+      - { label: "Imagem", name: "image", widget: "image", required: false }
+      - { label: "Texto alternativo da imagem", name: "imageAlt", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
