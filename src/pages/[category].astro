@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { categories } from '../data/categories';
+
+export async function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { category: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const articles = (await getCollection('articles', ({ data }) =>
+  !data.draft && data.categorySlug === category.slug
+)).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title={`${category.name} | Terapeuta AI`}
+  description={category.description}
+>
+  <section class="category-hero">
+    <div class="container">
+      <a class="back-link" href="/">← Todos os conteúdos</a>
+      <p class="eyebrow">{category.name}</p>
+      <h1>{category.name}</h1>
+      <p>{category.description}</p>
+    </div>
+  </section>
+
+  <section class="container category-content">
+    <div class="category-heading">
+      <div>
+        <p class="eyebrow">Conteúdos</p>
+        <h2>Explore esta área</h2>
+      </div>
+      <span>{articles.length} {articles.length === 1 ? 'artigo' : 'artigos'}</span>
+    </div>
+
+    {articles.length ? (
+      <div class="article-grid">
+        {articles.map((article) => (
+          <article class="article-card">
+            <div>
+              <p class="eyebrow">{article.data.category}</p>
+              <h3>{article.data.title}</h3>
+              <p>{article.data.description}</p>
+            </div>
+            <a href={`/artigos/${article.id}`}>Ler artigo →</a>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <div class="empty-state">
+        <h3>Estamos preparando os primeiros conteúdos desta área.</h3>
+        <p>Em breve, novos artigos serão publicados aqui.</p>
+      </div>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+.category-hero {
+  padding:84px 0 76px;
+  background:linear-gradient(180deg,#faf7ff 0%,#fff 100%);
+}
+.category-hero h1 { margin-bottom:18px; }
+.category-hero p:not(.eyebrow) { max-width:720px; color:var(--text-soft); font-size:1.1rem; }
+.back-link { display:inline-block; margin-bottom:36px; color:var(--text-soft); text-decoration:none; font-size:.85rem; }
+.category-content { padding:70px 0 30px; }
+.category-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:28px; }
+.category-heading h2 { margin:0; }
+.category-heading > span { color:var(--text-soft); font-size:.85rem; }
+.article-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px; }
+.article-card {
+  min-height:290px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:30px;
+  border:1px solid var(--border);
+  border-radius:22px;
+  background:white;
+  box-shadow:0 14px 40px rgba(94,38,214,.05);
+}
+.article-card h3 { margin:4px 0 12px; font-size:1.45rem; }
+.article-card p:not(.eyebrow) { color:var(--text-soft); }
+.article-card a { color:var(--violet); font-weight:700; text-decoration:none; }
+.empty-state {
+  padding:42px;
+  border:1px dashed var(--border);
+  border-radius:20px;
+  background:var(--surface-soft);
+}
+@media (max-width:720px) {
+  .category-heading { align-items:start; flex-direction:column; }
+  .article-grid { grid-template-columns:1fr; }
+}
+</style>
