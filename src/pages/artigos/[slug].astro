@@ -14,7 +14,7 @@ const { article } = Astro.props;
 const { Content, headings } = await render(article);
 const { data } = article;
 
-const canonical = new URL(`/artigos/${article.id}`, Astro.site).href;
+const canonical = new URL(`/artigos/${article.id}`, Astro.site ?? 'https://blog.terapeutaai.com.br').href;
 const published = data.pubDate.toISOString().slice(0, 10);
 const updated = data.updatedDate?.toISOString().slice(0, 10);
 ---
