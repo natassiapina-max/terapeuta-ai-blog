@@ -2,6 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "terapeuta-ai-blog",
   "compatibility_date": "2026-09-18",
+  "workers_dev": false,
   "assets": {
     "directory": "./dist"
   }
