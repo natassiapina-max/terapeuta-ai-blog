@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Terapeuta AI — Conhecimento para quem cuida de pessoas"
+  description="Conteúdos sobre inteligência artificial, gestão clínica, prontuário, carreira, marketing, ética e tecnologia para profissionais da saúde e das terapias."
+>
+  <section style="padding:96px 0 80px; background:linear-gradient(180deg,#faf7ff 0%,#fff 100%);">
+    <div class="container">
+      <p class="eyebrow">Terapeuta AI</p>
+      <h1 style="max-width:850px;">Conhecimento para quem cuida de pessoas.</h1>
+      <p class="muted" style="max-width:720px; font-size:1.1rem; margin:28px 0 32px;">
+        Conteúdos práticos sobre tecnologia, inteligência artificial, gestão clínica, carreira e rotina profissional para quem trabalha na saúde e nas terapias.
+      </p>
+      <a class="btn btn-primary" href="#conteudos">Explorar conteúdos</a>
+    </div>
+  </section>
+
+  <section class="container" style="padding:72px 0;" id="conteudos">
+    <p class="eyebrow">Em destaque</p>
+    <div style="display:grid; grid-template-columns:1.15fr .85fr; gap:28px; align-items:stretch;">
+      <article style="padding:38px; border:1px solid var(--border); border-radius:24px; background:white; box-shadow:0 18px 50px rgba(94,38,214,.08);">
+        <p class="eyebrow">Inteligência Artificial</p>
+        <h2 style="margin:0 0 18px;">Inteligência Artificial para Terapeutas: Guia Completo</h2>
+        <p class="muted">Um ponto de partida para entender aplicações, limites, privacidade e boas práticas no uso de IA na rotina profissional.</p>
+        <a href="/artigos/inteligencia-artificial-para-terapeutas" style="color:var(--violet); font-weight:600; text-decoration:none;">Ler o artigo →</a>
+      </article>
+      <aside style="padding:38px; border-radius:24px; background:var(--deep); color:white;">
+        <p style="color:var(--lavender); font-weight:700;">O propósito</p>
+        <h3 style="font-size:1.7rem;">Tecnologia com contexto profissional.</h3>
+        <p style="color:#eadfff;">Informação clara, fontes confiáveis e aplicação prática para quem cuida de pessoas.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="container" style="padding:10px 0 80px;">
+    <p class="eyebrow">Explore por tema</p>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px;">
+      {[
+        ['Inteligência Artificial','Tecnologia aplicada à rotina profissional.','/inteligencia-artificial'],
+        ['Gestão Clínica','Organização, processos e administração.','#'],
+        ['Prontuário','Documentação, registros e boas práticas.','#'],
+        ['Marketing','Presença digital e posicionamento profissional.','#'],
+        ['Carreira','Desenvolvimento e empreendedorismo.','#'],
+        ['Ética & LGPD','Privacidade, segurança e responsabilidade.','#']
+      ].map(([title, text, href]) => (
+        <a href={href} style="padding:28px; border:1px solid var(--border); border-radius:18px; text-decoration:none; background:var(--surface-soft);">
+          <h3 style="color:var(--deep); margin-top:0;">{title}</h3>
+          <p class="muted" style="margin-bottom:0;">{text}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
