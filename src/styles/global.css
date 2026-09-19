@@ -3,7 +3,7 @@
 :root{
   --purple:#922fd0;--violet:#5e26d6;--deep:#1b0f83;--lavender:#a985e0;
   --surface:#fff;--soft:#faf8ff;--tint:#f4edff;--border:#e7daf7;
-  --text:#1b0f83;--muted:#5d5280;--max:1180px;
+  --text:#1b0f83;--muted:#5d5280;--text-soft:#5d5280;--surface-soft:#faf8ff;--max:1180px;
   --shadow:0 22px 70px rgba(94,38,214,.11);
 }
 *{box-sizing:border-box} html{scroll-behavior:smooth}
