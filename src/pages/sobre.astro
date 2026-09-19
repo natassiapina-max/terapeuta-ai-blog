@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Sobre o Blog Terapeuta AI" description="Conheça o propósito editorial do Blog Terapeuta AI: conhecimento, tecnologia e contexto para profissionais que cuidam de pessoas.">
+  <section class="page-hero"><div class="container">
+    <p class="eyebrow">Sobre o blog</p>
+    <h1>Conhecimento para quem cuida de pessoas.</h1>
+    <p>O Blog Terapeuta AI é um espaço editorial dedicado a aproximar conhecimento, tecnologia e prática profissional de quem trabalha com cuidado em saúde e terapias.</p>
+  </div></section>
+  <section class="container content">
+    <div><p class="eyebrow">Nosso propósito</p><h2>Informação útil, contexto e responsabilidade.</h2><p>Publicamos conteúdos sobre inteligência artificial, gestão clínica, prontuário, marketing, carreira, negócios, ética, privacidade e proteção de dados.</p><p>A proposta não é transformar assuntos complexos em respostas rápidas, mas ajudar o profissional a compreender melhor as questões que fazem parte da sua rotina.</p></div>
+    <div class="cards"><div><strong>Conteúdo editorial</strong><p>Textos organizados por temas e construídos para serem úteis na prática.</p></div><div><strong>Responsabilidade</strong><p>Quando um assunto depende de legislação, normas ou evidências, buscamos indicar fontes e referências.</p></div><div><strong>Tecnologia com contexto</strong><p>Ferramentas digitais são apresentadas considerando limites, riscos e aplicação profissional.</p></div></div>
+  </section>
+  <section class="container note"><h2>Uma regra simples</h2><p>O conteúdo do blog é informativo e não substitui orientação profissional, jurídica, contábil ou regulatória específica para cada situação.</p></section>
+</BaseLayout>
+<style>
+.page-hero{padding:90px 0 70px;background:linear-gradient(180deg,#faf7ff,#fff)}.page-hero h1{max-width:900px}.page-hero>div>p:last-child{max-width:760px;color:var(--muted);font-size:1.08rem;margin-top:25px}.content{padding:70px 0;display:grid;grid-template-columns:1fr 1fr;gap:70px}.content h2{font-size:clamp(2rem,4vw,3rem)}.content p{color:var(--muted)}.cards{display:grid;gap:14px}.cards>div{padding:25px;border:1px solid var(--border);border-radius:20px;background:white}.cards p{margin-bottom:0;font-size:.9rem}.note{margin-bottom:40px;padding:35px;border-radius:24px;background:var(--deep);color:white}.note h2{color:white}.note p{color:#eadfff;max-width:780px}@media(max-width:760px){.content{grid-template-columns:1fr;gap:35px}}
+</style>
