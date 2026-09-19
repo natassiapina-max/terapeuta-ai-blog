@@ -51,6 +51,7 @@ const articles = (await getCollection('articles', ({ data }) =>
       <div class="article-grid">
         {articles.map((article) => (
           <article class="article-card">
+            {article.data.image && <img class="card-image" src={article.data.image} alt={article.data.imageAlt ?? ''} loading="lazy" />}
             <div>
               <p class="eyebrow">{article.data.category}</p>
               <h3>{article.data.title}</h3>
@@ -93,7 +94,7 @@ const articles = (await getCollection('articles', ({ data }) =>
   background:white;
   box-shadow:0 14px 40px rgba(94,38,214,.05);
 }
-.article-card h3 { margin:4px 0 12px; font-size:1.45rem; }
+.card-image{display:block;width:calc(100% + 60px);height:180px;object-fit:cover;margin:-30px -30px 24px;border-radius:22px 22px 0 0}.article-card h3 { margin:4px 0 12px; font-size:1.45rem; }
 .article-card p:not(.eyebrow) { color:var(--text-soft); }
 .article-card a { color:var(--violet); font-weight:700; text-decoration:none; }
 .empty-state {
