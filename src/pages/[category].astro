@@ -29,6 +29,15 @@ const articles = (await getCollection('articles', ({ data }) =>
     </div>
   </section>
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://blog.terapeutaai.com.br/' },
+      { '@type': 'ListItem', position: 2, name: category.name, item: new URL('/' + category.slug, 'https://blog.terapeutaai.com.br').href }
+    ]
+  })} />
+
   <section class="container category-content">
     <div class="category-heading">
       <div>
