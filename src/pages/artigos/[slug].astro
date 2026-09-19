@@ -13,6 +13,9 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content, headings } = await render(article);
 const { data } = article;
+const related = (await getCollection('articles', ({ data: itemData, id }) =>
+  !itemData.draft && id !== article.id && itemData.categorySlug === data.categorySlug
+)).sort((x, y) => y.data.pubDate.valueOf() - x.data.pubDate.valueOf()).slice(0, 3);
 
 const canonical = new URL(`/artigos/${article.id}`, Astro.site ?? 'https://blog.terapeutaai.com.br').href;
 const published = data.pubDate.toISOString().slice(0, 10);
@@ -53,6 +56,10 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
       </div>
     </div>
 
+    <nav class="article-breadcrumb container-narrow" aria-label="Breadcrumb">
+      <a href="/">Início</a><span>›</span><a href={`/${data.categorySlug}`}>{data.category}</a><span>›</span><span aria-current="page">{data.title}</span>
+    </nav>
+
     <div class="container-article article-layout">
       {headings.length > 1 && (
         <aside class="article-toc" aria-label="Neste artigo">
@@ -69,6 +76,17 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
         <Content />
       </div>
     </div>
+
+    {related.length > 0 && <section class="container-narrow related">
+      <div class="section-label"><span class="eyebrow">Continue explorando</span><h2>Conteúdos relacionados</h2></div>
+      <div class="related-grid">
+        {related.map((item) => <a class="related-card" href={`/artigos/${item.id}`}>
+          <span>{item.data.category}</span>
+          <h3>{item.data.title}</h3>
+          <b>Ler artigo →</b>
+        </a>)}
+      </div>
+    </section>}
 
     <section class="container-narrow article-footer">
       <div class="author-box">
@@ -133,6 +151,7 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
 
 <style>
 .article-page { padding: 76px 0 0; }
+.article-breadcrumb{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px;color:var(--muted);font-size:.72rem}.article-breadcrumb a{text-decoration:none;color:var(--purple)}.article-breadcrumb span:last-child{max-width:480px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .container-narrow { width: min(calc(100% - 40px), 900px); margin-inline: auto; }
 .container-article { width: min(calc(100% - 40px), 1180px); margin-inline: auto; }
 
@@ -211,7 +230,7 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
   font-weight:600;
 }
 
-.article-footer { padding:70px 0 10px; }
+.related{padding-top:70px}.section-label h2{font-size:1.8rem;margin:0 0 20px}.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.related-card{min-height:190px;padding:24px;border:1px solid var(--border);border-radius:20px;background:var(--soft);text-decoration:none;display:flex;flex-direction:column}.related-card>span{color:var(--purple);font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em}.related-card h3{margin:12px 0;font-size:1.15rem;color:var(--deep)}.related-card b{margin-top:auto;color:var(--violet);font-size:.75rem}.article-footer { padding:70px 0 10px; }
 .author-box {
   padding:26px;
   border:1px solid var(--border);
@@ -235,6 +254,7 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
   .article-toc { position:static; }
 }
 @media (max-width: 720px) {
+  .related-grid{grid-template-columns:1fr}
   .article-page { padding-top:54px; }
   .container-narrow, .container-article { width:min(calc(100% - 28px), 900px); }
 }
