@@ -11,6 +11,7 @@ interface Props {
   image?: string;
   publishedTime?: string;
   modifiedTime?: string;
+  robots?: string;
 }
 
 const {
@@ -20,7 +21,8 @@ const {
   type = 'website',
   image,
   publishedTime,
-  modifiedTime
+  modifiedTime,
+  robots = 'index, follow, max-image-preview:large'
 } = Astro.props;
 
 const siteUrl = 'https://blog.terapeutaai.com.br';
@@ -48,7 +50,7 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
     {ogImage && <meta property="og:image" content={ogImage} />}
     {publishedTime && <meta property="article:published_time" content={publishedTime} />}
     {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="robots" content={robots} />
 
     <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <meta name="twitter:title" content={title} />
