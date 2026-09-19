@@ -57,7 +57,7 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
     <meta name="twitter:description" content={description} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
 
-    <script src="/clarity-loader.js"></script>
+    <script is:inline src="/clarity-loader.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSDLQTD8WW"></script>
     <script>
