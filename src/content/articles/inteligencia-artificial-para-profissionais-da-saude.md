@@ -8,7 +8,7 @@ author: "Equipe Terapeuta AI"
 readTime: 10
 featured: true
 image: "/images/imagem-artigo-ia-terapeuta-ai (1).png"
-draft: true
+draft: false
 imageAlt: "Profissional da saúde utilizando inteligência artificial em sua rotina de trabalho"
 sources:
   - label: "OMS — Ethics and governance of artificial intelligence for health"
