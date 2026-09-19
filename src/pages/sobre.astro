@@ -1,6 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'Terapeuta AI',
+    url: 'https://terapeutaai.com.br',
+    logo: 'https://blog.terapeutaai.com.br/images/logomarca-terapeuta-ai-2-.png'
+  }
+})} />
+
 <BaseLayout title="Sobre o Blog Terapeuta AI" description="Conheça o propósito editorial do Blog Terapeuta AI: conhecimento, tecnologia e contexto para profissionais que cuidam de pessoas.">
   <section class="page-hero"><div class="container">
     <p class="eyebrow">Sobre o blog</p>
