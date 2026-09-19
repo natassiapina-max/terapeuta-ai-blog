@@ -1,67 +1,16 @@
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">TERAPEUTA <span>AI</span></div>
-        <p>Conhecimento para quem cuida de pessoas.</p>
-      </div>
-
-      <div>
-        <strong>Conteúdo</strong>
-        <a href="/inteligencia-artificial">Inteligência Artificial</a>
-        <a href="/gestao-clinica">Gestão Clínica</a>
-        <a href="/prontuario">Prontuário</a>
-      </div>
-
-      <div>
-        <strong>Profissional</strong>
-        <a href="/carreira-e-negocios">Carreira e Negócios</a>
-        <a href="/marketing">Marketing</a>
-        <a href="/etica-e-lgpd">Ética & LGPD</a>
-      </div>
-
-      <div>
-        <strong>Terapeuta AI</strong>
-        <a href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">Conheça o Hub</a>
-        <a href="/admin/">Área editorial</a>
-      </div>
+    <div class="footer-top">
+      <div class="intro"><a href="/" class="footer-brand">TERAPEUTA <span>AI</span></a><p>Conhecimento para quem cuida de pessoas.</p><small>Tecnologia, prática e contexto profissional.</small></div>
+      <div><strong>Conteúdo</strong><a href="/inteligencia-artificial">Inteligência Artificial</a><a href="/gestao-clinica">Gestão Clínica</a><a href="/prontuario">Prontuário</a></div>
+      <div><strong>Profissional</strong><a href="/marketing">Marketing</a><a href="/carreira-e-negocios">Carreira e Negócios</a><a href="/etica-e-lgpd">Ética & LGPD</a></div>
+      <div><strong>Terapeuta AI</strong><a href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">Conheça o Hub ↗</a><a href="/admin/">Área editorial</a></div>
     </div>
-
-    <div class="footer-bottom">
-      © 2026 Terapeuta AI. Todos os direitos reservados.
-    </div>
+    <div class="footer-bottom"><span>© 2026 Terapeuta AI. Todos os direitos reservados.</span><span>Feito para quem cuida.</span></div>
   </div>
 </footer>
-
 <style>
-.site-footer {
-  margin-top:100px;
-  padding:64px 0 28px;
-  background:var(--deep);
-  color:white;
-}
-.footer-grid {
-  display:grid;
-  grid-template-columns:1.5fr repeat(3,1fr);
-  gap:40px;
-}
-.footer-brand { font-size:1.1rem; font-weight:700; }
-.footer-brand span { color:var(--lavender); }
-.footer-grid p { max-width:360px; color:#e9ddff; }
-.footer-grid strong { display:block; margin-bottom:14px; }
-.footer-grid a { display:block; width:max-content; margin:.6rem 0; color:#e9ddff; text-decoration:none; font-size:.88rem; }
-.footer-grid a:hover { color:white; }
-.footer-bottom {
-  margin-top:48px;
-  padding-top:20px;
-  border-top:1px solid rgba(255,255,255,.18);
-  font-size:.8rem;
-  color:#e9ddff;
-}
-@media (max-width:720px) {
-  .footer-grid { grid-template-columns:1fr 1fr; gap:28px; }
-}
-@media (max-width:480px) {
-  .footer-grid { grid-template-columns:1fr; }
-}
+.site-footer{margin-top:110px;padding:72px 0 28px;background:var(--deep);color:white}.footer-top{display:grid;grid-template-columns:1.7fr repeat(3,1fr);gap:45px}.footer-brand{color:white;text-decoration:none;font-size:1.05rem;font-weight:700}.footer-brand span{color:var(--lavender)}.intro p{max-width:300px;margin:15px 0 7px;color:#f0e8ff;font-size:.82rem}.intro small{color:#cdbde9;font-size:.68rem}.footer-top strong{display:block;margin-bottom:15px;font-size:.76rem}.footer-top a{display:block;width:max-content;margin:.62rem 0;color:#dcd0f2;text-decoration:none;font-size:.72rem}.footer-top a:hover{color:white}.footer-bottom{display:flex;justify-content:space-between;gap:20px;margin-top:54px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);color:#cdbde9;font-size:.65rem}
+@media(max-width:700px){.footer-top{grid-template-columns:1fr 1fr}.intro{grid-column:1/-1}.footer-bottom{flex-direction:column}}
+@media(max-width:460px){.footer-top{grid-template-columns:1fr}.intro{grid-column:auto}}
 </style>
