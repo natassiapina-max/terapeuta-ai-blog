@@ -63,14 +63,42 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "ykusnfxcgt");
+
+      // Privacy-first default: analytics remain disabled until the visitor chooses.
+      window.clarity('consentv2', {
+        ad_Storage: "denied",
+        analytics_Storage: "denied"
+      });
     </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSDLQTD8WW"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied'
+      });
       gtag('js', new Date());
       gtag('config', 'G-QSDLQTD8WW');
+
+      window.addEventListener('load', function () {
+        var choice = localStorage.getItem('terapeutaai-analytics-consent');
+        if (choice === 'granted') {
+          window.clarity('consentv2', {
+            ad_Storage: "granted",
+            analytics_Storage: "granted"
+          });
+          gtag('consent', 'update', {
+            analytics_storage: 'granted',
+            ad_storage: 'granted'
+          });
+        }
+        if (!choice) {
+          var banner = document.getElementById('analytics-consent');
+          if (banner) banner.hidden = false;
+        }
+      });
     </script>
 
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -98,9 +126,46 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <Header />
+    <div id="analytics-consent" class="analytics-consent" hidden role="dialog" aria-label="Preferências de privacidade">
+      <div class="analytics-consent__copy">
+        <strong>Privacidade e experiência</strong>
+        <p>Usamos ferramentas de análise para entender como o blog é utilizado e melhorar o conteúdo. Você escolhe se quer permitir essa análise.</p>
+        <a href="/privacidade">Saiba mais</a>
+      </div>
+      <div class="analytics-consent__actions">
+        <button type="button" id="analytics-reject" class="btn btn-secondary">Continuar sem análise</button>
+        <button type="button" id="analytics-accept" class="btn btn-primary">Aceitar análise</button>
+      </div>
+    </div>
     <main id="conteudo">
       <slot />
     </main>
     <Footer />
   </body>
 </html>
+
+<style>
+.analytics-consent{position:fixed;left:18px;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:18px 20px;border:1px solid var(--border);border-radius:18px;background:rgba(255,255,255,.98);box-shadow:0 18px 55px rgba(27,15,131,.18);backdrop-filter:blur(12px)}
+.analytics-consent[hidden]{display:none}
+.analytics-consent__copy{max-width:760px}.analytics-consent__copy strong{display:block;font-size:.92rem}.analytics-consent__copy p{margin:5px 0 2px;font-size:.78rem;line-height:1.55;color:var(--muted)}.analytics-consent__copy a{font-size:.75rem;color:var(--violet);font-weight:600}.analytics-consent__actions{display:flex;gap:10px;flex-shrink:0}.analytics-consent__actions .btn{min-height:42px;font-size:.72rem;cursor:pointer;font-family:inherit}
+@media(max-width:760px){.analytics-consent{left:10px;right:10px;bottom:10px;display:block}.analytics-consent__actions{margin-top:12px;display:grid;grid-template-columns:1fr 1fr}.analytics-consent__actions .btn{width:100%}}
+</style>
+<script>
+  const consentKey = 'terapeutaai-analytics-consent';
+  const banner = document.getElementById('analytics-consent');
+  const accept = document.getElementById('analytics-accept');
+  const reject = document.getElementById('analytics-reject');
+  const closeBanner = () => { if (banner) banner.hidden = true; };
+  accept?.addEventListener('click', () => {
+    localStorage.setItem(consentKey, 'granted');
+    window.clarity('consentv2', { ad_Storage: 'granted', analytics_Storage: 'granted' });
+    window.gtag?.('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted' });
+    closeBanner();
+  });
+  reject?.addEventListener('click', () => {
+    localStorage.setItem(consentKey, 'denied');
+    window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'denied' });
+    window.gtag?.('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied' });
+    closeBanner();
+  });
+</script>
