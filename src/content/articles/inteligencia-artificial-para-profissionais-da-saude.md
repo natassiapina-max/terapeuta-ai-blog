@@ -1,6 +1,6 @@
 ---
 title: "Inteligência Artificial para Profissionais da Saúde: Guia Completo"
-description: "Entenda como a inteligência artificial pode apoiar a rotina profissional, a documentação e tarefas administrativas, com atenção à privacidade, segurança e responsabilidade profissional."
+description: "Entenda como a inteligência artificial pode apoiar a rotina de profissionais da saúde, terapeutas e outros profissionais do cuidado, com atenção à documentação, privacidade, segurança e responsabilidade profissional."
 category: "Inteligência Artificial"
 categorySlug: "inteligencia-artificial"
 pubDate: 2026-09-19
@@ -9,7 +9,7 @@ readTime: 10
 featured: true
 image: "/images/imagem-artigo-ia-terapeuta-ai (1).png"
 draft: true
-imageAlt: "Profissional da saúde trabalhando com inteligência artificial e informações organizadas em um ambiente clínico contemporâneo"
+imageAlt: "Profissional da saúde utilizando inteligência artificial em sua rotina de trabalho"
 sources:
   - label: "OMS — Ethics and governance of artificial intelligence for health"
     url: "https://www.who.int/publications/i/item/9789240029200"
@@ -25,6 +25,8 @@ tags:
   - IA generativa
   - tecnologia em saúde
   - profissionais da saúde
+  - profissionais do cuidado
+  - terapeutas
   - documentação clínica
   - privacidade
   - LGPD
