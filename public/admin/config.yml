@@ -1,8 +1,7 @@
 backend:
-  name: github
-  repo: natassiapina-max/terapeuta-ai-blog
+  name: turbo-github
+  turbo_site_id: eb60133d-8fec-41a2-84f8-c66859f498aa
   branch: main
-  use_graphql: true
 
 publish_mode: editorial_workflow
 
