@@ -19,3 +19,7 @@ h1,h2,h3{line-height:1.1;letter-spacing:-.045em} h1{font-size:clamp(2.8rem,6vw,5
 .muted{color:var(--muted)}
 ::selection{background:#eadcff;color:var(--deep)}
 @media(max-width:720px){.container{width:min(calc(100% - 28px),var(--max))}h1{font-size:clamp(2.55rem,13vw,4.1rem)}}
+
+
+.skip-link{position:fixed;left:16px;top:12px;z-index:100;padding:10px 14px;border-radius:10px;background:var(--deep);color:#fff;text-decoration:none;font-size:.78rem;transform:translateY(-180%);transition:transform .2s}.skip-link:focus{transform:translateY(0)}
+:focus-visible{outline:3px solid var(--lavender);outline-offset:3px}
