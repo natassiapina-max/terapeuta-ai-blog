@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Privacidade e Cookies | Terapeuta AI"
+  description="Informações sobre ferramentas de análise, cookies e escolhas de privacidade no Blog Terapeuta AI."
+>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Privacidade</p>
+      <h1>Privacidade e cookies.</h1>
+      <p>Como o Blog Terapeuta AI utiliza ferramentas de análise e como você pode controlar essa escolha.</p>
+    </div>
+  </section>
+
+  <section class="container privacy">
+    <article>
+      <h2>Ferramentas de análise</h2>
+      <p>O blog utiliza Google Analytics 4 e Microsoft Clarity para compreender, de forma agregada, como as páginas são utilizadas, melhorar a experiência e orientar a produção de conteúdo.</p>
+    </article>
+
+    <article>
+      <h2>Seu controle</h2>
+      <p>Na primeira visita, você pode aceitar ou recusar a análise. Sua escolha é armazenada no navegador para que não precisemos perguntar novamente em cada página.</p>
+    </article>
+
+    <article>
+      <h2>Microsoft Clarity</h2>
+      <p>O Clarity registra interações e informações técnicas para análise de experiência. A Microsoft informa que conteúdos potencialmente sensíveis são mascarados por padrão. O blog não solicita nem envia deliberadamente dados de pacientes, prontuários ou informações clínicas para essas ferramentas.</p>
+      <p><a href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-data" rel="noopener noreferrer">Saiba mais sobre os dados coletados pelo Clarity.</a></p>
+    </article>
+
+    <article>
+      <h2>Google Analytics</h2>
+      <p>O Google Analytics é utilizado para métricas de acesso e desempenho editorial. O blog não deve enviar nomes de pacientes, dados clínicos, prontuários ou outras informações pessoais sensíveis como parâmetros de análise.</p>
+    </article>
+
+    <article>
+      <h2>Como alterar sua escolha</h2>
+      <p>Para alterar a preferência salva neste navegador, você pode limpar os dados do site e acessar o blog novamente. Uma nova opção de escolha será apresentada.</p>
+    </article>
+
+    <article>
+      <h2>Atualizações</h2>
+      <p>Esta página pode ser atualizada quando houver mudança nas ferramentas utilizadas, na forma de coleta ou nas configurações de privacidade.</p>
+    </article>
+  </section>
+</BaseLayout>
+
+<style>
+.page-hero{padding:90px 0 70px;background:linear-gradient(180deg,#faf7ff,#fff)}.page-hero h1{max-width:900px}.page-hero>div>p:last-child{max-width:760px;color:var(--muted);font-size:1.08rem;margin-top:25px}.privacy{padding:70px 0;display:grid;grid-template-columns:1fr 1fr;gap:18px}.privacy article{padding:30px;border:1px solid var(--border);border-radius:22px;background:white}.privacy h2{font-size:1.35rem}.privacy p{color:var(--muted);font-size:.9rem}.privacy a{color:var(--violet);font-weight:600}@media(max-width:720px){.privacy{grid-template-columns:1fr}}
+</style>
