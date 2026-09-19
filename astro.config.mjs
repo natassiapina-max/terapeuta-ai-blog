@@ -3,6 +3,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://blog.terapeutaai.com.br',
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !page.includes('/preview/') })],
   trailingSlash: 'never'
 });
