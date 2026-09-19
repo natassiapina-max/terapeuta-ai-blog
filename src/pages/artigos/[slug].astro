@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles', ({ data }) => !data.draft);
+  const articles = (await getCollection('articles')).filter((article) => article.data?.draft !== true);
   return articles.map((article) => ({
     params: { slug: article.id },
     props: { article },
@@ -15,7 +15,7 @@ const { Content, headings } = await render(article);
 const { data } = article;
 const related = (await getCollection('articles', ({ data: itemData, id }) =>
   !itemData.draft && id !== article.id && itemData.categorySlug === data.categorySlug
-)).sort((x, y) => y.data.pubDate.valueOf() - x.data.pubDate.valueOf()).slice(0, 3);
+)).sort((x, y) => (y.data.pubDate?.getTime?.() ?? 0) - (x.data.pubDate?.getTime?.() ?? 0)).slice(0, 3);
 
 const canonical = new URL(`/artigos/${article.id}`, Astro.site ?? 'https://blog.terapeutaai.com.br').href;
 const published = data.pubDate.toISOString().slice(0, 10);
