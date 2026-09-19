@@ -7,7 +7,7 @@ pubDate: 2026-09-18
 author: Natassia Pina
 readTime: 6
 featured: false
-draft: true
+draft: false
 tags:
   - teste
   - decap
