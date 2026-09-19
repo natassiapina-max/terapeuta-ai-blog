@@ -47,11 +47,33 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
     {ogImage && <meta property="og:image" content={ogImage} />}
     {publishedTime && <meta property="article:published_time" content={publishedTime} />}
     {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    <meta name="robots" content="index, follow, max-image-preview:large" />
 
     <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Organization',
+          '@id': 'https://terapeutaai.com.br/#organization',
+          name: 'Terapeuta AI',
+          url: 'https://terapeutaai.com.br',
+          logo: 'https://blog.terapeutaai.com.br/images/logomarca-terapeuta-ai-2-.png'
+        },
+        {
+          '@type': 'WebSite',
+          '@id': 'https://blog.terapeutaai.com.br/#website',
+          url: siteUrl,
+          name: 'Blog Terapeuta AI',
+          description: 'Conhecimento para quem cuida de pessoas.',
+          publisher: { '@id': 'https://terapeutaai.com.br/#organization' },
+          inLanguage: 'pt-BR'
+        }
+      ]
+    })} />
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
