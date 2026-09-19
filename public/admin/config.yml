@@ -47,5 +47,12 @@ collections:
       - { label: "Rascunho", name: "draft", widget: "boolean", default: false }
       - { label: "Imagem", name: "image", widget: "image", required: false }
       - { label: "Texto alternativo da imagem", name: "imageAlt", widget: "string", required: false }
+      - label: "Fontes e referências"
+        name: "sources"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Nome da fonte", name: "label", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Conteúdo", name: "body", widget: "markdown" }
