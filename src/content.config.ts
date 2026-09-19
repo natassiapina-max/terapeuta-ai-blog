@@ -32,6 +32,7 @@ const articles = defineCollection({
     draft: z.boolean().default(false),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    sources: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
     tags: z.array(z.string()).default([]),
   }),
 });
