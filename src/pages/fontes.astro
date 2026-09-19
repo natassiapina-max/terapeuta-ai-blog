@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Fontes e Referências | Terapeuta AI" description="Fontes institucionais e referências úteis para aprofundar temas de tecnologia, saúde, privacidade e proteção de dados.">
+  <section class="page-hero"><div class="container"><p class="eyebrow">Fontes e referências</p><h1>Onde aprofundar o que publicamos.</h1><p>Uma seleção de fontes institucionais que ajudam a contextualizar temas recorrentes no Blog Terapeuta AI.</p></div></section>
+  <section class="container sources-grid">
+    <a href="https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes" target="_blank" rel="noopener noreferrer"><strong>ANPD</strong><span>Guias, materiais educativos e publicações sobre proteção de dados pessoais.</span><b>Visitar fonte ↗</b></a>
+    <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener noreferrer"><strong>Lei Geral de Proteção de Dados</strong><span>Texto da Lei nº 13.709/2018 e suas disposições sobre tratamento de dados pessoais.</span><b>Visitar fonte ↗</b></a>
+    <a href="https://developers.google.com/search/docs/appearance/structured-data/article?hl=pt-BR" target="_blank" rel="noopener noreferrer"><strong>Google Search Central</strong><span>Documentação oficial sobre dados estruturados para artigos.</span><b>Visitar fonte ↗</b></a>
+  </section>
+</BaseLayout>
+<style>
+.page-hero{padding:90px 0 70px;background:linear-gradient(180deg,#faf7ff,#fff)}.page-hero h1{max-width:900px}.page-hero>div>p:last-child{max-width:760px;color:var(--muted);font-size:1.08rem;margin-top:25px}.sources-grid{padding:70px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.sources-grid a{display:flex;flex-direction:column;min-height:250px;padding:30px;border:1px solid var(--border);border-radius:22px;background:white;text-decoration:none}.sources-grid strong{font-size:1.15rem;color:var(--deep)}.sources-grid span{margin-top:12px;color:var(--muted);font-size:.88rem}.sources-grid b{margin-top:auto;color:var(--violet);font-size:.78rem}@media(max-width:850px){.sources-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.sources-grid{grid-template-columns:1fr}}
+</style>
