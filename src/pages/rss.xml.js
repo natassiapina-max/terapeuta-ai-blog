@@ -1,4 +1,3 @@
----
 import { getCollection } from 'astro:content';
 
 const escapeXml = (value) =>
