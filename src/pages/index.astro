@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { categories } from '../data/categories';
 
-const articles = (await getCollection('articles', ({ data }) => !data.draft))
+const articles = (await getCollection('articles')).filter((article) => article.data?.draft !== true)
   .sort((a,b) => (b.data.pubDate?.getTime?.() ?? 0) - (a.data.pubDate?.getTime?.() ?? 0));
 const featured = articles.find(a => a.data.featured) ?? articles[0];
 const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
