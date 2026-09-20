@@ -1,32 +1,33 @@
 ---
 title: "Inteligência Artificial para Profissionais da Saúde: Guia Completo"
-description: "Entenda como a inteligência artificial pode apoiar a rotina de profissionais da saúde, terapeutas e outros profissionais do cuidado, com atenção à documentação, privacidade, segurança e responsabilidade profissional."
-category: "Inteligência Artificial"
-categorySlug: "inteligencia-artificial"
+description: Entenda como a inteligência artificial pode apoiar a rotina
+  profissional, a documentação e tarefas administrativas, com atenção à
+  privacidade, segurança e responsabilidade profissional.
+category: Inteligência Artificial
+categorySlug: inteligencia-artificial
 pubDate: 2026-09-19
-author: "Equipe Terapeuta AI"
+author: Equipe Terapeuta AI
 readTime: 10
 featured: true
-image: "/images/imagem-artigo-ia-terapeuta-ai (1).png"
-draft: false
-imageAlt: "Profissional da saúde utilizando inteligência artificial em sua rotina de trabalho"
+draft: true
+image: /images/imagem-artigo-ia-terapeuta-ai (1).png
+imageAlt: Profissional da saúde trabalhando com inteligência artificial e
+  informações organizadas em um ambiente clínico contemporâneo
 sources:
-  - label: "OMS — Ethics and governance of artificial intelligence for health"
-    url: "https://www.who.int/publications/i/item/9789240029200"
-  - label: "OMS — Guidance on large multi-modal models"
-    url: "https://www.who.int/publications/i/item/9789240084759"
-  - label: "Lei Geral de Proteção de Dados — Lei nº 13.709/2018"
-    url: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
-  - label: "ANPD — Materiais Educativos e Publicações"
-    url: "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes"
+  - label: OMS — Ethics and governance of artificial intelligence for health
+    url: https://www.who.int/publications/i/item/9789240029200
+  - label: OMS — Guidance on large multi-modal models
+    url: https://www.who.int/publications/i/item/9789240084759
+  - label: Lei Geral de Proteção de Dados — Lei nº 13.709/2018
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
+  - label: ANPD — Materiais Educativos e Publicações
+    url: https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes
 tags:
   - inteligência artificial
   - IA na saúde
   - IA generativa
   - tecnologia em saúde
   - profissionais da saúde
-  - profissionais do cuidado
-  - terapeutas
   - documentação clínica
   - privacidade
   - LGPD
