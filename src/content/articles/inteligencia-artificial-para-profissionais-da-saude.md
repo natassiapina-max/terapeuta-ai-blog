@@ -9,7 +9,7 @@ pubDate: 2026-09-19
 author: Equipe Terapeuta AI
 readTime: 10
 featured: true
-draft: true
+draft: false
 image: /images/imagem-artigo-ia-terapeuta-ai (1).png
 imageAlt: Profissional da saúde trabalhando com inteligência artificial e
   informações organizadas em um ambiente clínico contemporâneo
