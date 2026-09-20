@@ -7,8 +7,8 @@ pubDate: 2026-09-20
 author: "Equipe Terapeuta AI"
 readTime: 9
 featured: false
-image: "/images/imagem-artigo-ia-terapeuta-ai (1).png"
-imageAlt: "Profissional da saúde utilizando uma solução digital para organizar informações clínicas"
+image: "/images/prontuario-eletronico-terapeuta-ai.png"
+imageAlt: "Terapeuta utilizando um prontuário eletrônico para organizar informações de atendimento"
 sources:
   - label: "Ministério da Saúde — O que é prontuário eletrônico"
     url: "https://www.gov.br/saude/pt-br/composicao/saps/informatiza-aps/prontuario-eletronico"
@@ -97,7 +97,7 @@ Isso pode facilitar a compreensão da continuidade do acompanhamento e reduzir a
 
 Um sistema digital pode permitir que cada usuário tenha uma conta própria e que os acessos sejam definidos de acordo com sua função.
 
-O Ministério da Saúde destaca, em suas orientações sobre o prontuário eletrônico e-SUS APS, a importância de credenciais pessoais, gestão de perfis e permissões e controle de auditoria. citeturn0search1
+O Ministério da Saúde destaca, em suas orientações sobre o prontuário eletrônico e-SUS APS, a importância de credenciais pessoais, gestão de perfis e permissões e controle de auditoria.
 
 Esse conceito é especialmente importante em clínicas com mais de um profissional.
 
@@ -121,7 +121,7 @@ Isso pode facilitar a consulta do histórico e a continuidade do acompanhamento.
 
 Quando o sistema é bem estruturado, encontrar uma informação pode ser mais rápido do que procurar uma ficha física ou diferentes arquivos.
 
-O próprio Ministério da Saúde aponta o acesso rápido às informações de saúde como uma das características do prontuário eletrônico. citeturn0search0
+O próprio Ministério da Saúde aponta o acesso rápido às informações de saúde como uma das características do prontuário eletrônico.
 
 ### Padronização
 
@@ -173,7 +173,7 @@ Dados referentes à saúde são classificados pela Lei Geral de Proteção de Da
 
 Isso significa que informações de pacientes e usuários não devem ser tratadas como informações comuns.
 
-A LGPD estabelece princípios e regras para o tratamento de dados pessoais, incluindo aspectos relacionados à finalidade, adequação, necessidade e segurança. O Ministério da Saúde também destaca que sistemas de prontuário eletrônico que tratam dados de saúde devem observar o sistema de proteção de dados e adotar medidas técnicas e administrativas de segurança. citeturn0search1
+A LGPD estabelece princípios e regras para o tratamento de dados pessoais, incluindo aspectos relacionados à finalidade, adequação, necessidade e segurança. O Ministério da Saúde também destaca que sistemas de prontuário eletrônico que tratam dados de saúde devem observar o sistema de proteção de dados e adotar medidas técnicas e administrativas de segurança.
 
 ### O que isso significa na prática?
 
@@ -209,7 +209,7 @@ Por exemplo, um sistema pode diferenciar:
 
 A configuração exata deve considerar o contexto da clínica e as necessidades de cada função.
 
-O Ministério da Saúde recomenda gestão de contas, perfis e permissões orientada pela necessidade de uso da informação. citeturn0search1
+O Ministério da Saúde recomenda gestão de contas, perfis e permissões orientada pela necessidade de uso da informação.
 
 ## Prontuário eletrônico substitui o profissional?
 
