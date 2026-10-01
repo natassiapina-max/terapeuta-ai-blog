@@ -8,7 +8,8 @@ author: "Equipe Terapeuta AI"
 readTime: 8
 featured: false
 draft: false
-imageAlt: "Profissional da saúde organizando processos e informações de uma rotina clínica"
+image: "/images/imagem_reuniao.png"
+imageAlt: "Equipe multidisciplinar de uma clínica reunida para organizar o cuidado e os processos de atendimento"
 sources:
   - label: "Ministério da Saúde — Política Nacional de Atenção Hospitalar"
     url: "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt3390_30_12_2013.html"
@@ -63,7 +64,7 @@ Informações podem ficar dispersas, registros podem ser feitos de maneira incon
 
 Uma gestão estruturada ajuda a criar processos mais previsíveis e facilita o acompanhamento do serviço.
 
-O Ministério da Saúde relaciona a segurança do paciente à adoção de práticas mais seguras, ao gerenciamento de riscos, à análise de incidentes e à integração desses processos à organização dos serviços de saúde. citeturn0search3turn0search9
+O Ministério da Saúde relaciona a segurança do paciente à adoção de práticas mais seguras, ao gerenciamento de riscos, à análise de incidentes e à integração desses processos à organização dos serviços de saúde.
 
 Na prática, isso significa que **organizar processos também é uma forma de cuidar da qualidade do serviço**.
 
