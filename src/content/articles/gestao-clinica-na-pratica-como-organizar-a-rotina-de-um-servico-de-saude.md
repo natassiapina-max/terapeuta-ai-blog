@@ -34,7 +34,7 @@ Gerenciar um serviço de saúde não significa apenas preencher a agenda e atend
 
 É nesse contexto que entra a **gestão clínica**.
 
-Em uma definição utilizada pelo Ministério da Saúde, gestão da clínica envolve práticas assistenciais e gerenciais relacionadas à organização do cuidado e à avaliação de indicadores assistenciais. Embora essa definição esteja inserida no contexto da gestão hospitalar e do SUS, a ideia ajuda a compreender um princípio que também é útil em clínicas, consultórios e serviços multiprofissionais: **a gestão precisa estar conectada à qualidade do cuidado**. citeturn0search4
+Em uma definição utilizada pelo Ministério da Saúde, gestão da clínica envolve práticas assistenciais e gerenciais relacionadas à organização do cuidado e à avaliação de indicadores assistenciais. Embora essa definição esteja inserida no contexto da gestão hospitalar e do SUS, a ideia ajuda a compreender um princípio que também é útil em clínicas, consultórios e serviços multiprofissionais: **a gestão precisa estar conectada à qualidade do cuidado**.
 
 ## O que é gestão clínica?
 
@@ -132,9 +132,9 @@ O indicador só é útil quando existe uma pergunta por trás dele. Medir tudo s
 
 A gestão clínica também precisa considerar segurança.
 
-O Programa Nacional de Segurança do Paciente busca apoiar serviços de saúde na adoção de práticas mais seguras e inclui gerenciamento de riscos, análise de incidentes, capacitação e integração da segurança aos processos organizacionais. citeturn0search3
+O Programa Nacional de Segurança do Paciente busca apoiar serviços de saúde na adoção de práticas mais seguras e inclui gerenciamento de riscos, análise de incidentes, capacitação e integração da segurança aos processos organizacionais.
 
-Mais recentemente, a Anvisa publicou o Plano Integrado para a Gestão Sanitária da Segurança do Paciente em Serviços de Saúde 2026–2030, que inclui ações relacionadas à gestão de riscos, qualidade assistencial, vigilância e investigação de incidentes e eventos adversos. citeturn0search10
+Mais recentemente, a Anvisa publicou o Plano Integrado para a Gestão Sanitária da Segurança do Paciente em Serviços de Saúde 2026–2030, que inclui ações relacionadas à gestão de riscos, qualidade assistencial, vigilância e investigação de incidentes e eventos adversos.
 
 Mesmo em serviços menores, o princípio é aplicável: processos devem ser pensados para **reduzir falhas previsíveis e facilitar a identificação de problemas**.
 
@@ -142,7 +142,7 @@ Mesmo em serviços menores, o princípio é aplicável: processos devem ser pens
 
 Uma clínica lida diariamente com informações que podem ser pessoais e sensíveis.
 
-A LGPD classifica dados referentes à saúde como **dados pessoais sensíveis** e estabelece regras específicas para seu tratamento. A lei também prevê hipóteses específicas para o tratamento de dados necessários à tutela da saúde por profissionais e serviços de saúde. citeturn0search1
+A LGPD classifica dados referentes à saúde como **dados pessoais sensíveis** e estabelece regras específicas para seu tratamento. A lei também prevê hipóteses específicas para o tratamento de dados necessários à tutela da saúde por profissionais e serviços de saúde.
 
 Por isso, a gestão clínica precisa considerar aspectos como:
 
