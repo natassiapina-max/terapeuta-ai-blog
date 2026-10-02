@@ -220,6 +220,8 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
 }
 .prose p, .prose li { color:var(--text-soft); }
 .prose li { margin:8px 0; }
+.prose table { display:block; width:100%; max-width:100%; overflow-x:auto; border-collapse:collapse; -webkit-overflow-scrolling:touch; }
+.prose th, .prose td { min-width:140px; padding:10px 12px; border:1px solid var(--border); text-align:left; vertical-align:top; }
 .prose blockquote {
   margin:42px 0;
   padding:26px 28px;
