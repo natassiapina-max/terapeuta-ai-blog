@@ -257,7 +257,12 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
 }
 @media (max-width: 720px) {
   .related-grid{grid-template-columns:1fr}
-  .article-page { padding-top:54px; }
-  .container-narrow, .container-article { width:min(calc(100% - 28px), 900px); }
+  .article-page { padding-top:54px; min-width:0; max-width:100%; }
+  .container-narrow, .container-article { width:min(calc(100% - 28px), 900px); min-width:0; max-width:100%; }
+  .article-header, .article-summary, .article-breadcrumb, .article-layout, .article-footer { min-width:0; max-width:100%; }
+  .prose { min-width:0; max-width:100%; overflow-wrap:anywhere; }
+  .prose > * { max-width:100%; }
+  .prose pre { max-width:100%; overflow-x:auto; }
+  .prose img, .prose iframe, .prose video { max-width:100%; }
 }
 </style>
