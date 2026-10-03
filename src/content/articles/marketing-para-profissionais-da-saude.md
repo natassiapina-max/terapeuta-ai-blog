@@ -67,11 +67,11 @@ Existe uma relação de confiança envolvida. O público pode estar procurando a
 
 Além disso, diferentes profissões possuem códigos de ética e normas próprias para publicidade.
 
-O Conselho Federal de Psicologia, por exemplo, orienta que a divulgação profissional nas redes sociais deve observar o Código de Ética, as resoluções e outras normas aplicáveis à profissão. citeturn0search2turn0search36
+O Conselho Federal de Psicologia, por exemplo, orienta que a divulgação profissional nas redes sociais deve observar o Código de Ética, as resoluções e outras normas aplicáveis à profissão.
 
-O Conselho Federal de Fonoaudiologia também estabelece regras específicas para publicidade, redes sociais, identificação profissional e divulgação de informações sobre clientes. citeturn0search0
+O Conselho Federal de Fonoaudiologia também estabelece regras específicas para publicidade, redes sociais, identificação profissional e divulgação de informações sobre clientes.
 
-Para fisioterapeutas e terapeutas ocupacionais, o COFFITO possui regulamentação específica sobre divulgação de imagens, textos e áudios relacionados aos procedimentos profissionais. citeturn0search7
+Para fisioterapeutas e terapeutas ocupacionais, o COFFITO possui regulamentação específica sobre divulgação de imagens, textos e áudios relacionados aos procedimentos profissionais.
 
 Por isso, uma regra importante é: **não existe uma fórmula universal de marketing ético para todas as profissões da saúde**.
 
@@ -171,7 +171,7 @@ Quando falar de temas técnicos, utilize fontes confiáveis e deixe claro quando
 
 Apresente formação, especializações, estrutura, equipe e formas de atendimento de maneira objetiva.
 
-O Conselho Federal de Psicologia, por exemplo, orienta que profissionais podem destacar formação, público atendido, abordagem e metodologia de trabalho em sua publicidade, observando as normas da profissão. citeturn0search36
+O Conselho Federal de Psicologia, por exemplo, orienta que profissionais podem destacar formação, público atendido, abordagem e metodologia de trabalho em sua publicidade, observando as normas da profissão.
 
 ## Autoridade não é a mesma coisa que promessa
 
@@ -199,9 +199,9 @@ Esse é um ponto que merece atenção especial.
 
 As regras variam entre profissões e podem ser bastante específicas.
 
-O CFP, por exemplo, possui orientações próprias sobre publicidade nas redes sociais e aborda questões como depoimentos, fotos, preços, ofertas e uso de informações profissionais. citeturn0search2
+O CFP, por exemplo, possui orientações próprias sobre publicidade nas redes sociais e aborda questões como depoimentos, fotos, preços, ofertas e uso de informações profissionais.
 
-O Código de Ética da Fonoaudiologia também estabelece regras específicas para publicação de imagens, vídeos e áudios de clientes e para a divulgação de casos identificáveis. citeturn0search0
+O Código de Ética da Fonoaudiologia também estabelece regras específicas para publicação de imagens, vídeos e áudios de clientes e para a divulgação de casos identificáveis.
 
 Além da regra do conselho profissional, existe uma questão fundamental: **o consentimento não deve ser tratado como uma solução automática para todos os riscos de exposição**.
 
