@@ -1,26 +1,31 @@
 ---
-title: "Como Construir uma Carreira Sustentável na Área da Saúde: 7 Decisões que Fazem Diferença"
-description: "Veja como construir uma carreira sustentável na área da saúde com planejamento, posicionamento, desenvolvimento profissional, gestão e visão de longo prazo."
-category: "Carreira e Negócios"
-categorySlug: "carreira-e-negocios"
+title: "Como Construir uma Carreira Sustentável na Área da Saúde: 7 Decisões que
+  Fazem Diferença"
+description: Veja como construir uma carreira sustentável na área da saúde com
+  planejamento, posicionamento, desenvolvimento profissional, gestão e visão de
+  longo prazo.
+category: Carreira e Negócios
+categorySlug: carreira-e-negocios
 pubDate: 2026-10-07
-author: "Equipe Terapeuta AI"
+author: Equipe Terapeuta AI
 readTime: 10
 featured: false
-image: "/images/carreira-sustentavel-na-area-da-saude-terapeuta-ai.png"
 draft: false
-imageAlt: "Profissional da saúde planejando sua carreira em um ambiente profissional"
+image: /images/profissional-escritorio-roxo.webp
+imageAlt: Profissional da saúde planejando sua carreira em um ambiente profissional
 sources:
-  - label: "Google Search Central — Como criar conteúdo útil, confiável e que prioriza as pessoas"
-    url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br"
-  - label: "Ministério da Saúde — Secretaria de Gestão do Trabalho e da Educação na Saúde"
-    url: "https://www.gov.br/saude/pt-br/composicao/sgtes/competencias/competencias"
-  - label: "Ministério da Saúde — Política Nacional de Educação Permanente em Saúde"
-    url: "https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_educacao_permanente_saude.pdf"
-  - label: "Sebrae — Plano de negócio"
-    url: "https://meuatendimento.sebrae.com.br/sites/PortalSebrae/artigos/como-elaborar-um-plano-de-negocio%2C37d2438af1c92410VgnVCM100000b272010aRCRD"
-  - label: "Sebrae — Monte um plano de negócio fácil e simples"
-    url: "https://loja.sebrae.com.br/monte-um-plano-de-negocio-facil-e-simples"
+  - label: Google Search Central — Como criar conteúdo útil, confiável e que
+      prioriza as pessoas
+    url: https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br
+  - label: Ministério da Saúde — Secretaria de Gestão do Trabalho e da Educação na
+      Saúde
+    url: https://www.gov.br/saude/pt-br/composicao/sgtes/competencias/competencias
+  - label: Ministério da Saúde — Política Nacional de Educação Permanente em Saúde
+    url: https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_educacao_permanente_saude.pdf
+  - label: Sebrae — Plano de negócio
+    url: https://meuatendimento.sebrae.com.br/sites/PortalSebrae/artigos/como-elaborar-um-plano-de-negocio%2C37d2438af1c92410VgnVCM100000b272010aRCRD
+  - label: Sebrae — Monte um plano de negócio fácil e simples
+    url: https://loja.sebrae.com.br/monte-um-plano-de-negocio-facil-e-simples
 tags:
   - carreira na área da saúde
   - carreira para profissionais da saúde
