@@ -122,9 +122,9 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
     datePublished: data.pubDate.toISOString(),
     dateModified: (data.updatedDate ?? data.pubDate).toISOString(),
     author: {
-      '@type': 'Organization',
+      '@type': data.author === 'Juliano Lima' ? 'Person' : 'Organization',
       name: data.author,
-      url: 'https://blog.terapeutaai.com.br/sobre'
+      url: data.author === 'Juliano Lima' ? undefined : 'https://blog.terapeutaai.com.br/sobre'
     },
     publisher: {
       '@type': 'Organization',
@@ -266,3 +266,4 @@ const updated = data.updatedDate?.toISOString().slice(0, 10);
   .prose img, .prose iframe, .prose video { max-width:100%; }
 }
 </style>
+

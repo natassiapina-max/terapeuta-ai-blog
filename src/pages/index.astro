@@ -33,7 +33,7 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
     <div class="section-head"><div><p class="eyebrow">Leitura em destaque</p><h2>Comece por aqui.</h2></div><p>Um conteúdo escolhido para abrir a conversa.</p></div>
     <article class="featured-card">
       <div class="featured-art" aria-hidden={featured.data.image ? undefined : 'true'}>
-        {featured.data.image ? <img src={featured.data.image} alt="" loading="lazy" /> : <><span>TERAPEUTA AI</span><strong>CONHECIMENTO<br/>QUE SE APLICA.</strong><div class="art-line"></div></>}
+        {featured.data.image ? <img src={featured.data.image} alt="" loading="lazy" style={featured.id === 'como-precificar-atendimentos' ? 'object-fit:contain' : undefined} /> : <><span>TERAPEUTA AI</span><strong>CONHECIMENTO<br/>QUE SE APLICA.</strong><div class="art-line"></div></>}
       </div>
       <div class="featured-content">
         <a class="category" href={`/${featured.data.categorySlug}`}>{featured.data.category}</a>
@@ -99,3 +99,4 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
 @media(max-width:850px){.hero-grid{grid-template-columns:1fr;min-height:auto;padding:55px 0 35px}.hero-visual{justify-self:center;width:min(100%,430px)}.featured-card{grid-template-columns:1fr}.featured-art{min-height:290px}.theme-grid{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}.section-head>p{text-align:left}.featured-content{padding:35px}}
 @media(max-width:560px){.hero{padding-top:55px}.actions{align-items:flex-start;flex-direction:column;gap:17px}.hero-visual{margin-top:20px}.topic-inner{justify-content:flex-start;padding:13px 0}.featured,.themes,.latest{padding:70px 0 30px}.theme-grid,.latest-grid{grid-template-columns:1fr}.manifesto{grid-template-columns:1fr;padding:32px 27px}.manifesto-mark{width:60px;height:60px}}
 </style>
+
