@@ -21,9 +21,9 @@ const canonical = new URL(`/artigos/${article.id}`, Astro.site ?? 'https://blog.
 const published = data.pubDate.toISOString().slice(0, 10);
 const updated = data.updatedDate?.toISOString().slice(0, 10);
 const extractFaqItems = (body: string) => {
-  const faqStart = body.search(/^## Perguntas frequentes/m);
+  const faqStart = body.search(/^## (Perguntas frequentes|FAQ)/m);
   if (faqStart === -1) return [];
-  const faqBody = body.slice(faqStart).replace(/^## Perguntas frequentes[^\n]*\n?/m, '');
+  const faqBody = body.slice(faqStart).replace(/^## (Perguntas frequentes|FAQ)[^\n]*\n?/m, '');
   const nextSection = faqBody.search(/^## (?!#)/m);
   const section = nextSection === -1 ? faqBody : faqBody.slice(0, nextSection);
   const matches = [...section.matchAll(/(?:^|\n)###\s+(.+)\n([\s\S]*?)(?=\n###\s+|\n##\s+|$)/g)];
