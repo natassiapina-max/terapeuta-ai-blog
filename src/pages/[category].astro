@@ -35,7 +35,7 @@ const articles = (await getCollection('articles')).filter((article) =>
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://blog.terapeutaai.com.br/' },
-      { '@type': 'ListItem', position: 2, name: category.name, item: new URL('/' + category.slug, 'https://blog.terapeutaai.com.br').href }
+      { '@type': 'ListItem', position: 2, name: category.name, item: new URL('/' + category.slug + '/', 'https://blog.terapeutaai.com.br').href }
     ]
   })} />
 
@@ -58,7 +58,7 @@ const articles = (await getCollection('articles')).filter((article) =>
               <h3>{article.data.title}</h3>
               <p>{article.data.description}</p>
             </div>
-            <a href={`/artigos/${article.id}`}>Ler artigo →</a>
+            <a href={`/artigos/${article.id}/`}>Ler artigo →</a>
           </article>
         ))}
       </div>
