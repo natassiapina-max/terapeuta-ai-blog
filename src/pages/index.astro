@@ -36,10 +36,10 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
         {featured.data.image ? <img src={featured.data.image} alt="" loading="lazy" style={featured.id === 'como-precificar-atendimentos' ? 'object-fit:contain' : undefined} /> : <><span>TERAPEUTA AI</span><strong>CONHECIMENTO<br/>QUE SE APLICA.</strong><div class="art-line"></div></>}
       </div>
       <div class="featured-content">
-        <a class="category" href={`/${featured.data.categorySlug}`}>{featured.data.category}</a>
+        <a class="category" href={`/${featured.data.categorySlug}/`}>{featured.data.category}</a>
         <h3>{featured.data.title}</h3><p>{featured.data.description}</p>
         <div class="meta"><span>{featured.data.readTime} min de leitura</span><span>Por {featured.data.author}</span></div>
-        <a class="read-link" href={`/artigos/${featured.id}`}>Ler artigo <span>→</span></a>
+        <a class="read-link" href={`/artigos/${featured.id}/`}>Ler artigo <span>→</span></a>
       </div>
     </article>
   </section>}
@@ -47,7 +47,7 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
   <section class="container themes" id="temas">
     <div class="section-head"><div><p class="eyebrow">Explore por tema</p><h2>Escolha o assunto que acompanha sua rotina.</h2></div><p>Conteúdo organizado para facilitar a descoberta.</p></div>
     <div class="theme-grid">
-      {categories.map((category,index) => <a class="theme-card" href={`/${category.slug}`}>
+      {categories.map((category,index) => <a class="theme-card" href={`/${category.slug}/`}>
         <div class="theme-top"><span>0{index+1}</span><b>↗</b></div>
         <div class="theme-icon">{['✦','◫','▤','◎','↗','◇'][index]}</div>
         <h3>{category.name}</h3><p>{category.description}</p>
@@ -58,9 +58,9 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
   {latest.length > 0 && <section class="container latest">
     <div class="section-head"><div><p class="eyebrow">Mais recentes</p><h2>Para continuar pensando.</h2></div><p>Novos conteúdos, ideias e referências.</p></div>
     <div class="latest-grid">{latest.map(article => <article class="latest-card">
-      <div class="latest-meta"><a class="category" href={`/${article.data.categorySlug}`}>{article.data.category}</a><span>{article.data.readTime} min</span></div>
+      <div class="latest-meta"><a class="category" href={`/${article.data.categorySlug}/`}>{article.data.category}</a><span>{article.data.readTime} min</span></div>
       <h3>{article.data.title}</h3><p>{article.data.description}</p>
-      <a class="read-link" href={`/artigos/${article.id}`}>Ler artigo <span>→</span></a>
+      <a class="read-link" href={`/artigos/${article.id}/`}>Ler artigo <span>→</span></a>
     </article>)}</div>
   </section>}
 
