@@ -1,10 +1,12 @@
 ---
 title: "Gestão Clínica na Prática: Como Organizar a Rotina de um Serviço de Saúde"
 description: "Entenda o que é gestão clínica, quais processos fazem parte dela e como organizar a rotina, os registros, os indicadores e a experiência do paciente de forma mais segura e eficiente."
+directAnswer: "Gestão clínica é a organização dos processos que sustentam o atendimento em saúde, incluindo agenda, prontuário, equipe, comunicação, indicadores, segurança do paciente e melhoria contínua da rotina."
 category: "Gestão Clínica"
 categorySlug: "gestao-clinica"
 pubDate: 2026-10-01
-author: "Equipe Terapeuta AI"
+updatedDate: 2026-10-10
+author: Juliano Lima
 readTime: 8
 featured: false
 draft: false
