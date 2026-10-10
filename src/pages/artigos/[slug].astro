@@ -26,7 +26,7 @@ const extractFaqItems = (body: string) => {
   const faqBody = body.slice(faqStart).replace(/^## Perguntas frequentes[^\n]*\n?/m, '');
   const nextSection = faqBody.search(/^## (?!#)/m);
   const section = nextSection === -1 ? faqBody : faqBody.slice(0, nextSection);
-  const matches = [...section.matchAll(/^###\s+(.+)\n([\s\S]*?)(?=^###\s+|$)/gm)];
+  const matches = [...section.matchAll(/(?:^|\n)###\s+(.+)\n([\s\S]*?)(?=\n###\s+|\n##\s+|$)/g)];
   return matches
     .map((match) => ({
       question: match[1].trim(),
