@@ -1,10 +1,12 @@
 ---
 title: "Marketing para Profissionais da Saúde: Como Atrair Pacientes sem Comprometer a Ética Profissional"
 description: "Entenda como construir uma presença digital profissional na saúde, atrair pacientes e fortalecer sua autoridade sem ultrapassar limites éticos."
+directAnswer: "Marketing para profissionais da saúde deve construir presença digital, autoridade e clareza sobre serviços sem prometer resultados, expor pacientes ou desrespeitar normas éticas de cada profissão."
 category: "Marketing"
 categorySlug: "marketing"
 pubDate: 2026-10-03
-author: "Equipe Terapeuta AI"
+updatedDate: 2026-10-10
+author: Juliano Lima
 readTime: 9
 featured: false
 image: "/images/marketing-para-profissionais-da-saude-terapeuta-ai.png"
