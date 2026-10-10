@@ -1,9 +1,11 @@
 ---
 title: "Como precificar seus atendimentos: custos, agenda e sustentabilidade profissional"
 description: "Aprenda como precificar atendimentos considerando custos, remuneração, agenda e impostos, com um exemplo fictício e simulações de sessões por mês."
+directAnswer: "Para precificar atendimentos, estime custos fixos e variáveis, remuneração desejada, impostos e capacidade real de agenda. Depois distribua essa necessidade por uma quantidade realista de sessões pagas."
 category: "Carreira e Negócios"
 categorySlug: carreira-e-negocios
 pubDate: 2026-10-08
+updatedDate: 2026-10-10
 author: Juliano Lima
 readTime: 11
 featured: false
@@ -25,7 +27,7 @@ tags:
   - carreira e negócios
 ---
 
-**Por Juliano Lima — Terapeuta e CEO do Terapeuta AI**
+**Por Juliano Lima — administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.**
 
 Uma agenda movimentada pode esconder uma conta que não fecha. Entre uma sessão e outra, existem registros, planejamento, mensagens, despesas e períodos sem atendimento. Tudo isso faz parte do trabalho, mesmo quando não aparece no valor cobrado do paciente.
 
