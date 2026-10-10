@@ -29,7 +29,7 @@ tags:
   - qualidade do atendimento
 ---
 
-**Por Juliano Lima — administrador, musicoterapeuta, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e CEO do Terapeuta AI.**
+**Por Juliano Lima — administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.**
 
 **Organizar uma agenda sustentável na saúde significa planejar atendimentos, pausas, registros, comunicação e recuperação como partes do mesmo trabalho.** O objetivo não é atender menos por princípio, mas criar uma rotina que sustente qualidade, previsibilidade e saúde profissional ao longo do tempo.
 
