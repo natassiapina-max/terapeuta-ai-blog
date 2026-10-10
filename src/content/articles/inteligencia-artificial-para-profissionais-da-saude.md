@@ -3,10 +3,12 @@ title: "Inteligência Artificial para Profissionais da Saúde: Guia Completo"
 description: Entenda como a inteligência artificial pode apoiar a rotina
   profissional, a documentação e tarefas administrativas, com atenção à
   privacidade, segurança e responsabilidade profissional.
+directAnswer: "Inteligência artificial pode apoiar profissionais da saúde em tarefas administrativas, organização de informações, documentação e pesquisa, desde que haja revisão humana, proteção de dados e responsabilidade profissional sobre o uso dos resultados."
 category: Inteligência Artificial
 categorySlug: inteligencia-artificial
 pubDate: 2026-09-19
-author: Equipe Terapeuta AI
+updatedDate: 2026-10-10
+author: Juliano Lima
 readTime: 10
 featured: true
 draft: false
