@@ -17,7 +17,7 @@ export async function GET({ site }) {
 
   const items = articles.map((article) => {
     const published = article.data.pubDate?.toISOString?.() ?? new Date(0).toISOString();
-    const link = `${baseUrl}/artigos/${article.id}`;
+    const link = `${baseUrl}/artigos/${article.id}/`;
 
     return `<item>
       <title>${escapeXml(article.data.title)}</title>
