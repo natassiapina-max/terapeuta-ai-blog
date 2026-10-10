@@ -20,7 +20,7 @@ const related = (await getCollection('articles', ({ data: itemData, id }) =>
 
 const published = data.pubDate.toISOString().slice(0, 10);
 const updated = data.updatedDate?.toISOString().slice(0, 10);
-const previewCanonical = new URL(`/preview/artigos/${article.id}`, Astro.site ?? 'https://blog.terapeutaai.com.br').href;
+const previewCanonical = new URL(`/preview/artigos/${article.id}/`, Astro.site ?? 'https://blog.terapeutaai.com.br').href;
 const authorProfile = data.author === 'Juliano Lima'
   ? {
       name: 'Juliano Lima',
@@ -54,7 +54,7 @@ const authorProfile = data.author === 'Juliano Lima'
     </div>
 
     <header class="article-header container-narrow">
-      <a class="article-category" href={`/${data.categorySlug}`}>{data.category}</a>
+      <a class="article-category" href={`/${data.categorySlug}/`}>{data.category}</a>
       <h1>{data.title}</h1>
       <p class="article-lead">{data.description}</p>
       <div class="article-meta">
@@ -77,7 +77,7 @@ const authorProfile = data.author === 'Juliano Lima'
     </div>
 
     <nav class="article-breadcrumb container-narrow" aria-label="Breadcrumb">
-      <a href="/">Início</a><span>›</span><a href={`/${data.categorySlug}`}>{data.category}</a><span>›</span><span aria-current="page">{data.title}</span>
+      <a href="/">Início</a><span>›</span><a href={`/${data.categorySlug}/`}>{data.category}</a><span>›</span><span aria-current="page">{data.title}</span>
     </nav>
 
     <div class="container-article article-layout">
@@ -99,7 +99,7 @@ const authorProfile = data.author === 'Juliano Lima'
     {related.length > 0 && <section class="container-narrow related">
       <div class="section-label"><span class="eyebrow">Continue explorando</span><h2>Conteúdos relacionados</h2></div>
       <div class="related-grid">
-        {related.map((item) => <a class="related-card" href={`/artigos/${item.id}`}>
+        {related.map((item) => <a class="related-card" href={`/artigos/${item.id}/`}>
           <span>{item.data.category}</span>
           <h3>{item.data.title}</h3>
           <b>Ler artigo →</b>
@@ -139,7 +139,7 @@ const authorProfile = data.author === 'Juliano Lima'
         <span class="eyebrow">Terapeuta AI</span>
         <h2>Mais conhecimento para uma rotina profissional mais organizada.</h2>
         <p>Explore outros conteúdos sobre tecnologia, gestão, documentação, carreira e ética.</p>
-        <a class="btn btn-primary" href={`/${data.categorySlug}`}>Continuar lendo</a>
+        <a class="btn btn-primary" href={`/${data.categorySlug}/`}>Continuar lendo</a>
       </div>
     </section>
   </article>
