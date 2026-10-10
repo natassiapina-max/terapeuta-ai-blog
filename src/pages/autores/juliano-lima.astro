@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const authorUrl = 'https://blog.terapeutaai.com.br/autores/juliano-lima';
+const imageUrl = 'https://blog.terapeutaai.com.br/images/foto_rosto_blog.png';
+---
+
+<BaseLayout
+  title="Juliano Lima | Autor no Blog Terapeuta AI"
+  description="Juliano Lima é administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB."
+  canonical={authorUrl}
+  image="/images/foto_rosto_blog.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@type': 'Person',
+      '@id': authorUrl + '#person',
+      name: 'Juliano Lima',
+      alternateName: 'Juliano de Rocha e Lima Rodrigues',
+      url: authorUrl,
+      image: imageUrl,
+      jobTitle: 'Musicoterapeuta, escritor e fundador do TerapeutaAI HUB',
+      affiliation: {
+        '@type': 'Organization',
+        name: 'Terapeuta AI',
+        url: 'https://terapeutaai.com.br'
+      },
+      identifier: 'ABMT 182-PR',
+      description: 'Administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.',
+      knowsAbout: [
+        'Musicoterapia',
+        'ABA',
+        'TEA',
+        'Neurodesenvolvimento',
+        'TDAH',
+        'Saúde mental',
+        'Tecnologia para profissionais da saúde',
+        'Gestão clínica',
+        'TerapeutaAI HUB'
+      ],
+      sameAs: [
+        'https://www.instagram.com/julianolima.mt',
+        'https://www.linkedin.com/in/julianolimamt/',
+        'https://terapeutaai.com.br'
+      ]
+    }
+  })} />
+
+  <section class="author-hero">
+    <div class="container author-grid">
+      <img src="/images/foto_rosto_blog.png" alt="Foto de Juliano Lima" class="author-photo" />
+      <div>
+        <p class="eyebrow">Autor</p>
+        <h1>Juliano Lima</h1>
+        <p class="lead">Administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.</p>
+        <p>Atua desde 2019 com saúde mental, neurodesenvolvimento, TEA, TDAH e tecnologia aplicada à rotina clínica. É criador do Terapeuta AI Hub e escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.</p>
+        <div class="author-links">
+          <a href="https://www.instagram.com/julianolima.mt" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/in/julianolimamt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://terapeutaai.com.br" target="_blank" rel="noopener noreferrer">TerapeutaAI HUB</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container author-content">
+    <article>
+      <h2>Áreas de conhecimento</h2>
+      <ul>
+        <li>Musicoterapia, neurodesenvolvimento, TEA e TDAH.</li>
+        <li>ABA aplicada à rotina terapêutica e educacional.</li>
+        <li>Gestão clínica, documentação, ética e tecnologia para profissionais da saúde.</li>
+        <li>Inteligência artificial aplicada à organização da rotina clínica.</li>
+      </ul>
+    </article>
+    <article>
+      <h2>Responsabilidade editorial</h2>
+      <p>Os conteúdos assinados por Juliano Lima têm finalidade informativa e profissional. Eles não substituem avaliação individual, orientação jurídica, contábil, regulatória ou clínica específica.</p>
+      <p>Quando o tema envolve legislação, normas profissionais, privacidade, saúde mental ou tecnologia aplicada à saúde, o conteúdo deve ser lido em conjunto com as fontes oficiais indicadas no artigo.</p>
+    </article>
+  </section>
+</BaseLayout>
+
+<style>
+.author-hero{padding:86px 0 70px;background:linear-gradient(180deg,#faf7ff,#fff)}
+.author-grid{display:grid;grid-template-columns:180px minmax(0,820px);gap:42px;align-items:center}
+.author-photo{width:180px;height:180px;border-radius:50%;object-fit:cover;border:1px solid var(--border);box-shadow:0 18px 45px rgba(94,38,214,.14)}
+.author-hero h1{font-size:clamp(2.6rem,5vw,4.4rem)}
+.lead{max-width:820px;color:var(--deep);font-size:1.14rem;font-weight:600}
+.author-hero p:not(.eyebrow){max-width:820px;color:var(--text-soft)}
+.author-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.author-links a{padding:10px 14px;border:1px solid var(--border);border-radius:12px;color:var(--purple);font-size:.82rem;font-weight:700;text-decoration:none;background:#fff}
+.author-content{padding:60px 0;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.author-content article{padding:30px;border:1px solid var(--border);border-radius:20px;background:white}
+.author-content h2{font-size:1.5rem}
+.author-content p,.author-content li{color:var(--text-soft);font-size:.94rem}
+@media(max-width:760px){.author-grid{grid-template-columns:1fr;gap:28px}.author-photo{width:132px;height:132px}.author-content{grid-template-columns:1fr}}
+</style>
