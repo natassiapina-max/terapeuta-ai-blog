@@ -24,10 +24,15 @@ const authorProfile = data.author === 'Juliano Lima'
   ? {
       name: 'Juliano Lima',
       role: 'Terapeuta, escritor e CEO do Terapeuta AI.',
-      credentials: 'Administrador, musicoterapeuta, pós-graduado em ABA e TEA, coautor do livro Conexão Autista.',
+      credentials: 'Administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.',
       bio: 'Atua desde 2019 com saúde mental, neurodesenvolvimento, TEA, TDAH e tecnologia aplicada à rotina clínica. É criador do Terapeuta AI Hub e escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.',
       image: '/images/foto_rosto_blog.png',
-      url: 'https://blog.terapeutaai.com.br/sobre'
+      url: 'https://blog.terapeutaai.com.br/sobre',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/julianolima.mt' },
+        { label: 'LinkedIn', url: 'https://www.linkedin.com/in/julianolimamt/' },
+        { label: 'TerapeutaAI HUB', url: 'https://terapeutaai.com.br' }
+      ]
     }
   : null;
 ---
@@ -109,6 +114,11 @@ const authorProfile = data.author === 'Juliano Lima'
           {authorProfile && <strong>{authorProfile.role}</strong>}
           {authorProfile && <p class="author-credentials">{authorProfile.credentials}</p>}
           {authorProfile && <p>{authorProfile.bio}</p>}
+          {authorProfile?.links && (
+            <div class="author-links">
+              {authorProfile.links.map((link) => <a href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>)}
+            </div>
+          )}
           {data.reviewer && <p>Revisão: {data.reviewer}</p>}
         </div>
       </div>
@@ -151,7 +161,13 @@ const authorProfile = data.author === 'Juliano Lima'
         'Neurodesenvolvimento',
         'Saúde mental',
         'Tecnologia para profissionais da saúde',
-        'Conexão Autista'
+        'Conexão Autista',
+        'TerapeutaAI HUB'
+      ] : undefined,
+      sameAs: authorProfile ? [
+        'https://www.instagram.com/julianolima.mt',
+        'https://www.linkedin.com/in/julianolimamt/',
+        'https://terapeutaai.com.br'
       ] : undefined
     },
     publisher: {
@@ -283,6 +299,8 @@ const authorProfile = data.author === 'Juliano Lima'
 .author-box strong { display:block; margin-bottom:8px; color:var(--deep); font-size:.9rem; }
 .author-box p { margin:0; color:var(--text-soft); font-size:.92rem; }
 .author-box .author-credentials { margin-bottom:8px; color:var(--deep); font-weight:600; }
+.author-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+.author-links a { color:var(--purple); font-size:.82rem; font-weight:700; text-decoration:none; }
 .article-cta {
   margin-top:24px;
   padding:34px;
