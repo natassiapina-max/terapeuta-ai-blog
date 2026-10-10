@@ -21,6 +21,15 @@ const related = (await getCollection('articles', ({ data: itemData, id }) =>
 const published = data.pubDate.toISOString().slice(0, 10);
 const updated = data.updatedDate?.toISOString().slice(0, 10);
 const previewCanonical = new URL(`/preview/artigos/${article.id}`, Astro.site ?? 'https://blog.terapeutaai.com.br').href;
+const authorProfile = data.author === 'Juliano Lima'
+  ? {
+      name: 'Juliano Lima',
+      role: 'Terapeuta, escritor e CEO do Terapeuta AI.',
+      credentials: 'Administrador. Pós-graduado em Musicoterapia, Neuropsicopedagogia Clínica, Saúde Mental e Psicopatologia.',
+      bio: 'Atua desde 2019 com saúde mental, neurodesenvolvimento, TEA, TDAH e tecnologia aplicada à rotina clínica. É criador do Terapeuta AI Hub e escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.',
+      image: '/images/foto_rosto_blog.png'
+    }
+  : null;
 ---
 
 <BaseLayout
@@ -95,9 +104,15 @@ const previewCanonical = new URL(`/preview/artigos/${article.id}`, Astro.site ??
 
     <section class="container-narrow article-footer">
       <div class="author-box">
+        {authorProfile && (
+          <img class="author-photo" src={authorProfile.image} alt={`Foto de ${authorProfile.name}`} loading="lazy" />
+        )}
         <div>
           <span class="eyebrow">Responsabilidade editorial</span>
           <h2>{data.author}</h2>
+          {authorProfile && <strong>{authorProfile.role}</strong>}
+          {authorProfile && <p class="author-credentials">{authorProfile.credentials}</p>}
+          {authorProfile && <p>{authorProfile.bio}</p>}
           {data.reviewer && <p>Revisão: {data.reviewer}</p>}
         </div>
       </div>
@@ -155,8 +170,10 @@ const previewCanonical = new URL(`/preview/artigos/${article.id}`, Astro.site ??
 .article-toc ul{padding-left:18px;margin-bottom:0}.article-toc li{margin:10px 0}.article-toc a{color:var(--text-soft);text-decoration:none;font-size:.85rem}
 .prose{font-size:1.05rem}.prose h2{margin-top:52px;margin-bottom:18px;font-size:clamp(1.65rem,3vw,2.25rem)}.prose p,.prose li{color:var(--text-soft)}.prose li{margin:8px 0}
 .related{padding-top:70px}.section-label h2{font-size:1.8rem;margin:0 0 20px}.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.related-card{min-height:190px;padding:24px;border:1px solid var(--border);border-radius:20px;background:var(--soft);text-decoration:none;display:flex;flex-direction:column}.related-card>span{color:var(--purple);font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em}.related-card h3{margin:12px 0;font-size:1.15rem;color:var(--deep)}.related-card b{margin-top:auto;color:var(--violet);font-size:.75rem}
-.article-footer{padding:70px 0 10px}.author-box{padding:26px;border:1px solid var(--border);border-radius:20px;background:white}.author-box h2{margin:4px 0 8px;font-size:1.4rem}.author-box p{margin:0;color:var(--text-soft)}
+.article-footer{padding:70px 0 10px}.author-box{display:flex;gap:22px;align-items:center;padding:26px;border:1px solid var(--border);border-radius:20px;background:white}.author-photo{width:96px;height:96px;flex:0 0 96px;border-radius:50%;object-fit:cover;border:1px solid var(--border);box-shadow:0 12px 28px rgba(94,38,214,.12)}.author-box h2{margin:4px 0 8px;font-size:1.4rem}.author-box strong{display:block;margin-bottom:8px;color:var(--deep);font-size:.9rem}.author-box p{margin:0;color:var(--text-soft);font-size:.92rem}.author-box .author-credentials{margin-bottom:8px;color:var(--deep);font-weight:600}
 .article-cta{margin-top:24px;padding:34px;border-radius:24px;background:linear-gradient(135deg,var(--purple),var(--violet));color:white}.article-cta h2{margin:4px 0 10px;color:white}.article-cta p{color:#eadfff}
 @media (max-width:900px){.article-layout{grid-template-columns:1fr;gap:28px}.article-toc{position:static}}
-@media (max-width:720px){.related-grid{grid-template-columns:1fr}.article-page{padding-top:54px}.container-narrow,.container-article{width:min(calc(100% - 28px),900px)}.preview-banner{width:min(calc(100% - 28px),900px);align-items:flex-start;flex-direction:column}}
+@media (max-width:720px){.related-grid{grid-template-columns:1fr}.article-page{padding-top:54px}.container-narrow,.container-article{width:min(calc(100% - 28px),900px)}.preview-banner{width:min(calc(100% - 28px),900px);align-items:flex-start;flex-direction:column}.author-box{align-items:flex-start}}
+@media (max-width:560px){.author-box{flex-direction:column}}
 </style>
+
