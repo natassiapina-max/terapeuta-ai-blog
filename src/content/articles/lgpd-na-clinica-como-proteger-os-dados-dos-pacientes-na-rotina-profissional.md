@@ -1,10 +1,12 @@
 ---
 title: "LGPD na Clínica: Como Proteger os Dados dos Pacientes na Rotina Profissional"
 description: "Entenda como a LGPD se aplica à rotina de clínicas e consultórios, quais dados exigem maior proteção e quais cuidados os profissionais da saúde podem adotar no dia a dia."
+directAnswer: "A LGPD se aplica a clínicas e consultórios porque dados de saúde são dados pessoais sensíveis. A proteção precisa envolver coleta adequada, acesso controlado, armazenamento seguro, comunicação responsável e procedimentos claros."
 category: "Ética e LGPD"
 categorySlug: "etica-e-lgpd"
 pubDate: 2026-10-02
-author: "Equipe Terapeuta AI"
+updatedDate: 2026-10-10
+author: Juliano Lima
 readTime: 9
 featured: false
 draft: false
