@@ -165,7 +165,12 @@ const authorProfile = data.author === 'Juliano Lima'
 .article-breadcrumb{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px;color:var(--muted);font-size:.72rem}.article-breadcrumb a{text-decoration:none;color:var(--purple)}.article-breadcrumb span:last-child{max-width:480px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .container-narrow { width: min(calc(100% - 40px), 900px); margin-inline: auto; }
 .container-article { width: min(calc(100% - 40px), 1180px); margin-inline: auto; }
-.article-header h1 { max-width: 920px; }
+.article-header h1 {
+  max-width: 920px;
+  font-size: clamp(2.4rem, 4.2vw, 3.9rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
 .article-category{display:inline-block;margin-bottom:18px;color:var(--purple);font-size:.82rem;font-weight:700;text-decoration:none}
 .article-lead{max-width:820px;margin:24px 0;font-size:1.2rem;color:var(--text-soft)}
 .article-meta{display:flex;flex-wrap:wrap;gap:10px 20px;color:var(--text-soft);font-size:.82rem}
@@ -183,7 +188,7 @@ const authorProfile = data.author === 'Juliano Lima'
 .article-footer{padding:70px 0 10px}.author-box{display:flex;gap:22px;align-items:center;padding:26px;border:1px solid var(--border);border-radius:20px;background:white}.author-photo{width:96px;height:96px;flex:0 0 96px;border-radius:50%;object-fit:cover;border:1px solid var(--border);box-shadow:0 12px 28px rgba(94,38,214,.12)}.author-box h2{margin:4px 0 8px;font-size:1.4rem}.author-box strong{display:block;margin-bottom:8px;color:var(--deep);font-size:.9rem}.author-box p{margin:0;color:var(--text-soft);font-size:.92rem}.author-box .author-credentials{margin-bottom:8px;color:var(--deep);font-weight:600}.author-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.author-links a{color:var(--purple);font-size:.82rem;font-weight:700;text-decoration:none}
 .article-cta{margin-top:24px;padding:34px;border-radius:24px;background:linear-gradient(135deg,var(--purple),var(--violet));color:white}.article-cta h2{margin:4px 0 10px;color:white}.article-cta p{color:#eadfff}
 @media (max-width:900px){.article-layout{grid-template-columns:1fr;gap:28px}.article-toc{position:static}}
-@media (max-width:720px){.related-grid{grid-template-columns:1fr}.article-page{padding-top:54px}.container-narrow,.container-article{width:min(calc(100% - 28px),900px)}.preview-banner{width:min(calc(100% - 28px),900px);align-items:flex-start;flex-direction:column}.author-box{align-items:flex-start}}
+@media (max-width:720px){.article-header h1{font-size:clamp(2.1rem,9vw,3rem)}.related-grid{grid-template-columns:1fr}.article-page{padding-top:54px}.container-narrow,.container-article{width:min(calc(100% - 28px),900px)}.preview-banner{width:min(calc(100% - 28px),900px);align-items:flex-start;flex-direction:column}.author-box{align-items:flex-start}}
 @media (max-width:560px){.author-box{flex-direction:column}}
 </style>
 
