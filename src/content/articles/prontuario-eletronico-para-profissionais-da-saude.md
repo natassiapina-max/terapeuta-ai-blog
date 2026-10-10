@@ -241,7 +241,7 @@ A IA não deve ser tratada como uma autoridade automática sobre o registro clí
 
 Além disso, quando informações de pacientes são utilizadas em recursos de IA, entram em cena questões adicionais de privacidade, segurança, finalidade e tratamento de dados.
 
-Se quiser entender melhor esse assunto, leia também nosso artigo sobre [inteligência artificial para profissionais da saúde](/artigos/inteligencia-artificial-para-profissionais-da-saude).
+Se quiser entender melhor esse assunto, leia também nosso artigo sobre [inteligência artificial para profissionais da saúde](/artigos/inteligencia-artificial-para-profissionais-da-saude/).
 
 ## O que observar antes de escolher um prontuário eletrônico?
 
