@@ -2,7 +2,27 @@ User-agent: *
 Allow: /
 Disallow: /preview/
 
+User-agent: Googlebot
+Allow: /
+Disallow: /preview/
+
 User-agent: OAI-SearchBot
+Allow: /
+Disallow: /preview/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /preview/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /preview/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /preview/
+
+User-agent: ClaudeBot
 Allow: /
 Disallow: /preview/
 
