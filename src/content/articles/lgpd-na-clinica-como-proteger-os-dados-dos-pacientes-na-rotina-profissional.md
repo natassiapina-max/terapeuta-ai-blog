@@ -326,9 +326,9 @@ Não sozinho. O sistema é apenas uma parte da estrutura de proteção de dados.
 
 ## Conteúdos relacionados
 
-- [Prontuário Eletrônico para Profissionais da Saúde: O Que É, Como Funciona e Quais São as Vantagens](/artigos/prontuario-eletronico-para-profissionais-da-saude)
-- [Gestão Clínica na Prática: Como Organizar a Rotina de um Serviço de Saúde](/artigos/gestao-clinica-na-pratica-como-organizar-a-rotina-de-um-servico-de-saude)
-- [Inteligência Artificial para Profissionais da Saúde: Guia Completo](/artigos/inteligencia-artificial-para-profissionais-da-saude)
+- [Prontuário Eletrônico para Profissionais da Saúde: O Que É, Como Funciona e Quais São as Vantagens](/artigos/prontuario-eletronico-para-profissionais-da-saude/)
+- [Gestão Clínica na Prática: Como Organizar a Rotina de um Serviço de Saúde](/artigos/gestao-clinica-na-pratica-como-organizar-a-rotina-de-um-servico-de-saude/)
+- [Inteligência Artificial para Profissionais da Saúde: Guia Completo](/artigos/inteligencia-artificial-para-profissionais-da-saude/)
 
 ## Conclusão
 
