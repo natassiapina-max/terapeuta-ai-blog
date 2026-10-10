@@ -199,7 +199,12 @@ const authorProfile = data.author === 'Juliano Lima'
 .container-narrow { width: min(calc(100% - 40px), 900px); margin-inline: auto; }
 .container-article { width: min(calc(100% - 40px), 1180px); margin-inline: auto; }
 
-.article-header h1 { max-width: 920px; }
+.article-header h1 {
+  max-width: 920px;
+  font-size: clamp(2.4rem, 4.2vw, 3.9rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
 .article-category {
   display:inline-block;
   margin-bottom:18px;
@@ -316,6 +321,7 @@ const authorProfile = data.author === 'Juliano Lima'
   .article-toc { position:static; }
 }
 @media (max-width: 720px) {
+  .article-header h1 { font-size: clamp(2.1rem, 9vw, 3rem); }
   .related-grid{grid-template-columns:1fr}
   .article-page { padding-top:54px; min-width:0; max-width:100%; }
   .container-narrow, .container-article { width:min(calc(100% - 28px), 900px); min-width:0; max-width:100%; }
