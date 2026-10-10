@@ -4,10 +4,12 @@ title: "Como Construir uma Carreira Sustentável na Área da Saúde: 7 Decisões
 description: Veja como construir uma carreira sustentável na área da saúde com
   planejamento, posicionamento, desenvolvimento profissional, gestão e visão de
   longo prazo.
+directAnswer: "Construir uma carreira sustentável na saúde exige combinar desenvolvimento técnico, posicionamento, gestão financeira, limites de agenda, atualização profissional e decisões de longo prazo compatíveis com qualidade de vida e cuidado."
 category: Carreira e Negócios
 categorySlug: carreira-e-negocios
 pubDate: 2026-10-07
-author: Equipe Terapeuta AI
+updatedDate: 2026-10-10
+author: Juliano Lima
 readTime: 10
 featured: false
 draft: false
