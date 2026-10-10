@@ -90,7 +90,7 @@ O prontuário concentra informações importantes para a continuidade do cuidado
 
 Anamnese, registros de atendimento, evoluções, documentos e outras informações precisam estar organizados de maneira que o profissional consiga consultar aquilo que é necessário para o acompanhamento do paciente.
 
-Para aprofundar esse assunto, veja também o artigo do Blog Terapeuta AI sobre [prontuário eletrônico para profissionais da saúde](/artigos/prontuario-eletronico-para-profissionais-da-saude).
+Para aprofundar esse assunto, veja também o artigo do Blog Terapeuta AI sobre [prontuário eletrônico para profissionais da saúde](/artigos/prontuario-eletronico-para-profissionais-da-saude/).
 
 ### 3. Organização da equipe
 
@@ -213,7 +213,7 @@ A tecnologia também pode reduzir tarefas repetitivas e facilitar a localizaçã
 
 A inteligência artificial é outra possibilidade, especialmente para atividades de apoio, organização e geração de conteúdos administrativos ou documentais. Mas seu uso precisa considerar privacidade, segurança, revisão humana e responsabilidade profissional.
 
-Se quiser entender melhor esse tema, leia também nosso [guia sobre inteligência artificial para profissionais da saúde](/artigos/inteligencia-artificial-para-profissionais-da-saude).
+Se quiser entender melhor esse tema, leia também nosso [guia sobre inteligência artificial para profissionais da saúde](/artigos/inteligencia-artificial-para-profissionais-da-saude/).
 
 ## Checklist de gestão clínica
 
