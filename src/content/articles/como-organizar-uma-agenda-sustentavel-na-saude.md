@@ -4,6 +4,7 @@ description: "Veja como planejar uma agenda de atendimentos mais realista, com p
 category: "Carreira e Negócios"
 categorySlug: carreira-e-negocios
 pubDate: 2026-10-10
+updatedDate: 2026-10-10
 author: Juliano Lima
 readTime: 10
 featured: false
@@ -28,11 +29,11 @@ tags:
   - qualidade do atendimento
 ---
 
-**Por Juliano Lima — Terapeuta e CEO do Terapeuta AI**
+**Por Juliano Lima — terapeuta, pós-graduado em Musicoterapia, Neuropsicopedagogia Clínica, Saúde Mental e Psicopatologia, escritor e CEO do Terapeuta AI.**
+
+**Organizar uma agenda sustentável na saúde significa planejar atendimentos, pausas, registros, comunicação e recuperação como partes do mesmo trabalho.** O objetivo não é atender menos por princípio, mas criar uma rotina que sustente qualidade, previsibilidade e saúde profissional ao longo do tempo.
 
 Uma agenda cheia pode parecer sinal de crescimento. Mas, quando todos os horários ficam ocupados, os registros atrasam, as pausas desaparecem e qualquer imprevisto desmonta a semana, a rotina começa a cobrar um preço alto.
-
-**Organizar uma agenda sustentável na saúde significa planejar atendimentos, pausas, registros, comunicação e recuperação como partes do mesmo trabalho.** O objetivo não é atender menos por princípio, mas criar uma rotina que consiga sustentar qualidade, previsibilidade e saúde profissional ao longo do tempo.
 
 Este artigo apresenta uma forma prática de revisar a agenda do consultório, especialmente para profissionais que atendem de forma autônoma ou em pequena equipe.
 
