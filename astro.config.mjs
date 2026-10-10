@@ -8,5 +8,5 @@ export default defineConfig({
       filter: (page) => !page.includes('/preview/') && !page.includes('/admin')
     })
   ],
-  trailingSlash: 'never'
+  trailingSlash: 'always'
 });
