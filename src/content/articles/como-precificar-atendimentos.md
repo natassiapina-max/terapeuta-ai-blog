@@ -207,7 +207,7 @@ Você pode iniciar com um controle simples, desde que registre informações con
 
 Comece pelos gastos reais, construa uma agenda viável e teste o cálculo em diferentes volumes. Depois, confronte a projeção com os resultados observados.
 
-Para ampliar esse planejamento, leia também [Como construir uma carreira sustentável na área da saúde](https://blog.terapeutaai.com.br/artigos/como-construir-uma-carreira-sustentavel-na-area-da-saude).
+Para ampliar esse planejamento, leia também [Como construir uma carreira sustentável na área da saúde](https://blog.terapeutaai.com.br/artigos/como-construir-uma-carreira-sustentavel-na-area-da-saude/).
 
 Quer conhecer uma ferramenta para apoiar a organização da sua rotina? [Conheça o Terapeuta AI Hub](https://terapeutaai.com.br) e avalie os recursos apresentados para o seu contexto de trabalho.
 
