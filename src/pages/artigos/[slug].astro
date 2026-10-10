@@ -20,6 +20,26 @@ const related = (await getCollection('articles', ({ data: itemData, id }) =>
 const canonical = new URL(`/artigos/${article.id}`, Astro.site ?? 'https://blog.terapeutaai.com.br').href;
 const published = data.pubDate.toISOString().slice(0, 10);
 const updated = data.updatedDate?.toISOString().slice(0, 10);
+const extractFaqItems = (body: string) => {
+  const faqStart = body.search(/^## Perguntas frequentes/m);
+  if (faqStart === -1) return [];
+  const faqBody = body.slice(faqStart).replace(/^## Perguntas frequentes[^\n]*\n?/m, '');
+  const nextSection = faqBody.search(/^## (?!#)/m);
+  const section = nextSection === -1 ? faqBody : faqBody.slice(0, nextSection);
+  const matches = [...section.matchAll(/^###\s+(.+)\n([\s\S]*?)(?=^###\s+|$)/gm)];
+  return matches
+    .map((match) => ({
+      question: match[1].trim(),
+      answer: match[2]
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
+        .replace(/[*_`>#-]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+    }))
+    .filter((item) => item.question && item.answer)
+    .slice(0, 8);
+};
+const faqItems = extractFaqItems(article.body ?? '');
 const authorProfile = data.author === 'Juliano Lima'
   ? {
       name: 'Juliano Lima',
@@ -27,7 +47,7 @@ const authorProfile = data.author === 'Juliano Lima'
       credentials: 'Administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.',
       bio: 'Atua desde 2019 com saúde mental, neurodesenvolvimento, TEA, TDAH e tecnologia aplicada à rotina clínica. É criador do Terapeuta AI Hub e escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.',
       image: '/images/foto_rosto_blog.png',
-      url: 'https://blog.terapeutaai.com.br/sobre',
+      url: 'https://blog.terapeutaai.com.br/autores/juliano-lima',
       links: [
         { label: 'Instagram', url: 'https://www.instagram.com/julianolima.mt' },
         { label: 'LinkedIn', url: 'https://www.linkedin.com/in/julianolimamt/' },
@@ -170,6 +190,17 @@ const authorProfile = data.author === 'Juliano Lima'
         'https://terapeutaai.com.br'
       ] : undefined
     },
+    reviewedBy: data.reviewer ? {
+      '@type': 'Person',
+      name: data.reviewer,
+      url: data.reviewerUrl
+    } : undefined,
+    citation: data.sources?.map((source) => ({
+      '@type': 'CreativeWork',
+      name: source.label,
+      url: source.url
+    })),
+    about: data.tags,
     publisher: {
       '@type': 'Organization',
       name: 'Terapeuta AI',
@@ -182,6 +213,18 @@ const authorProfile = data.author === 'Juliano Lima'
     articleSection: data.category,
     keywords: data.tags
   })} />
+  {faqItems.length > 0 && <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer
+      }
+    }))
+  })} />}
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
