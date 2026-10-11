@@ -9,7 +9,7 @@ author: "Juliano Lima"
 readTime: 10
 featured: false
 draft: false
-image: "/images/imagem-artigo-ia-terapeuta-ai (1).png"
+image: "/images/ia-clinica-sem-expor-dados-pacientes-terapeuta-ai.svg"
 imageAlt: "Profissional da saúde usando inteligência artificial com foco em segurança, privacidade e proteção de dados"
 directAnswer: "Profissionais da saúde podem usar IA com mais segurança quando evitam inserir dados identificáveis de pacientes, revisam todo resultado antes de usar, adotam ferramentas com política clara de privacidade e mantêm a responsabilidade técnica sobre qualquer documento, orientação ou decisão profissional."
 sources:
