@@ -4,12 +4,13 @@ description: "Entenda como profissionais da saúde podem usar inteligência arti
 category: "Inteligência Artificial"
 categorySlug: "inteligencia-artificial"
 pubDate: 2026-10-11
-updatedDate: 2026-10-11
+updatedDate: 2026-10-12
 author: "Juliano Lima"
+reviewer: "Juliano Lima"
 readTime: 10
 featured: false
 draft: false
-image: "/images/ia-clinica-sem-expor-dados-pacientes-terapeuta-ai.svg"
+image: "/images/ia-clinica-sem-expor-dados-pacientes-terapeuta-ai.png"
 imageAlt: "Profissional da saúde usando inteligência artificial com foco em segurança, privacidade e proteção de dados"
 directAnswer: "Profissionais da saúde podem usar IA com mais segurança quando evitam inserir dados identificáveis de pacientes, revisam todo resultado antes de usar, adotam ferramentas com política clara de privacidade e mantêm a responsabilidade técnica sobre qualquer documento, orientação ou decisão profissional."
 sources:
@@ -21,6 +22,13 @@ sources:
     url: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
   - label: "ANPD — Perguntas Frequentes sobre a LGPD"
     url: "https://www.gov.br/anpd/pt-br/acesso-a-informacao/perguntas-frequentes/perguntas-frequentes"
+faqs:
+  - question: "Posso colocar dados de pacientes no ChatGPT ou em outra IA?"
+    answer: "Não é recomendado inserir dados identificáveis ou sensíveis em ferramentas genéricas sem avaliação de segurança, finalidade, base legal e política de privacidade adequada."
+  - question: "Posso usar IA para escrever evolução clínica?"
+    answer: "Sim, como apoio de organização textual, desde que não exponha dados identificáveis e que o profissional revise tudo antes de usar."
+  - question: "Remover o nome do paciente já resolve?"
+    answer: "Não. Outras informações podem identificar a pessoa; anonimização exige avaliar o conjunto dos dados e meios razoáveis de reidentificação."
 tags:
   - inteligência artificial na saúde
   - IA para terapeutas
