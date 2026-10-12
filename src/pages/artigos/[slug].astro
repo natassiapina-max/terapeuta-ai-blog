@@ -24,6 +24,7 @@ const nextArticle = related[0] ?? publishedArticles[0];
 const canonical = new URL(`/artigos/${article.id}/`, Astro.site ?? 'https://blog.terapeutaai.com.br').href;
 const published = data.pubDate.toISOString().slice(0, 10);
 const updated = data.updatedDate?.toISOString().slice(0, 10);
+const summaryText = data.directAnswer ?? data.description;
 const extractFaqItems = (body: string) => {
   const faqStart = body.search(/^## (Perguntas frequentes|FAQ)/m);
   if (faqStart === -1) return [];
@@ -43,19 +44,24 @@ const extractFaqItems = (body: string) => {
     .filter((item) => item.question && item.answer)
     .slice(0, 8);
 };
-const faqItems = extractFaqItems(article.body ?? '');
+const faqItems = data.faqs?.length > 0 ? data.faqs : extractFaqItems(article.body ?? '');
 const authorProfile = data.author === 'Juliano Lima'
   ? {
       name: 'Juliano Lima',
-      role: 'Terapeuta, escritor e CEO do Terapeuta AI.',
-      credentials: 'Administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.',
+      role: 'Musicoterapeuta, escritor e fundador do TerapeutaAI Hub.',
+      credentials: 'Administrador, musicoterapeuta (ABMT 182-PR), pós-graduado em ABA e TEA, coautor do livro Conexão Autista.',
       bio: 'Atua desde 2019 com saúde mental, neurodesenvolvimento, TEA, TDAH e tecnologia aplicada à rotina clínica. É criador do Terapeuta AI Hub e escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.',
       image: '/images/foto_rosto_blog.png',
       url: 'https://blog.terapeutaai.com.br/autores/juliano-lima/',
+      sameAs: [
+        'https://www.linkedin.com/in/julianolimamt/',
+        'https://www.instagram.com/julianolima.mt/',
+        'https://terapeutaai.com.br'
+      ],
       links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/julianolima.mt' },
+        { label: 'Instagram', url: 'https://www.instagram.com/julianolima.mt/' },
         { label: 'LinkedIn', url: 'https://www.linkedin.com/in/julianolimamt/' },
-        { label: 'TerapeutaAI HUB', url: 'https://terapeutaai.com.br' }
+        { label: 'TerapeutaAI Hub', url: 'https://terapeutaai.com.br' }
       ]
     }
   : null;
@@ -92,7 +98,7 @@ const authorProfile = data.author === 'Juliano Lima'
     <div class="container-narrow">
       <div class="article-summary">
         <strong>Em resumo</strong>
-        <p>{data.directAnswer ?? data.description}</p>
+        <p>{summaryText}</p>
       </div>
     </div>
 
@@ -170,6 +176,7 @@ const authorProfile = data.author === 'Juliano Lima'
     '@type': 'BlogPosting',
     headline: data.title,
     description: data.description,
+    abstract: summaryText,
     datePublished: data.pubDate.toISOString(),
     dateModified: (data.updatedDate ?? data.pubDate).toISOString(),
     author: {
@@ -177,22 +184,19 @@ const authorProfile = data.author === 'Juliano Lima'
       name: data.author,
       url: authorProfile?.url ?? 'https://blog.terapeutaai.com.br/sobre',
       image: authorProfile ? new URL(authorProfile.image, 'https://blog.terapeutaai.com.br').href : undefined,
-      jobTitle: authorProfile ? 'Terapeuta, escritor e CEO do Terapeuta AI' : undefined,
+      jobTitle: authorProfile ? 'Musicoterapeuta, escritor e fundador do TerapeutaAI Hub' : undefined,
       description: authorProfile ? `${authorProfile.credentials} ${authorProfile.bio}` : undefined,
+      sameAs: authorProfile?.sameAs,
       knowsAbout: authorProfile ? [
         'Musicoterapia',
         'ABA',
         'TEA',
-        'Neurodesenvolvimento',
+        'TDAH',
         'Saúde mental',
-        'Tecnologia para profissionais da saúde',
+        'Neurodesenvolvimento',
         'Conexão Autista',
-        'TerapeutaAI HUB'
-      ] : undefined,
-      sameAs: authorProfile ? [
-        'https://www.instagram.com/julianolima.mt',
-        'https://www.linkedin.com/in/julianolimamt/',
-        'https://terapeutaai.com.br'
+        'TerapeutaAI Hub',
+        'Tecnologia para profissionais da saúde'
       ] : undefined
     },
     reviewedBy: data.reviewer ? {
@@ -218,18 +222,20 @@ const authorProfile = data.author === 'Juliano Lima'
     articleSection: data.category,
     keywords: data.tags
   })} />
-  {faqItems.length > 0 && <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqItems.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer
-      }
-    }))
-  })} />}
+  {faqItems.length > 0 && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqItems.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    })} />
+  )}
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -247,12 +253,7 @@ const authorProfile = data.author === 'Juliano Lima'
 .container-narrow { width: min(calc(100% - 40px), 900px); margin-inline: auto; }
 .container-article { width: min(calc(100% - 40px), 1180px); margin-inline: auto; }
 
-.article-header h1 {
-  max-width: 920px;
-  font-size: clamp(2.4rem, 4.2vw, 3.9rem);
-  line-height: 1.08;
-  letter-spacing: -0.035em;
-}
+.article-header h1 { max-width: 920px; }
 .article-category {
   display:inline-block;
   margin-bottom:18px;
@@ -358,7 +359,8 @@ const authorProfile = data.author === 'Juliano Lima'
   border:1px solid var(--border);
   box-shadow:0 12px 28px rgba(94,38,214,.12);
 }
-.author-box h2 { margin:4px 0 8px; font-size:1.4rem; }.author-box h2 a{color:inherit;text-decoration:none}
+.author-box h2 { margin:4px 0 8px; font-size:1.4rem; }
+.author-box h2 a { color:inherit; text-decoration:none; }
 .author-box strong { display:block; margin-bottom:8px; color:var(--deep); font-size:.9rem; }
 .author-box p { margin:0; color:var(--text-soft); font-size:.92rem; }
 .author-box .author-credentials { margin-bottom:8px; color:var(--deep); font-weight:600; }
@@ -379,7 +381,6 @@ const authorProfile = data.author === 'Juliano Lima'
   .article-toc { position:static; }
 }
 @media (max-width: 720px) {
-  .article-header h1 { font-size: clamp(2.1rem, 9vw, 3rem); }
   .related-grid{grid-template-columns:1fr}
   .article-page { padding-top:54px; min-width:0; max-width:100%; }
   .container-narrow, .container-article { width:min(calc(100% - 28px), 900px); min-width:0; max-width:100%; }
