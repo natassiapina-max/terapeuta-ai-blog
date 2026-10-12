@@ -24,6 +24,13 @@ sources:
     url: "https://www.gov.br/anpd/pt-br/acesso-a-informacao/perguntas-frequentes/perguntas-frequentes"
   - label: "OMS — Ethics and governance of artificial intelligence for health"
     url: "https://www.who.int/publications/i/item/9789240029200"
+faqs:
+  - question: "O que é evolução clínica?"
+    answer: "É o registro objetivo do que foi observado, realizado e encaminhado em um atendimento, com foco na continuidade do cuidado."
+  - question: "Evolução clínica precisa ser longa?"
+    answer: "Não. Ela precisa ser suficiente, clara, datada e profissional, sem excesso de dados desnecessários."
+  - question: "Posso usar IA para escrever evolução clínica?"
+    answer: "A IA pode apoiar a organização textual, mas não deve receber dados identificáveis em ferramentas inadequadas e o profissional continua responsável pelo registro."
 tags:
   - evolução clínica
   - como fazer evolução clínica
