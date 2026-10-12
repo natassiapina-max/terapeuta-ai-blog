@@ -1,12 +1,13 @@
 ---
 title: "LGPD na Clínica: Como Proteger os Dados dos Pacientes na Rotina Profissional"
 description: "Entenda como a LGPD se aplica à rotina de clínicas e consultórios, quais dados exigem maior proteção e quais cuidados os profissionais da saúde podem adotar no dia a dia."
-directAnswer: "A LGPD se aplica a clínicas e consultórios porque dados de saúde são dados pessoais sensíveis. A proteção precisa envolver coleta adequada, acesso controlado, armazenamento seguro, comunicação responsável e procedimentos claros."
 category: "Ética e LGPD"
 categorySlug: "etica-e-lgpd"
 pubDate: 2026-10-02
-updatedDate: 2026-10-10
-author: Juliano Lima
+updatedDate: 2026-10-12
+author: "Juliano Lima"
+reviewer: "Juliano Lima"
+directAnswer: "A LGPD na clínica exige que dados de pacientes sejam coletados, armazenados, acessados e compartilhados com finalidade clara, necessidade, segurança e controle de acesso. Como dados de saúde são sensíveis, clínicas e profissionais precisam revisar cadastros, prontuários, documentos, ferramentas digitais e rotinas de comunicação."
 readTime: 9
 featured: false
 draft: false
@@ -21,6 +22,13 @@ sources:
     url: "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aprova-o-regulamento-de-comunicacao-de-incidente-de-seguranca"
   - label: "Planalto — Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais"
     url: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+faqs:
+  - question: "Dados de saúde são dados sensíveis pela LGPD?"
+    answer: "Sim. A LGPD classifica dados referentes à saúde como dados pessoais sensíveis, exigindo cuidados reforçados no tratamento dessas informações."
+  - question: "Toda clínica precisa pedir consentimento para tratar dados?"
+    answer: "Não necessariamente. O consentimento é uma base legal possível, mas não é a única; a base adequada depende da finalidade e do contexto do tratamento."
+  - question: "Prontuário eletrônico resolve sozinho a LGPD?"
+    answer: "Não. Um sistema ajuda na organização e segurança, mas a clínica ainda precisa definir acessos, políticas, procedimentos e responsabilidades."
 tags:
   - LGPD
   - LGPD na saúde
@@ -33,6 +41,8 @@ tags:
   - prontuário
   - privacidade
 ---
+
+A LGPD na clínica exige que dados de pacientes sejam coletados, armazenados, acessados e compartilhados com finalidade clara, necessidade, segurança e controle de acesso. Como dados de saúde são sensíveis, clínicas e profissionais precisam revisar cadastros, prontuários, documentos, ferramentas digitais e rotinas de comunicação.
 
 Clínicas, consultórios e profissionais da saúde lidam diariamente com uma grande quantidade de informações pessoais.
 
@@ -326,9 +336,9 @@ Não sozinho. O sistema é apenas uma parte da estrutura de proteção de dados.
 
 ## Conteúdos relacionados
 
-- [Prontuário Eletrônico para Profissionais da Saúde: O Que É, Como Funciona e Quais São as Vantagens](/artigos/prontuario-eletronico-para-profissionais-da-saude/)
-- [Gestão Clínica na Prática: Como Organizar a Rotina de um Serviço de Saúde](/artigos/gestao-clinica-na-pratica-como-organizar-a-rotina-de-um-servico-de-saude/)
-- [Inteligência Artificial para Profissionais da Saúde: Guia Completo](/artigos/inteligencia-artificial-para-profissionais-da-saude/)
+- [Prontuário Eletrônico para Profissionais da Saúde: O Que É, Como Funciona e Quais São as Vantagens](/artigos/prontuario-eletronico-para-profissionais-da-saude)
+- [Gestão Clínica na Prática: Como Organizar a Rotina de um Serviço de Saúde](/artigos/gestao-clinica-na-pratica-como-organizar-a-rotina-de-um-servico-de-saude)
+- [Inteligência Artificial para Profissionais da Saúde: Guia Completo](/artigos/inteligencia-artificial-para-profissionais-da-saude)
 
 ## Conclusão
 
@@ -341,3 +351,4 @@ Para começar, o caminho pode ser mais simples do que parece: **entender quais d
 Quando esses processos passam a fazer parte da rotina, a proteção de dados deixa de ser apenas uma preocupação jurídica e passa a integrar a própria gestão clínica.
 
 E esse é um ponto importante: **organizar dados também é organizar a clínica.**
+
