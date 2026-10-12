@@ -25,7 +25,7 @@ const articles = defineCollection({
     ]),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
-    author: z.string().default('Equipe Terapeuta AI'),
+    author: z.string().default('Juliano Lima'),
     reviewer: z.string().optional(),
     reviewerUrl: z.string().url().optional(),
     readTime: z.number().int().positive().default(6),
@@ -35,8 +35,10 @@ const articles = defineCollection({
     imageAlt: z.string().optional(),
     sources: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
     directAnswer: z.string().optional(),
+    faqs: z.array(z.object({ question: z.string(), answer: z.string() })).default([]),
     tags: z.array(z.string()).default([]),
   }),
 });
 
 export const collections = { articles };
+
