@@ -11,7 +11,7 @@ directAnswer: "Organizar uma agenda sustentável na saúde significa planejar at
 readTime: 10
 featured: false
 draft: false
-image: /images/agenda-sustentavel-profissionais-saude-terapeuta-ai.png
+image: /images/agenda-sustentavel-profissionais-saude-terapeuta-ai.svg
 imageAlt: Profissional da saúde organizando cartões de horários sobre uma agenda em um consultório iluminado.
 sources:
   - label: "OMS — Mental health at work"

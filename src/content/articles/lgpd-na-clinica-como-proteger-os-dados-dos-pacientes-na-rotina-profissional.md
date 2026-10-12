@@ -11,7 +11,7 @@ directAnswer: "A LGPD na clínica exige que dados de pacientes sejam coletados, 
 readTime: 9
 featured: false
 draft: false
-image: "/images/lgpd-na-clinica-terapeuta-ai.png"
+image: "/images/lgpd-na-clinica-terapeuta-ai.svg"
 imageAlt: "Profissional da saúde trabalhando em um computador com elementos visuais que representam a proteção de dados de pacientes"
 sources:
   - label: "ANPD — Perguntas Frequentes sobre a LGPD"

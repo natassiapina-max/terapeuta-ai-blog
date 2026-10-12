@@ -32,7 +32,7 @@ const authorProfile = data.author === 'Juliano Lima'
       role: 'Musicoterapeuta, escritor e fundador do TerapeutaAI Hub.',
       credentials: 'Administrador, musicoterapeuta (ABMT 182-PR), pós-graduado em ABA e TEA, coautor do livro Conexão Autista.',
       bio: 'Atua desde 2019 com saúde mental, neurodesenvolvimento, TEA, TDAH e tecnologia aplicada à rotina clínica. É criador do Terapeuta AI Hub e escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.',
-      image: '/images/foto_rosto_blog.png',
+      image: '/images/foto-rosto-juliano-lima.svg',
       url: 'https://blog.terapeutaai.com.br/autores/juliano-lima/',
       links: [
         { label: 'Instagram', url: 'https://www.instagram.com/julianolima.mt/' },
@@ -143,9 +143,12 @@ const authorProfile = data.author === 'Juliano Lima'
 
       <div class="article-cta">
         <span class="eyebrow">Terapeuta AI</span>
-        <h2>Mais conhecimento para uma rotina profissional mais organizada.</h2>
-        <p>Explore outros conteúdos sobre tecnologia, gestão, documentação, carreira e ética.</p>
-        {nextArticle && <a class="btn btn-primary" href={`/artigos/${nextArticle.id}/`}>Continuar lendo</a>}
+        <h2>Organize sua rotina clínica com mais clareza.</h2>
+        <p>O TerapeutaAI Hub reúne agenda, prontuário, gestão financeira e recursos de inteligência artificial para apoiar profissionais e clínicas na rotina de cuidado.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">Conheça o TerapeutaAI Hub</a>
+          {nextArticle && <a class="btn btn-secondary" href={`/artigos/${nextArticle.id}/`}>Continuar lendo</a>}
+        </div>
       </div>
     </section>
   </article>
@@ -187,7 +190,7 @@ const authorProfile = data.author === 'Juliano Lima'
 .prose{font-size:1.05rem}.prose h2{margin-top:52px;margin-bottom:18px;font-size:clamp(1.65rem,3vw,2.25rem)}.prose p,.prose li{color:var(--text-soft)}.prose li{margin:8px 0}
 .related{padding-top:70px}.section-label h2{font-size:1.8rem;margin:0 0 20px}.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.related-card{min-height:190px;padding:24px;border:1px solid var(--border);border-radius:20px;background:var(--soft);text-decoration:none;display:flex;flex-direction:column}.related-card>span{color:var(--purple);font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em}.related-card h3{margin:12px 0;font-size:1.15rem;color:var(--deep)}.related-card b{margin-top:auto;color:var(--violet);font-size:.75rem}
 .article-footer{padding:70px 0 10px}.author-box{display:flex;gap:22px;align-items:center;padding:26px;border:1px solid var(--border);border-radius:20px;background:white}.author-photo{width:96px;height:96px;flex:0 0 96px;border-radius:50%;object-fit:cover;border:1px solid var(--border);box-shadow:0 12px 28px rgba(94,38,214,.12)}.author-box h2{margin:4px 0 8px;font-size:1.4rem}.author-box strong{display:block;margin-bottom:8px;color:var(--deep);font-size:.9rem}.author-box p{margin:0;color:var(--text-soft);font-size:.92rem}.author-box .author-credentials{margin-bottom:8px;color:var(--deep);font-weight:600}.author-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.author-links a{color:var(--purple);font-size:.82rem;font-weight:700;text-decoration:none}
-.article-cta{margin-top:24px;padding:34px;border-radius:24px;background:linear-gradient(135deg,var(--purple),var(--violet));color:white}.article-cta h2{margin:4px 0 10px;color:white}.article-cta p{color:#eadfff}
+.article-cta{margin-top:24px;padding:34px;border-radius:24px;background:linear-gradient(135deg,var(--purple),var(--violet));color:white}.article-cta h2{margin:4px 0 10px;color:white}.article-cta p{color:#eadfff}.cta-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.article-cta .btn-secondary{color:white;border-color:rgba(255,255,255,.42);background:rgba(255,255,255,.08)}
 @media (max-width:900px){.article-layout{grid-template-columns:1fr;gap:28px}.article-toc{position:static}}
 @media (max-width:720px){.related-grid{grid-template-columns:1fr}.article-page{padding-top:54px}.container-narrow,.container-article{width:min(calc(100% - 28px),900px)}.preview-banner{width:min(calc(100% - 28px),900px);align-items:flex-start;flex-direction:column}.author-box{align-items:flex-start}}
 @media (max-width:560px){.author-box{flex-direction:column}}

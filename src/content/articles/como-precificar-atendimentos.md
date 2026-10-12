@@ -11,7 +11,7 @@ directAnswer: "Para precificar atendimentos, estime os custos da atividade, defi
 readTime: 11
 featured: false
 draft: false
-image: /images/como-precificar-atendimentos-terapeuta-ai.webp
+image: /images/como-precificar-atendimentos-terapeuta-ai.svg
 imageAlt: Profissional analisando o planejamento financeiro e a agenda de atendimentos em um consultório.
 sources:
   - label: "Sebrae — Precificação de serviços: 7 etapas para chegar ao preço ideal"

@@ -13,7 +13,7 @@ directAnswer: "A inteligência artificial pode ajudar profissionais da saúde a 
 readTime: 10
 featured: true
 draft: false
-image: /images/imagem-artigo-ia-terapeuta-ai (1).png
+image: /images/inteligencia-artificial-profissionais-saude-terapeuta-ai.svg
 imageAlt: Profissional da saúde trabalhando com inteligência artificial e
   informações organizadas em um ambiente clínico contemporâneo
 sources:
