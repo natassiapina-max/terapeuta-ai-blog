@@ -10,7 +10,7 @@ reviewer: "Juliano Lima"
 readTime: 12
 featured: false
 draft: false
-image: "/images/software-gestao-clinica-consultorios-terapeuta-ai.svg"
+image: "/images/software-gestao-clinica-consultorios-terapeuta-ai.webp"
 imageAlt: "Profissional da saúde usando software de gestão clínica em um consultório organizado, com agenda, prontuário e indicadores na tela"
 directAnswer: "Software de gestão clínica é uma ferramenta que organiza agenda, cadastro de pacientes, prontuário, documentos, financeiro e indicadores em um só fluxo. Para escolher bem, avalie segurança de dados, facilidade de uso, aderência à rotina, controle de acesso, suporte, integrações e capacidade de reduzir retrabalho sem comprometer a responsabilidade profissional."
 sources:
