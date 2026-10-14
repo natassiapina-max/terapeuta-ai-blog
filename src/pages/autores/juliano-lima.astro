@@ -1,15 +1,17 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
+const articles = (await getCollection('articles')).filter(({ data }) => !data.draft && data.author === 'Juliano Lima').sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 const authorUrl = 'https://blog.terapeutaai.com.br/autores/juliano-lima/';
-const imageUrl = 'https://blog.terapeutaai.com.br/images/foto_rosto_blog.png';
+const imageUrl = 'https://blog.terapeutaai.com.br/images/foto-rosto-juliano-lima.webp';
 ---
 
 <BaseLayout
   title="Juliano Lima | Autor no Blog Terapeuta AI"
   description="Juliano Lima é administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB."
   canonical={authorUrl}
-  image="/images/foto_rosto_blog.png"
+  image="/images/foto-rosto-juliano-lima.webp"
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
@@ -50,7 +52,7 @@ const imageUrl = 'https://blog.terapeutaai.com.br/images/foto_rosto_blog.png';
 
   <section class="author-hero">
     <div class="container author-grid">
-      <img src="/images/foto_rosto_blog.png" alt="Foto de Juliano Lima" class="author-photo" />
+      <img width="320" height="320" src="/images/foto-rosto-juliano-lima.webp" alt="Foto de Juliano Lima" class="author-photo" />
       <div>
         <p class="eyebrow">Autor</p>
         <h1>Juliano Lima</h1>
@@ -79,6 +81,12 @@ const imageUrl = 'https://blog.terapeutaai.com.br/images/foto_rosto_blog.png';
       <h2>Responsabilidade editorial</h2>
       <p>Os conteúdos assinados por Juliano Lima têm finalidade informativa e profissional. Eles não substituem avaliação individual, orientação jurídica, contábil, regulatória ou clínica específica.</p>
       <p>Quando o tema envolve legislação, normas profissionais, privacidade, saúde mental ou tecnologia aplicada à saúde, o conteúdo deve ser lido em conjunto com as fontes oficiais indicadas no artigo.</p>
+    </article>
+  </section>
+  <section class="container author-content">
+    <article>
+      <h2>Artigos de Juliano Lima</h2>
+      <ul>{articles.map((article) => <li><a href={`/artigos/${article.id}/`}>{article.data.title}</a></li>)}</ul>
     </article>
   </section>
 </BaseLayout>

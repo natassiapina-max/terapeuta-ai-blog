@@ -10,7 +10,7 @@ reviewer: "Juliano Lima"
 directAnswer: "Marketing para profissionais da saúde é o conjunto de ações para construir presença, autoridade e relacionamento com o público sem prometer resultados ou ferir limites éticos. O foco deve ser educação, clareza, confiança e comunicação responsável, respeitando as regras do conselho profissional aplicável."
 readTime: 9
 featured: false
-image: "/images/marketing-para-profissionais-da-saude-terapeuta-ai.svg"
+image: "/images/marketing-para-profissionais-da-saude-terapeuta-ai.webp"
 draft: false
 imageAlt: "Profissional da saúde planejando sua estratégia de marketing digital em um ambiente profissional"
 sources:

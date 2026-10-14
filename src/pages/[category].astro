@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { imageDimensions } from '../utils/imageDimensions';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { categories } from '../data/categories';
 
@@ -35,7 +36,7 @@ const articles = (await getCollection('articles')).filter((article) =>
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://blog.terapeutaai.com.br/' },
-      { '@type': 'ListItem', position: 2, name: category.name, item: new URL('/' + category.slug, 'https://blog.terapeutaai.com.br').href }
+      { '@type': 'ListItem', position: 2, name: category.name, item: new URL('/' + category.slug + '/', 'https://blog.terapeutaai.com.br').href }
     ]
   })} />
 
@@ -52,13 +53,13 @@ const articles = (await getCollection('articles')).filter((article) =>
       <div class="article-grid">
         {articles.map((article) => (
           <article class="article-card">
-            {article.data.image && <img class="card-image" src={article.data.image} alt={article.data.imageAlt ?? ''} loading="lazy" />}
+            {article.data.image && <img {...imageDimensions(article.data.image)} class="card-image" src={article.data.image} alt={article.data.imageAlt ?? article.data.title} loading="lazy" decoding="async" />}
             <div>
               <p class="eyebrow">{article.data.category}</p>
               <h3>{article.data.title}</h3>
               <p>{article.data.description}</p>
             </div>
-            <a href={`/artigos/${article.id}`}>Ler artigo →</a>
+            <a href={`/artigos/${article.id}/`}>Ler artigo →</a>
           </article>
         ))}
       </div>
@@ -76,7 +77,7 @@ const articles = (await getCollection('articles')).filter((article) =>
   padding:84px 0 76px;
   background:linear-gradient(180deg,#faf7ff 0%,#fff 100%);
 }
-.category-hero h1 { margin-bottom:18px; }
+.category-hero h1 { margin-bottom:18px; font-size:clamp(2rem,4.5vw,3.5rem); }
 .category-hero p:not(.eyebrow) { max-width:720px; color:var(--text-soft); font-size:1.1rem; }
 .back-link { display:inline-block; margin-bottom:36px; color:var(--text-soft); text-decoration:none; font-size:.85rem; }
 .category-content { padding:70px 0 30px; }

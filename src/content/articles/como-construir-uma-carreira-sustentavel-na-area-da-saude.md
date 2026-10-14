@@ -14,7 +14,7 @@ directAnswer: "Uma carreira sustentável na área da saúde combina desenvolvime
 readTime: 10
 featured: false
 draft: false
-image: /images/profissional-escritorio-roxo.svg
+image: /images/profissional-escritorio-roxo.webp
 imageAlt: Profissional da saúde planejando sua carreira em um ambiente profissional
 sources:
   - label: Google Search Central — Como criar conteúdo útil, confiável e que

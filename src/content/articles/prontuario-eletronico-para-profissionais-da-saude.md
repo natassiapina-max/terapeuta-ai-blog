@@ -10,7 +10,7 @@ reviewer: "Juliano Lima"
 directAnswer: "Prontuário eletrônico é um sistema digital usado para registrar, armazenar e organizar informações clínicas e administrativas de atendimentos em saúde. Para profissionais e clínicas, ele ajuda a manter histórico, evoluções, documentos, permissões de acesso e continuidade do cuidado com mais segurança e praticidade."
 readTime: 9
 featured: false
-image: "/images/prontuario-eletronico-terapeuta-ai.svg"
+image: "/images/prontuario-eletronico-terapeuta-ai.webp"
 imageAlt: "Terapeuta utilizando um prontuário eletrônico para organizar informações de atendimento"
 sources:
   - label: "Ministério da Saúde — O que é prontuário eletrônico"

@@ -17,7 +17,7 @@ interface Props {
 const {
   title,
   description,
-  canonical = Astro.url.href,
+  canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://blog.terapeutaai.com.br').href,
   type = 'website',
   image,
   publishedTime,
@@ -43,6 +43,7 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
     <link rel="alternate" type="application/rss+xml" title="Blog Terapeuta AI" href="/rss.xml" />
 
     <meta property="og:type" content={type} />
+    <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Terapeuta AI" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -57,14 +58,27 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
     <meta name="twitter:description" content={description} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
 
-    <script is:inline src="/clarity-loader.js"></script>
+    <script is:inline defer src="/clarity-loader.js"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSDLQTD8WW"></script>
-    <script>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QSDLQTD8WW"></script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){window.dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-QSDLQTD8WW');
+      document.addEventListener('click', function(event) {
+        const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+        if (!link) return;
+        const destination = new URL(link.href, location.href);
+        if (destination.hostname === 'terapeutaai.com.br') {
+          gtag('event', 'hub_click', {
+            link_url: destination.href,
+            link_text: link.textContent.trim(),
+            page_path: location.pathname,
+            transport_type: 'beacon'
+          });
+        }
+      });
     </script>
 
     <script type="application/ld+json" set:html={JSON.stringify({

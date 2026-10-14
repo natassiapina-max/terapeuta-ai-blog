@@ -11,7 +11,7 @@ directAnswer: "Gestão clínica é a organização dos processos que sustentam o
 readTime: 8
 featured: false
 draft: false
-image: "/images/gestao-clinica-rotina-servico-saude-terapeuta-ai.svg"
+image: "/images/gestao-clinica-rotina-servico-saude-terapeuta-ai.webp"
 imageAlt: "Equipe multidisciplinar de uma clínica reunida para organizar o cuidado e os processos de atendimento"
 sources:
   - label: "Ministério da Saúde — Política Nacional de Atenção Hospitalar"

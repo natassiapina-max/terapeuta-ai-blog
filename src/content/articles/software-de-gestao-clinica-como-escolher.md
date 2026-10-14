@@ -21,7 +21,7 @@ sources:
   - label: "OMS — Global strategy on digital health 2020-2025"
     url: "https://www.who.int/publications/i/item/9789240020924"
   - label: "ANPD — Segurança da informação para agentes de tratamento de pequeno porte"
-    url: "https://www.gov.br/anpd/pt-br/documentos-e-publicacoes/guia-seguranca-da-informacao-para-agentes-de-tratamento-de-pequeno-porte.pdf"
+    url: "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-sobre-seguranca-da-informacao-para-agentes-de-tratamento-de-pequeno-porte"
 faqs:
   - question: "Qual é o melhor software de gestão clínica?"
     answer: "O melhor software é o que resolve a rotina real da clínica com segurança, facilidade de uso, suporte confiável e aderência às obrigações profissionais. Não é necessariamente o sistema com mais recursos."
@@ -180,7 +180,7 @@ Avalie se a solução oferece:
 - cuidado com dados sensíveis;
 - estabilidade e histórico do fornecedor.
 
-A ANPD recomenda medidas de segurança da informação proporcionais ao risco, incluindo controles de acesso, gestão de senhas, cópias de segurança e conscientização sobre o tratamento de dados. [ANPD — Segurança da informação para agentes de tratamento de pequeno porte](https://www.gov.br/anpd/pt-br/documentos-e-publicacoes/guia-seguranca-da-informacao-para-agentes-de-tratamento-de-pequeno-porte.pdf)
+A ANPD recomenda medidas de segurança da informação proporcionais ao risco, incluindo controles de acesso, gestão de senhas, cópias de segurança e conscientização sobre o tratamento de dados. [ANPD — Segurança da informação para agentes de tratamento de pequeno porte](https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-sobre-seguranca-da-informacao-para-agentes-de-tratamento-de-pequeno-porte)
 
 Um sistema barato, mas sem clareza sobre segurança, pode sair caro.
 

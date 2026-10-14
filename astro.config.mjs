@@ -5,7 +5,7 @@ export default defineConfig({
   site: 'https://blog.terapeutaai.com.br',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/preview/') && !page.includes('/admin')
+      filter: (page) => !page.includes('/preview/') && !page.includes('/admin') && !page.endsWith('/404/') && !page.endsWith('/404.html')
     })
   ],
   trailingSlash: 'always'

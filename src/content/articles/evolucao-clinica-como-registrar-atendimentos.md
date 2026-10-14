@@ -10,7 +10,7 @@ reviewer: "Juliano Lima"
 readTime: 11
 featured: false
 draft: false
-image: "/images/evolucao-clinica-prontuario-eletronico-terapeuta-ai.svg"
+image: "/images/evolucao-clinica-prontuario-eletronico-terapeuta-ai.webp"
 imageAlt: "Profissional da saúde registrando evolução clínica em prontuário eletrônico em um consultório organizado"
 directAnswer: "Evolução clínica é o registro objetivo do que foi observado, realizado e encaminhado em um atendimento. Um bom registro deve ser claro, datado, profissional, sem excesso de dados desnecessários e suficiente para documentar a continuidade do cuidado, respeitando sigilo, ética e proteção de dados."
 sources:

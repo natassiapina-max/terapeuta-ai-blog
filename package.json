@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "rm -rf .astro && astro build",
-    "preview": "astro preview"
+    "build": "rm -rf .astro node_modules/.astro && astro build && node scripts/audit-build.mjs",
+    "preview": "astro preview",
+    "audit": "node scripts/audit-build.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
     "astro": "^5.13.0"
   }
 }
-
