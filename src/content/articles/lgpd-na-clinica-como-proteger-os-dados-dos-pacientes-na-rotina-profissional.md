@@ -1,5 +1,6 @@
 ---
 title: "LGPD na Clínica: Como Proteger os Dados dos Pacientes na Rotina Profissional"
+seoTitle: "LGPD na clínica: proteção de dados de pacientes"
 description: "Entenda como a LGPD se aplica à rotina de clínicas e consultórios, quais dados exigem maior proteção e quais cuidados os profissionais da saúde podem adotar no dia a dia."
 category: "Ética e LGPD"
 categorySlug: "etica-e-lgpd"

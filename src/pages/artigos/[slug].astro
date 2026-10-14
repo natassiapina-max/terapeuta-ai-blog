@@ -70,7 +70,7 @@ const authorProfile = data.author === 'Juliano Lima'
 ---
 
 <BaseLayout
-  title={`${data.title} | Terapeuta AI`}
+  title={`${data.seoTitle ?? data.title} | TerapeutaAI`}
   description={data.description}
   canonical={canonical}
   type="article"

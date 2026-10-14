@@ -1,5 +1,6 @@
 ---
 title: "Inteligência Artificial para Profissionais da Saúde: Guia Completo"
+seoTitle: "Inteligência artificial na saúde: guia prático"
 description: Entenda como a inteligência artificial pode apoiar a rotina
   profissional, a documentação e tarefas administrativas, com atenção à
   privacidade, segurança e responsabilidade profissional.

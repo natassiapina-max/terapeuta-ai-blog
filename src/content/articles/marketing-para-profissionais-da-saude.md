@@ -1,5 +1,6 @@
 ---
 title: "Marketing para Profissionais da Saúde: Como Atrair Pacientes sem Comprometer a Ética Profissional"
+seoTitle: "Marketing para profissionais da saúde"
 description: "Entenda como construir uma presença digital profissional na saúde, atrair pacientes e fortalecer sua autoridade sem ultrapassar limites éticos."
 category: "Marketing"
 categorySlug: "marketing"

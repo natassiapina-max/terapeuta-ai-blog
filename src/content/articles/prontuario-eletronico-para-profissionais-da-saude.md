@@ -1,5 +1,6 @@
 ---
 title: "Prontuário Eletrônico para Profissionais da Saúde: O Que É, Como Funciona e Quais São as Vantagens"
+seoTitle: "Prontuário eletrônico: guia para profissionais"
 description: "Entenda o que é um prontuário eletrônico, como ele funciona, quais são suas vantagens e quais cuidados profissionais devem ser considerados na proteção de dados de saúde."
 category: "Prontuário"
 categorySlug: "prontuario"

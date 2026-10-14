@@ -1,0 +1,13 @@
+# Permanent canonical URLs; placeholders never match a slash.
+/artigos/:slug /artigos/:slug/ 301
+/autores/:author /autores/:author/ 301
+/inteligencia-artificial /inteligencia-artificial/ 301
+/gestao-clinica /gestao-clinica/ 301
+/prontuario /prontuario/ 301
+/marketing /marketing/ 301
+/carreira-e-negocios /carreira-e-negocios/ 301
+/etica-e-lgpd /etica-e-lgpd/ 301
+/sobre /sobre/ 301
+/fontes /fontes/ 301
+/politica-editorial /politica-editorial/ 301
+/privacidade /privacidade/ 301

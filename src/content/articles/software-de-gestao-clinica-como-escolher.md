@@ -1,5 +1,6 @@
 ---
 title: "Software de gestão clínica: como escolher uma solução segura para consultórios e clínicas"
+seoTitle: "Software de gestão clínica: como escolher"
 description: "Veja como escolher um software de gestão clínica avaliando agenda, prontuário, segurança de dados, LGPD, financeiro, suporte e aderência à rotina profissional."
 category: "Gestão Clínica"
 categorySlug: "gestao-clinica"

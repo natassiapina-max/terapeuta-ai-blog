@@ -1,5 +1,6 @@
 ---
 title: "Como organizar uma agenda sustentável na saúde sem comprometer a qualidade do atendimento"
+seoTitle: "Agenda sustentável na saúde: como organizar"
 description: "Veja como planejar uma agenda de atendimentos mais realista, com pausas, registros, encaixes e limites claros para reduzir sobrecarga profissional."
 category: "Carreira e Negócios"
 categorySlug: carreira-e-negocios

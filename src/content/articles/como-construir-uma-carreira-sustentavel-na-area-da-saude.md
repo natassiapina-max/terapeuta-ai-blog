@@ -1,6 +1,7 @@
 ---
 title: "Como Construir uma Carreira Sustentável na Área da Saúde: 7 Decisões que
   Fazem Diferença"
+seoTitle: "Carreira sustentável na saúde: 7 decisões"
 description: Veja como construir uma carreira sustentável na área da saúde com
   planejamento, posicionamento, desenvolvimento profissional, gestão e visão de
   longo prazo.

@@ -1,5 +1,6 @@
 ---
 title: "Evolução clínica: como registrar atendimentos com clareza, segurança e menos retrabalho"
+seoTitle: "Evolução clínica: como registrar atendimentos"
 description: "Veja o que é evolução clínica, o que registrar em cada atendimento, o que evitar, como proteger dados sensíveis e como o prontuário eletrônico ajuda na rotina."
 category: "Prontuário"
 categorySlug: "prontuario"

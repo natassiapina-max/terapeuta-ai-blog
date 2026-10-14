@@ -1,5 +1,6 @@
 ---
 title: "Gestão Clínica na Prática: Como Organizar a Rotina de um Serviço de Saúde"
+seoTitle: "Gestão clínica: como organizar a rotina"
 description: "Entenda o que é gestão clínica, quais processos fazem parte dela e como organizar a rotina, os registros, os indicadores e a experiência do paciente de forma mais segura e eficiente."
 category: "Gestão Clínica"
 categorySlug: "gestao-clinica"

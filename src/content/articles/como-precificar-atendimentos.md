@@ -1,5 +1,6 @@
 ---
 title: "Como precificar seus atendimentos: custos, agenda e sustentabilidade profissional"
+seoTitle: "Como precificar atendimentos: guia prático"
 description: "Aprenda como precificar atendimentos considerando custos, remuneração, agenda e impostos, com um exemplo fictício e simulações de sessões por mês."
 category: "Carreira e Negócios"
 categorySlug: carreira-e-negocios
@@ -213,7 +214,7 @@ Você pode iniciar com um controle simples, desde que registre informações con
 
 Comece pelos gastos reais, construa uma agenda viável e teste o cálculo em diferentes volumes. Depois, confronte a projeção com os resultados observados.
 
-Para ampliar esse planejamento, leia também [Como construir uma carreira sustentável na área da saúde](https://blog.terapeutaai.com.br/artigos/como-construir-uma-carreira-sustentavel-na-area-da-saude).
+Para ampliar esse planejamento, leia também [Como construir uma carreira sustentável na área da saúde](https://blog.terapeutaai.com.br/artigos/como-construir-uma-carreira-sustentavel-na-area-da-saude/).
 
 Quer conhecer uma ferramenta para apoiar a organização da sua rotina? [Conheça o Terapeuta AI Hub](https://terapeutaai.com.br) e avalie os recursos apresentados para o seu contexto de trabalho.
 

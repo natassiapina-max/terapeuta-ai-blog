@@ -1,5 +1,6 @@
 ---
 title: "Como usar IA na clínica sem expor dados de pacientes"
+seoTitle: "IA na clínica: como proteger dados de pacientes"
 description: "Entenda como profissionais da saúde podem usar inteligência artificial com mais segurança, evitando exposição de dados sensíveis, prontuários e informações identificáveis."
 category: "Inteligência Artificial"
 categorySlug: "inteligencia-artificial"

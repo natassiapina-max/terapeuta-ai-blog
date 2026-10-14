@@ -17,7 +17,9 @@ collections:
     preview_path: "artigos/{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Título SEO", name: "seoTitle", widget: "string", required: false }
       - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Resposta direta", name: "directAnswer", widget: "text", required: false }
       - label: "Categoria"
         name: "category"
         widget: "select"
@@ -40,7 +42,7 @@ collections:
           - "etica-e-lgpd"
       - { label: "Data de publicação", name: "pubDate", widget: "datetime", format: "YYYY-MM-DD" }
       - { label: "Data de atualização", name: "updatedDate", widget: "datetime", required: false, format: "YYYY-MM-DD" }
-      - { label: "Autor", name: "author", widget: "string", default: "Equipe Terapeuta AI" }
+      - { label: "Autor", name: "author", widget: "string", default: "Juliano Lima" }
       - { label: "Revisor", name: "reviewer", widget: "string", required: false }
       - { label: "Tempo de leitura (min)", name: "readTime", widget: "number", value_type: "int", min: 1, default: 6 }
       - { label: "Destaque", name: "featured", widget: "boolean", default: false }
