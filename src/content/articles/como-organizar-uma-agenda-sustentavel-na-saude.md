@@ -163,6 +163,8 @@ Quando o profissional trabalha em equipe, essas regras precisam ser conhecidas p
 
 ## Comunicação reduz ruído e protege a agenda
 
+Para estruturar lembretes, remarcações e reaproveitamento de vagas, veja o guia sobre [como reduzir faltas em consultas](/artigos/como-reduzir-faltas-em-consultas/).
+
 Muitos problemas de agenda nascem de orientações pouco claras.
 
 Vale revisar se o paciente ou cliente entende:
