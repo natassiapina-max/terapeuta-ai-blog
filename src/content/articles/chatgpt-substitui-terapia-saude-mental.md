@@ -6,9 +6,11 @@ category: "Inteligência Artificial"
 categorySlug: "inteligencia-artificial"
 pubDate: 2026-10-16
 author: "Natassia Pina"
+reviewer: "Juliano Lima"
+reviewerUrl: "https://blog.terapeutaai.com.br/autores/juliano-lima/"
 readTime: 9
 featured: false
-draft: true
+draft: false
 image: "/images/chatgpt-terapia-saude-mental.webp"
 imageAlt: "Homem sentado em uma sala iluminada olhando para um celular; imagem ilustrativa sobre conversas com inteligência artificial"
 directAnswer: "O ChatGPT não deve substituir terapia ou avaliação profissional em saúde mental. Uma conversa com IA pode organizar perguntas e oferecer informações gerais, mas respostas convincentes podem conter erros. Ferramentas estudadas para fins terapêuticos precisam ser avaliadas individualmente; seus resultados não validam qualquer chatbot."
