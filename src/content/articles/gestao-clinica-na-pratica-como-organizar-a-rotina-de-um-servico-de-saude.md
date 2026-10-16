@@ -5,11 +5,11 @@ description: "Entenda o que é gestão clínica, quais processos fazem parte del
 category: "Gestão Clínica"
 categorySlug: "gestao-clinica"
 pubDate: 2026-10-01
-updatedDate: 2026-10-12
+updatedDate: 2026-10-16
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Gestão clínica é a organização dos processos que sustentam o atendimento em saúde, incluindo agenda, prontuário, equipe, documentos, comunicação, indicadores e experiência do paciente. Uma boa gestão reduz improvisos, melhora a continuidade do cuidado e torna a rotina mais previsível."
-readTime: 8
+readTime: 12
 featured: false
 draft: false
 image: "/images/gestao-clinica-rotina-servico-saude-terapeuta-ai.webp"
@@ -23,6 +23,10 @@ sources:
     url: "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente/plano-integrado"
   - label: "Lei Geral de Proteção de Dados — Lei nº 13.709/2018"
     url: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+  - label: "Ministério da Saúde — Política Nacional de Humanização da Atenção e da Gestão do SUS"
+    url: "https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/articulacao-interfederativa/cit/pautas-de-reunioes-e-resumos/2004/marco/3-e-humanizacao.pdf"
+  - label: "Bain — Measuring Your Net Promoter Score"
+    url: "https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/"
 faqs:
   - question: "O que é gestão clínica?"
     answer: "É a organização dos processos assistenciais e administrativos que sustentam o cuidado, como agenda, documentos, prontuário, comunicação, equipe e indicadores."
@@ -141,6 +145,36 @@ Dependendo da realidade da clínica, podem ser acompanhados indicadores como:
 - ocorrências e eventos que precisam de análise.
 
 O indicador só é útil quando existe uma pergunta por trás dele. Medir tudo sem saber o que fazer com os dados pode criar mais trabalho, e não necessariamente melhorar a gestão.
+
+## Gestão humanizada: o que a experiência de trabalho revela
+
+Rafael, nome fictício usado para preservar a identidade do profissional, relata que, em uma clínica na qual trabalhou, percebeu falta de humanização na coordenação e de alinhamento entre diferentes áreas. Segundo seu relato, havia pais que reclamavam da coordenação. Ele ficou insatisfeito e recebeu um convite para trabalhar em outra clínica.
+
+O relato foi apresentado com nome fictício e sem identificar o serviço, os colegas ou as famílias. Não é uma auditoria da instituição, nem permite concluir o que causou as reclamações ou avaliar a qualidade dos atendimentos realizados.
+
+A reflexão editorial que extraímos dessa experiência é: **uma gestão precisa criar espaço para ouvir famílias e profissionais, esclarecer responsabilidades e dar retorno sobre as demandas recebidas**. Uma agenda organizada não responde, sozinha, a problemas de relacionamento.
+
+A [Política Nacional de Humanização do Ministério da Saúde](https://www.gov.br/saude/pt-br/acesso-a-informacao/gestao-do-sus/articulacao-interfederativa/cit/pautas-de-reunioes-e-resumos/2004/marco/3-e-humanizacao.pdf) valoriza usuários, trabalhadores e gestores e incentiva sua participação. É uma referência do SUS; as propostas abaixo são adaptações editoriais para reflexão em clínicas, não obrigações específicas criadas por essa política para todo serviço privado.
+
+### Modelo de encaminhamento de uma reclamação
+
+| Etapa | O que combinar | Registro mínimo |
+|---|---|---|
+| Escuta reservada | Quem acolhe a família sem interromper ou antecipar julgamentos | Demanda e data, com acesso restrito |
+| Triagem | Quem verifica urgência, segurança e necessidade de encaminhamento | Responsável pela avaliação |
+| Alinhamento | Quem pode decidir e quais áreas precisam participar | Ação, responsável e prazo combinado |
+| Devolutiva | Quem retorna à família e por qual canal | Data do retorno e encaminhamento |
+| Revisão | Quem verifica se a ação aconteceu e se há pendências | Situação e próxima verificação |
+
+Esse modelo não substitui canais de denúncia, procedimentos de segurança ou registros clínicos necessários. Uma demanda urgente não deve aguardar a reunião de rotina. Evite reproduzir detalhes identificáveis em atas administrativas amplamente compartilhadas.
+
+### Como interpretar um NPS baixo com cuidado
+
+No método descrito pela [Bain, responsável pelo Net Promoter System](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/), o NPS é a porcentagem de promotores, que atribuem 9 ou 10, menos a de detratores, que atribuem de 0 a 6, em uma pergunta de recomendação de 0 a 10. As notas 7 e 8 também entram no total de respostas usado nas porcentagens.
+
+Para analisar o resultado de uma clínica, registre período, pergunta aplicada, número de convidados e de respostas. Leia os comentários e compare períodos com critérios equivalentes. O índice, isoladamente, não mede qualidade clínica nem demonstra que a coordenação causou uma insatisfação.
+
+Para transformar demandas em decisões acompanháveis, use também o [modelo de reunião de equipe multidisciplinar](/artigos/reuniao-equipe-multidisciplinar-clinica/).
 
 ## Gestão clínica e segurança do paciente
 
