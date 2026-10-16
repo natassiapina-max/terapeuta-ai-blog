@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { authorProfiles } from '../../data/authors';
+
+const profile = authorProfiles['Natassia Pina'];
+const articles = (await getCollection('articles'))
+  .filter(({ data }) => !data.draft && data.author === profile.name)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+
+<BaseLayout
+  title="Natassia Pina | Autora no Blog TerapeutaAI"
+  description={profile.credentials}
+  canonical={profile.url}
+  image={profile.image}
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@type': 'Person',
+      '@id': profile.url + '#person',
+      name: profile.name,
+      url: profile.url,
+      image: new URL(profile.image, 'https://blog.terapeutaai.com.br').href,
+      jobTitle: 'Musicoterapeuta, neuropsicopedagoga e autora',
+      description: profile.credentials + ' ' + profile.bio,
+      knowsAbout: profile.knowsAbout
+    }
+  })} />
+  <section class="author-hero">
+    <div class="container author-grid">
+      <img width="630" height="630" src={profile.image} alt="Foto de Natassia Pina" class="author-photo" />
+      <div>
+        <p class="eyebrow">Autora</p>
+        <h1>{profile.name}</h1>
+        <p class="lead">{profile.credentials}</p>
+        <p>{profile.bio}</p>
+      </div>
+    </div>
+  </section>
+  <section class="container author-content">
+    <article>
+      <h2>Temas de contribuição</h2>
+      <ul>
+        <li>Musicoterapia e rotina de atendimento.</li>
+        <li>Comunicação entre profissionais e famílias.</li>
+        <li>Organização do trabalho em equipes multidisciplinares.</li>
+      </ul>
+      <p>As formações em Terapia Ocupacional e Psicanálise estão em andamento.</p>
+    </article>
+    <article>
+      <h2>Autoria e responsabilidade editorial</h2>
+      <p>Os textos assinados por Natassia Pina têm finalidade informativa e devem ser lidos em conjunto com as fontes indicadas em cada publicação.</p>
+      <p>A responsabilidade editorial geral do blog permanece com <a href="/autores/juliano-lima/">Juliano Lima</a>. Autoria e eventual revisão são identificadas em cada artigo, conforme a participação de cada profissional.</p>
+      <p>Conheça nossa <a href="/politica-editorial/">política editorial</a>.</p>
+    </article>
+  </section>
+  <section class="container author-articles">
+    <h2>Artigos de Natassia Pina</h2>
+    {articles.length > 0 ? (
+      <ul>{articles.map((article) => <li><a href={`/artigos/${article.id}/`}>{article.data.title}</a></li>)}</ul>
+    ) : (
+      <p>Os artigos assinados por Natassia serão reunidos nesta página conforme forem publicados.</p>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+.author-hero{padding:86px 0 70px;background:linear-gradient(180deg,#faf7ff,#fff)}
+.author-grid{display:grid;grid-template-columns:180px minmax(0,820px);gap:42px;align-items:center}
+.author-photo{display:block;width:180px;height:180px;border-radius:50%;object-fit:cover;object-position:center;border:1px solid var(--border);box-shadow:0 18px 45px rgba(94,38,214,.14)}
+.author-hero h1{font-size:clamp(2.6rem,5vw,4.4rem)}
+.lead{max-width:820px;color:var(--deep);font-size:1.14rem;font-weight:600}
+.author-hero p:not(.eyebrow){max-width:820px;color:var(--text-soft)}
+.author-content{padding:60px 0;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.author-content article{padding:30px;border:1px solid var(--border);border-radius:20px;background:white}
+.author-content h2,.author-articles h2{font-size:1.5rem}
+.author-content p,.author-content li,.author-articles p,.author-articles li{color:var(--text-soft);font-size:.94rem}
+.author-articles{padding-bottom:30px}
+@media(max-width:760px){.author-grid{grid-template-columns:1fr;gap:28px}.author-photo{width:132px;height:132px}.author-content{grid-template-columns:1fr}}
+</style>

@@ -42,7 +42,7 @@ collections:
           - "etica-e-lgpd"
       - { label: "Data de publicação", name: "pubDate", widget: "datetime", format: "YYYY-MM-DD" }
       - { label: "Data de atualização", name: "updatedDate", widget: "datetime", required: false, format: "YYYY-MM-DD" }
-      - { label: "Autor", name: "author", widget: "string", default: "Juliano Lima" }
+      - { label: "Autor", name: "author", widget: "select", default: "Juliano Lima", options: ["Juliano Lima", "Natassia Pina"] }
       - { label: "Revisor", name: "reviewer", widget: "string", required: false }
       - { label: "Tempo de leitura (min)", name: "readTime", widget: "number", value_type: "int", min: 1, default: 6 }
       - { label: "Destaque", name: "featured", widget: "boolean", default: false }
