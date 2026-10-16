@@ -274,6 +274,8 @@ Não existe um único indicador que seja adequado para todos os serviços.
 O ideal é escolher indicadores relacionados às perguntas que a gestão precisa responder, considerando o tipo de atendimento, o público e os objetivos do serviço.
 
 
+Para organizar o trabalho conjunto entre diferentes especialidades, veja o [roteiro de reunião de equipe multidisciplinar](/artigos/reuniao-equipe-multidisciplinar-clinica/), com pauta e modelo de registro de decisões.
+
 ## Conteúdos relacionados
 
 - [Prontuário eletrônico para profissionais da saúde](/artigos/prontuario-eletronico-para-profissionais-da-saude/)
