@@ -1,6 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { authorProfiles } from '../../data/authors';
+
+const profile = authorProfiles['Juliano Lima'];
 
 const articles = (await getCollection('articles')).filter(({ data }) => !data.draft && data.author === 'Juliano Lima').sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 const authorUrl = 'https://blog.terapeutaai.com.br/autores/juliano-lima/';
@@ -9,7 +12,7 @@ const imageUrl = 'https://blog.terapeutaai.com.br/images/foto-rosto-juliano-lima
 
 <BaseLayout
   title="Juliano Lima | Autor no Blog Terapeuta AI"
-  description="Juliano Lima é administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB."
+  description={`Juliano Lima. ${profile.role} ${profile.credentials}`}
   canonical={authorUrl}
   image="/images/foto-rosto-juliano-lima.webp"
 >
@@ -32,7 +35,7 @@ const imageUrl = 'https://blog.terapeutaai.com.br/images/foto-rosto-juliano-lima
         url: 'https://terapeutaai.com.br'
       },
       identifier: 'ABMT 182-PR',
-      description: 'Administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.',
+      description: `${profile.role} ${profile.credentials} ${profile.bio}`,
       knowsAbout: [
         'Musicoterapia',
         'ABA',
@@ -58,8 +61,8 @@ const imageUrl = 'https://blog.terapeutaai.com.br/images/foto-rosto-juliano-lima
       <div>
         <p class="eyebrow">Autor</p>
         <h1>Juliano Lima</h1>
-        <p class="lead">Administrador, musicoterapeuta ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro Conexão Autista e fundador do SaaS TerapeutaAI HUB.</p>
-        <p>Atua desde 2019 com saúde mental, neurodesenvolvimento, TEA, TDAH e tecnologia aplicada à rotina clínica. É criador do Terapeuta AI Hub e escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.</p>
+        <p class="lead">{profile.role} {profile.credentials}</p>
+        <p>{profile.bio}</p>
         <div class="author-links">
           <a href="https://www.instagram.com/julianolima.mt" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://www.linkedin.com/in/julianolimamt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

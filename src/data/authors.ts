@@ -13,9 +13,9 @@ export interface AuthorProfile {
 export const authorProfiles: Record<string, AuthorProfile> = {
   'Juliano Lima': {
     name: 'Juliano Lima',
-    role: 'Musicoterapeuta, escritor e fundador do TerapeutaAI Hub.',
-    credentials: 'Administrador, musicoterapeuta (ABMT 182-PR), pós-graduado em ABA e TEA, coautor do livro Conexão Autista.',
-    bio: 'Atua desde 2019 com saúde mental, neurodesenvolvimento, TEA, TDAH e tecnologia aplicada à rotina clínica. É criador do Terapeuta AI Hub e escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.',
+    role: 'Musicoterapeuta (ABMT 182-PR), escritor e fundador do TerapeutaAI Hub.',
+    credentials: 'Administrador, pós-graduado em ABA e TEA e coautor do livro Conexão Autista.',
+    bio: 'Atua desde 2019 com saúde mental, neurodesenvolvimento, TDAH e tecnologia aplicada à rotina clínica. Escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.',
     image: '/images/foto-rosto-juliano-lima.webp',
     url: 'https://blog.terapeutaai.com.br/autores/juliano-lima/',
     sameAs: ['https://www.linkedin.com/in/julianolimamt/', 'https://www.instagram.com/julianolima.mt/', 'https://terapeutaai.com.br'],
