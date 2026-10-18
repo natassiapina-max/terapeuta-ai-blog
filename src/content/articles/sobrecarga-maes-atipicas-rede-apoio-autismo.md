@@ -6,9 +6,11 @@ category: "Gestão Clínica"
 categorySlug: "gestao-clinica"
 pubDate: 2026-10-18
 author: "Natassia Pina"
+reviewer: "Juliano Lima"
+reviewerUrl: "https://blog.terapeutaai.com.br/autores/juliano-lima/"
 readTime: 8
 featured: false
-draft: true
+draft: false
 image: "/images/rede-apoio-cuidadores-autismo.webp"
 imageAlt: "Cena ilustrativa de dois adultos dividindo tarefas do cuidado com um calendário sobre a mesa, em ambiente doméstico"
 directAnswer: "Para enfrentar a sobrecarga de mães e cuidadores de crianças autistas, a rede de apoio precisa transformar disponibilidade em tarefas combinadas: quem faz, quando faz e quem substitui. Família e clínica podem organizar transporte, comunicação e agenda, respeitando as necessidades da criança e a saúde de quem cuida."
@@ -180,4 +182,4 @@ Se você gerencia um serviço, [conheça o TerapeutaAI Hub](https://terapeutaai.
 
 *Transparência comercial: Juliano Lima, responsável editorial do blog, é fundador do TerapeutaAI Hub.*
 
-*Nota de método: texto preparado com apoio de inteligência artificial e fontes consultadas em 18 de outubro de 2026, para revisão editorial antes da publicação. Os modelos de organização são propostas do blog, sem validação clínica. A capa é ilustrativa e foi gerada por IA; não retrata uma família atendida pelo serviço.*
+*Nota de método: texto preparado com apoio de inteligência artificial e fontes consultadas em 18 de outubro de 2026, com revisão editorial de Juliano Lima antes da publicação. Os modelos de organização são propostas do blog, sem validação clínica. A capa é ilustrativa e foi gerada por IA; não retrata uma família atendida pelo serviço.*
