@@ -41,6 +41,9 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
     <link rel="icon" type="image/png" href="/images/logomarca-terapeuta-ai-2-.png" />
     <link rel="apple-touch-icon" href="/images/logomarca-terapeuta-ai-2-.png" />
     <link rel="alternate" type="application/rss+xml" title="Blog Terapeuta AI" href="/rss.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <meta property="og:type" content={type} />
     <meta property="og:locale" content="pt_BR" />
@@ -69,6 +72,13 @@ const ogImage = image ? new URL(image, siteUrl).href : undefined;
       document.addEventListener('click', function(event) {
         const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
         if (!link) return;
+        if (link.dataset.resource) {
+          gtag('event', 'resource_download', {
+            resource_id: link.dataset.resource,
+            page_path: location.pathname,
+            transport_type: 'beacon'
+          });
+        }
         const destination = new URL(link.href, location.href);
         if (destination.hostname === 'terapeutaai.com.br') {
           gtag('event', 'hub_click', {

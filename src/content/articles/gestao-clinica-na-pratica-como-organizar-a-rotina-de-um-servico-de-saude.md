@@ -5,7 +5,7 @@ description: "Entenda o que é gestão clínica, quais processos fazem parte del
 category: "Gestão Clínica"
 categorySlug: "gestao-clinica"
 pubDate: 2026-10-01
-updatedDate: 2026-10-16
+updatedDate: 2026-10-21
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Gestão clínica é a organização dos processos que sustentam o atendimento em saúde, incluindo agenda, prontuário, equipe, documentos, comunicação, indicadores e experiência do paciente. Uma boa gestão reduz improvisos, melhora a continuidade do cuidado e torna a rotina mais previsível."
@@ -311,6 +311,8 @@ O ideal é escolher indicadores relacionados às perguntas que a gestão precisa
 Para organizar o trabalho conjunto entre diferentes especialidades, veja o [roteiro de reunião de equipe multidisciplinar](/artigos/reuniao-equipe-multidisciplinar-clinica/), com pauta e modelo de registro de decisões.
 
 ## Conteúdos relacionados
+
+Para transformar o alinhamento entre áreas em ações verificáveis, consulte o [roteiro de reunião de equipe multidisciplinar](/artigos/reuniao-equipe-multidisciplinar-clinica/) e seu [checklist para imprimir](/recursos/#reuniao). Para definir objetivos compartilhados do acompanhamento, veja [como elaborar um Projeto Terapêutico Singular](/artigos/projeto-terapeutico-singular-como-fazer/).
 
 - [Prontuário eletrônico para profissionais da saúde](/artigos/prontuario-eletronico-para-profissionais-da-saude/)
 - [Evolução clínica: como registrar atendimentos](/artigos/evolucao-clinica-como-registrar-atendimentos/)

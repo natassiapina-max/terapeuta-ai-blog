@@ -9,6 +9,7 @@ const articles = defineCollection({
     seoTitle: z.string().optional(),
     description: z.string(),
     category: z.enum([
+      'Desenvolvimento infantil e família',
       'Inteligência Artificial',
       'Gestão Clínica',
       'Prontuário',
@@ -17,6 +18,7 @@ const articles = defineCollection({
       'Ética e LGPD'
     ]),
     categorySlug: z.enum([
+      'desenvolvimento-infantil-e-familia',
       'inteligencia-artificial',
       'gestao-clinica',
       'prontuario',

@@ -2,8 +2,8 @@
 title: "Brincar no desenvolvimento infantil: como apoiar sem transformar tudo em tarefa"
 seoTitle: "Brincar no desenvolvimento infantil: guia para famílias"
 description: "Entenda a importância do brincar no desenvolvimento infantil e veja ideias simples e um roteiro para alinhar família e clínica sem sobrecarregar a rotina."
-category: "Gestão Clínica"
-categorySlug: "gestao-clinica"
+category: "Desenvolvimento infantil e família"
+categorySlug: "desenvolvimento-infantil-e-familia"
 pubDate: 2026-10-21
 author: "Natassia Pina"
 reviewer: "Juliano Lima"

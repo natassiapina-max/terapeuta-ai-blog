@@ -2,8 +2,8 @@
 title: "Sobrecarga de mães atípicas: como construir uma rede de apoio"
 seoTitle: "Sobrecarga de mães atípicas: rede de apoio no autismo"
 description: "Como dividir tarefas no cuidado de crianças autistas e alinhar família e clínica. Veja um modelo de rede de apoio e perguntas para organizar a rotina."
-category: "Gestão Clínica"
-categorySlug: "gestao-clinica"
+category: "Desenvolvimento infantil e família"
+categorySlug: "desenvolvimento-infantil-e-familia"
 pubDate: 2026-10-18
 author: "Natassia Pina"
 reviewer: "Juliano Lima"

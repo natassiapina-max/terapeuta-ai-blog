@@ -5,7 +5,7 @@ description: "Veja como planejar uma agenda de atendimentos mais realista, com p
 category: "Carreira e Negócios"
 categorySlug: carreira-e-negocios
 pubDate: 2026-10-10
-updatedDate: 2026-10-12
+updatedDate: 2026-10-21
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Organizar uma agenda sustentável na saúde significa planejar atendimentos, pausas, registros, comunicação e recuperação como partes do mesmo trabalho. O objetivo é preservar qualidade, previsibilidade e saúde profissional sem transformar a rotina em uma sequência permanente de urgências."
@@ -46,6 +46,8 @@ Uma agenda cheia pode parecer sinal de crescimento. Mas, quando todos os horári
 Este artigo apresenta uma forma prática de revisar a agenda do consultório, especialmente para profissionais que atendem de forma autônoma ou em pequena equipe.
 
 ## Agenda sustentável não é agenda vazia
+
+Essa organização faz parte de um [plano de carreira sustentável na saúde](/artigos/como-construir-uma-carreira-sustentavel-na-area-da-saude/): a agenda deve reservar espaço para documentação, estudo e descanso. Se o problema principal são ausências recorrentes, veja também [como reduzir faltas em consultas](/artigos/como-reduzir-faltas-em-consultas/).
 
 Uma agenda sustentável é aquela que respeita a capacidade real de trabalho.
 

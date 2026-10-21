@@ -5,6 +5,7 @@ description: "Organize a reunião de equipe da clínica com pauta, roteiro de 30
 category: "Gestão Clínica"
 categorySlug: "gestao-clinica"
 pubDate: 2026-10-16
+updatedDate: 2026-10-21
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 readTime: 8
@@ -76,6 +77,8 @@ Peça que cada participante traga a informação que falta para decidir. Uma reu
 Defina uma pessoa para facilitar a conversa e outra para registrar decisões, quando possível. Conduzir significa manter o foco e abrir espaço às contribuições, sem presumir que uma profissão tenha autoridade técnica sobre todas as demais.
 
 ## Roteiro de reunião de equipe em 30 minutos
+
+Você pode [imprimir ou baixar o checklist de reunião](/recursos/#reuniao) e adaptar a pauta à equipe. Quando o encontro envolve objetivos compartilhados do acompanhamento, consulte o [guia de Projeto Terapêutico Singular](/artigos/projeto-terapeutico-singular-como-fazer/) para organizar responsabilidades e revisão com a pessoa atendida e sua rede.
 
 O roteiro abaixo é uma **proposta editorial para teste e adaptação**, não um protocolo validado nem uma duração obrigatória. Discussões complexas podem exigir outro formato.
 

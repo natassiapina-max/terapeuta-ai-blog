@@ -1,5 +1,10 @@
 export const categories = [
   {
+    name: 'Desenvolvimento infantil e família',
+    slug: 'desenvolvimento-infantil-e-familia',
+    description: 'Brincar, telas, rede de apoio e comunicação entre família, escola e equipe de saúde, com orientações contextualizadas e fontes identificadas.'
+  },
+  {
     name: 'Inteligência Artificial',
     slug: 'inteligencia-artificial',
     description: 'Tecnologia, inteligência artificial e aplicações práticas para a rotina profissional.',

@@ -5,7 +5,7 @@ description: "Entenda o que é um prontuário eletrônico, como ele funciona, qu
 category: "Prontuário"
 categorySlug: "prontuario"
 pubDate: 2026-09-20
-updatedDate: 2026-10-12
+updatedDate: 2026-10-21
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Prontuário eletrônico é um sistema digital usado para registrar, armazenar e organizar informações clínicas e administrativas de atendimentos em saúde. Para profissionais e clínicas, ele ajuda a manter histórico, evoluções, documentos, permissões de acesso e continuidade do cuidado com mais segurança e praticidade."
@@ -316,6 +316,8 @@ Quanto mais próximo do uso real for o teste, melhor.
 Uma plataforma pode ter ótimos recursos e ainda assim gerar dificuldades se não houver suporte adequado.
 
 ## Prontuário eletrônico é mais do que abandonar o papel
+
+A qualidade do sistema também depende do conteúdo registrado. Veja o [guia de evolução clínica](/artigos/evolucao-clinica-como-registrar-atendimentos/) para organizar registros e o [guia de uso de IA sem expor dados de pacientes](/artigos/como-usar-ia-na-clinica-sem-expor-dados-de-pacientes/) antes de inserir informações em ferramentas externas.
 
 A digitalização do prontuário pode trazer ganhos importantes de organização, mas o objetivo não deveria ser simplesmente transformar uma ficha de papel em um formulário digital.
 

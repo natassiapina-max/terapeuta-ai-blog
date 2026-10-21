@@ -84,7 +84,7 @@ for (const file of htmlFiles) {
       if (url.origin === origin && !existsSync(localPath(url.pathname) ?? '')) fail(pathname, `imagem do schema ausente: ${image}`);
     }
   }
-  if (indexable && pathname.startsWith('/artigos/')) {
+  if (indexable && pathname.startsWith('/artigos/') && pathname !== '/artigos/') {
     const article = allSchemas.find((schema) => ['BlogPosting', 'Article'].includes(schema['@type']));
     if (!article?.author?.name || !article?.datePublished || !article?.image?.length) fail(pathname, 'schema de artigo incompleto');
     if (!allSchemas.some((schema) => schema['@type'] === 'BreadcrumbList')) fail(pathname, 'breadcrumb estruturado ausente');

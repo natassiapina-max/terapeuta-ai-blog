@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories } from '../../data/categories';
+const articles = (await getCollection('articles')).filter(a => !a.data.draft).sort((a,b) => b.data.pubDate.getTime()-a.data.pubDate.getTime());
+---
+<BaseLayout title="Todos os artigos sobre saúde, terapias e gestão | Terapeuta AI" description="Explore os artigos de Natassia Pina e Juliano Lima sobre desenvolvimento infantil, gestão clínica, prontuário, IA, carreira e proteção de dados.">
+  <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'CollectionPage',name:'Todos os artigos',url:'https://blog.terapeutaai.com.br/artigos/',mainEntity:{'@type':'ItemList',itemListElement:articles.map((a,i)=>({'@type':'ListItem',position:i+1,name:a.data.title,url:`https://blog.terapeutaai.com.br/artigos/${a.id}/`}))}})} />
+  <section class="container archive">
+    <p class="eyebrow">Biblioteca do blog</p>
+    <h1>Todos os artigos</h1>
+    <p>{articles.length} artigos para consultar por assunto, com autoria e referências identificadas.</p>
+    <nav aria-label="Escolha um tema">{categories.map(c => <a href={`/${c.slug}/`}>{c.name}</a>)}</nav>
+    <div class="grid">{articles.map(a => <article>
+      <a class="eyebrow" href={`/${a.data.categorySlug}/`}>{a.data.category}</a>
+      <h2><a href={`/artigos/${a.id}/`}>{a.data.title}</a></h2>
+      <p>{a.data.description}</p>
+      <small>{a.data.author} · <time datetime={a.data.pubDate.toISOString()}>{a.data.pubDate.toLocaleDateString('pt-BR', {timeZone:'UTC'})}</time> · {a.data.readTime} min</small>
+    </article>)}</div>
+    <p>Para aplicar os conceitos, consulte também nossas <a href="/recursos/">ferramentas para a rotina da clínica</a>.</p>
+  </section>
+</BaseLayout>
+<style>
+.archive{padding-block:64px}.archive>p{max-width:760px;color:var(--muted)}h1{font-size:clamp(2rem,5vw,3.5rem)}nav{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}nav a{border:1px solid var(--border);border-radius:12px;padding:10px 14px;font-size:.85rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.grid article{padding:26px;border:1px solid var(--border);border-radius:20px}.grid h2{font-size:1.4rem;line-height:1.3;margin:14px 0}.grid h2 a{text-decoration:none}.grid p,.grid small{color:var(--muted)}@media(max-width:720px){.grid{grid-template-columns:1fr}}
+</style>

@@ -5,7 +5,7 @@ description: "Entenda como a LGPD se aplica à rotina de clínicas e consultóri
 category: "Ética e LGPD"
 categorySlug: "etica-e-lgpd"
 pubDate: 2026-10-02
-updatedDate: 2026-10-12
+updatedDate: 2026-10-21
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "A LGPD na clínica exige que dados de pacientes sejam coletados, armazenados, acessados e compartilhados com finalidade clara, necessidade, segurança e controle de acesso. Como dados de saúde são sensíveis, clínicas e profissionais precisam revisar cadastros, prontuários, documentos, ferramentas digitais e rotinas de comunicação."
@@ -169,6 +169,8 @@ Também é importante conferir cuidadosamente o destinatário antes de enviar qu
 Um simples erro de contato pode transformar uma comunicação rotineira em um incidente de privacidade.
 
 ## Compartilhamento de informações entre profissionais
+
+Na rotina da equipe, o [roteiro de reunião multidisciplinar](/artigos/reuniao-equipe-multidisciplinar-clinica/) ajuda a separar pautas administrativas de discussões clínicas. Para ferramentas de IA, consulte também os [cuidados antes de compartilhar dados de pacientes](/artigos/como-usar-ia-na-clinica-sem-expor-dados-de-pacientes/).
 
 Em serviços multidisciplinares, o compartilhamento de determinadas informações pode ser necessário para a continuidade do cuidado.
 

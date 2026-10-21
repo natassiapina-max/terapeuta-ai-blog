@@ -24,6 +24,7 @@ collections:
         name: "category"
         widget: "select"
         options:
+          - "Desenvolvimento infantil e família"
           - "Inteligência Artificial"
           - "Gestão Clínica"
           - "Prontuário"
@@ -34,6 +35,7 @@ collections:
         name: "categorySlug"
         widget: "select"
         options:
+          - "desenvolvimento-infantil-e-familia"
           - "inteligencia-artificial"
           - "gestao-clinica"
           - "prontuario"

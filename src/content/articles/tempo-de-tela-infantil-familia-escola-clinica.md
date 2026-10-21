@@ -2,8 +2,8 @@
 title: "Tempo de tela infantil: como alinhar família, escola e clínica"
 seoTitle: "Tempo de tela infantil: guia para família, escola e clínica"
 description: "Como conversar sobre tempo de tela infantil sem culpar os pais. Veja um modelo para alinhar família, escola e clínica, com referências atuais."
-category: "Gestão Clínica"
-categorySlug: "gestao-clinica"
+category: "Desenvolvimento infantil e família"
+categorySlug: "desenvolvimento-infantil-e-familia"
 pubDate: 2026-10-19
 author: "Natassia Pina"
 reviewer: "Juliano Lima"

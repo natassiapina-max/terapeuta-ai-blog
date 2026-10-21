@@ -5,7 +5,7 @@ description: "Aprenda como precificar atendimentos considerando custos, remunera
 category: "Carreira e Negócios"
 categorySlug: carreira-e-negocios
 pubDate: 2026-10-08
-updatedDate: 2026-10-12
+updatedDate: 2026-10-21
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Para precificar atendimentos, estime os custos da atividade, defina a remuneração desejada, calcule uma quantidade realista de sessões pagas e inclua gastos variáveis, impostos e períodos de menor agenda. O preço final deve sustentar a rotina profissional, não apenas cobrir o tempo da sessão."
@@ -89,6 +89,8 @@ Considere uma agenda fictícia com 100 horários disponíveis no mês. Se a proj
 Essa ocupação de 80% é apenas uma hipótese didática. Quem já atende pode usar seu histórico; quem está começando pode montar cenários conservador, intermediário e favorável, sem tratar nenhum deles como receita garantida.
 
 ## Como calcular uma referência de preço por sessão
+
+Para aplicar o modelo aos seus números, use a [calculadora de preço por sessão](/recursos/#precificacao). Ela permite alterar custos, remuneração e sessões pagas sem enviar os valores ao blog. Para avaliar a capacidade de atendimento antes de calcular, consulte também [como organizar uma agenda sustentável](/artigos/como-organizar-uma-agenda-sustentavel-na-saude/).
 
 O modelo abaixo é uma adaptação gerencial simplificada para uma atividade com um único tipo de atendimento e preço uniforme.
 

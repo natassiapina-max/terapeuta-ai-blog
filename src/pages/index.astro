@@ -50,14 +50,14 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
     <div class="theme-grid">
       {categories.map((category,index) => <a class="theme-card" href={`/${category.slug}/`}>
         <div class="theme-top"><span>0{index+1}</span><b>↗</b></div>
-        <div class="theme-icon">{['✦','◫','▤','◎','↗','◇'][index]}</div>
+        <div class="theme-icon">{['♡','✦','◫','▤','◎','↗','◇'][index]}</div>
         <h3>{category.name}</h3><p>{category.description}</p>
       </a>)}
     </div>
   </section>
 
   {latest.length > 0 && <section class="container latest">
-    <div class="section-head"><div><p class="eyebrow">Mais recentes</p><h2>Para continuar pensando.</h2></div><p>Novos conteúdos, ideias e referências.</p></div>
+    <div class="section-head"><div><p class="eyebrow">Mais recentes</p><h2>Para continuar pensando.</h2></div><p><a href="/artigos/">Ver todos os {articles.length} artigos →</a></p></div>
     <div class="latest-grid">{latest.map(article => <article class="latest-card">
       <div class="latest-meta"><a class="category" href={`/${article.data.categorySlug}/`}>{article.data.category}</a><span>{article.data.readTime} min</span></div>
       <h3>{article.data.title}</h3><p>{article.data.description}</p>

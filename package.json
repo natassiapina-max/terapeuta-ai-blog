@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "rm -rf .astro node_modules/.astro && astro build && node scripts/audit-build.mjs",
+    "build": "node scripts/check-pricing.mjs && rm -rf .astro node_modules/.astro && astro build && node scripts/audit-build.mjs",
     "preview": "astro preview",
     "audit": "node scripts/audit-build.mjs"
   },

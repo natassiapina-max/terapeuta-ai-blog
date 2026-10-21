@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Ferramentas para clínicas: precificação e reunião | Terapeuta AI" description="Simule o preço de referência por sessão e use um checklist de reunião de equipe com decisões, responsáveis e prazos. Ferramentas gratuitas do blog.">
+  <section class="container resources">
+    <p class="eyebrow">Aplicar na rotina</p>
+    <h1>Ferramentas para clínicas e consultórios</h1>
+    <p>Dois recursos gratuitos para adaptar à sua realidade. Os cálculos acontecem no seu navegador. Os valores digitados não são enviados ao blog nem incluídos nos eventos de Analytics.</p>
+    <nav aria-label="Ferramentas disponíveis"><a href="#precificacao">Calculadora de precificação</a><a href="#reuniao">Checklist de reunião</a></nav>
+
+    <section id="precificacao" class="tool">
+      <p class="eyebrow">Planejamento financeiro</p>
+      <h2>Calculadora de preço por sessão</h2>
+      <p>Estime uma referência para uma modalidade de atendimento, considerando sessões efetivamente pagas. O resultado depende dos seus dados; não representa honorários obrigatórios nem receita garantida.</p>
+      <p>Modelo: <strong>[(custos fixos + remuneração + reserva) ÷ sessões pagas + custo variável por sessão] ÷ (1 − percentual sobre a receita)</strong>.</p>
+      <p>Não some a remuneração novamente se ela já estiver nos custos fixos. O percentual deve corresponder às taxas e aos tributos aplicáveis à sua atividade. Confira o enquadramento com sua contabilidade. <a href="/artigos/como-precificar-atendimentos/">Leia as premissas e o exemplo completo</a>.</p>
+      <form id="pricing-form" autocomplete="off" data-clarity-mask="true">
+        <div class="fields">
+          <label>Custos fixos mensais (R$)<input name="fixed" type="number" min="0" step="0.01" inputmode="decimal" required /></label>
+          <label>Remuneração mensal, com encargos (R$)<input name="pay" type="number" min="0" step="0.01" inputmode="decimal" required /></label>
+          <label>Reserva mensal desejada (R$)<input name="reserve" type="number" min="0" step="0.01" inputmode="decimal" required /></label>
+          <label>Sessões pagas previstas por mês<input name="sessions" type="number" min="1" step="1" inputmode="numeric" required /></label>
+          <label>Custo variável por sessão (R$)<input name="variable" type="number" min="0" step="0.01" inputmode="decimal" required /></label>
+          <label>Taxas e tributos sobre a receita (%)<input name="percent" type="number" min="0" max="99.99" step="0.01" inputmode="decimal" required /></label>
+        </div>
+        <div class="actions"><button type="submit" class="btn btn-primary">Calcular referência</button><button type="reset" class="btn btn-secondary">Limpar</button></div>
+        <output id="pricing-result" aria-live="polite" role="status">Preencha os seis campos para calcular.</output>
+      </form>
+      <noscript><p>Ative o JavaScript para usar a calculadora ou faça o cálculo com a fórmula acima.</p></noscript>
+      <p class="note">Exemplo fictício para conferir: custos de R$ 2.000, remuneração de R$ 4.000, reserva de R$ 400, 80 sessões, custo variável de R$ 10 e percentual de 10% resultam em R$ 100 por sessão. Não use esses números como recomendação de preço.</p>
+    </section>
+
+    <section id="reuniao" class="tool">
+      <p class="eyebrow">Organização da equipe</p>
+      <h2>Checklist de reunião multidisciplinar</h2>
+      <p>Proposta editorial de roteiro administrativo, para adaptação. Não é protocolo clínico validado. <a href="/artigos/reuniao-equipe-multidisciplinar-clinica/">Consulte o guia de reunião e suas referências</a>.</p>
+      <div class="print-sheet" id="meeting-sheet">
+        <h3>Reunião de equipe — roteiro de trabalho</h3>
+        <p>Data: __________________ &nbsp; Facilitador: __________________</p>
+        <h4>Antes do encontro</h4>
+        <ul><li>☐ Escrever o objetivo e selecionar até três prioridades.</li><li>☐ Convidar apenas os participantes necessários a cada pauta.</li><li>☐ Separar questões administrativas de discussões clínicas.</li><li>☐ Definir quem conduz, quem registra e o tempo disponível.</li></ul>
+        <h4>Durante o encontro — sugestão de 30 minutos</h4>
+        <ol><li>0–3 min: confirmar objetivo, pauta e participantes.</li><li>3–8 min: revisar decisões anteriores e obstáculos.</li><li>8–23 min: discutir prioridades, com espaço para diferentes áreas.</li><li>23–28 min: registrar ação, responsável e prazo.</li><li>28–30 min: conferir entendimento e combinar a próxima revisão.</li></ol>
+        <h4>Encaminhamentos</h4>
+        <div class="table-wrap"><table><thead><tr><th>Ação combinada</th><th>Responsável</th><th>Prazo</th><th>Como verificar</th></tr></thead><tbody>{[1,2,3].map(i => <tr><td>________________</td><td>____________</td><td>________</td><td>____________</td></tr>)}</tbody></table></div>
+        <h4>Depois do encontro</h4>
+        <ul><li>☐ Enviar os encaminhamentos pelo canal institucional adequado.</li><li>☐ Confirmar acesso restrito e informações mínimas necessárias.</li><li>☐ Verificar pendências na data combinada.</li></ul>
+        <p><strong>Sigilo:</strong> este modelo é administrativo. Não inclua nomes, diagnósticos ou outros dados identificáveis de pacientes. Registros clínicos pertencem ao ambiente institucional apropriado, conforme as responsabilidades da equipe.</p>
+        <p>Blog TerapeutaAI · blog.terapeutaai.com.br/recursos/ · Modelo de 21/10/2026.</p>
+      </div>
+      <div class="actions"><button type="button" id="print-meeting" class="btn btn-primary">Imprimir / salvar como PDF</button><a href="/downloads/checklist-reuniao-equipe.txt" download class="btn btn-secondary" data-resource="checklist_reuniao">Baixar modelo em texto</a></div>
+      <noscript><p>Para imprimir, use a opção de impressão do navegador, ou baixe o modelo em texto.</p></noscript>
+    </section>
+    <p>Para organizar a operação da clínica, <a href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">conheça o TerapeutaAI Hub</a> e avalie a adequação à sua rotina.</p>
+  </section>
+</BaseLayout>
+<script>
+  import { sessionPrice } from '../utils/pricing.mjs';
+  const form = document.querySelector<HTMLFormElement>('#pricing-form');
+  const result = document.querySelector<HTMLOutputElement>('#pricing-result');
+  const money = new Intl.NumberFormat('pt-BR', { style:'currency', currency:'BRL' });
+  function track(name: string) {
+    const analytics = (window as Window & {gtag?: (...args: unknown[]) => void}).gtag;
+    analytics?.('event', name, {resource_id:'calculadora_precificacao',page_path:location.pathname});
+  }
+  form?.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!result || !form.reportValidity()) return;
+    try {
+      const fields = new FormData(form);
+      const values = Object.fromEntries(['fixed','pay','reserve','sessions','variable','percent'].map(key => [key,Number(fields.get(key))]));
+      const calculated = sessionPrice(values);
+      result.textContent = `Referência por sessão: ${money.format(calculated.price)}. Necessidade mensal planejada: ${money.format(calculated.monthly)}. Reavalie ao mudar custos ou sessões pagas.`;
+      track('pricing_calculate');
+    } catch (error) { result.textContent = error instanceof Error ? error.message : 'Revise os valores informados.'; }
+  });
+  form?.addEventListener('reset', () => { if(result) result.textContent = 'Preencha os seis campos para calcular.'; });
+  document.querySelector('#print-meeting')?.addEventListener('click', () => window.print());
+</script>
+<style>
+.resources{padding-block:64px;max-width:960px}h1{font-size:clamp(2rem,5vw,3.5rem)}h2{font-size:clamp(1.6rem,4vw,2.3rem)}h3{line-height:1.3}p{color:var(--muted)}nav,.actions{display:flex;flex-wrap:wrap;gap:14px;margin:24px 0}nav a{padding:10px 14px;border:1px solid var(--border);border-radius:12px}.tool{padding:32px;border:1px solid var(--border);border-radius:22px;margin-block:32px;scroll-margin-top:170px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}label{display:flex;flex-direction:column;gap:8px;font-size:.85rem;font-weight:600}input{width:100%;min-height:48px;border:1px solid var(--border);border-radius:10px;padding:10px;font:inherit;color:var(--deep)}button{font:inherit;cursor:pointer;border:0}output{display:block;min-height:60px;background:var(--soft);border-radius:12px;padding:18px;font-weight:600}.note{font-size:.85rem}.print-sheet{padding:24px;border:1px solid var(--border);border-radius:12px}li{margin-bottom:8px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;border:1px solid var(--border);padding:10px}h4{margin-bottom:10px}.print-sheet ul{list-style:none;padding-left:0}@media(max-width:650px){.fields{grid-template-columns:1fr}.tool{padding:20px}.print-sheet{padding:14px}.btn{width:100%}}
+@media print{:global(.site-header),:global(.site-footer),:global(.skip-link),.resources>h1,.resources>p,.resources>nav,#precificacao,#reuniao>.eyebrow,#reuniao>h2,#reuniao>p,.actions{display:none!important}.resources,.tool,.print-sheet{width:100%;max-width:none;margin:0;padding:0;border:0}h3{font-size:16pt}p,li,td,th{font-size:10pt;color:#000}.print-sheet{break-inside:avoid}}
+</style>
