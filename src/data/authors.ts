@@ -28,7 +28,7 @@ export const authorProfiles: Record<string, AuthorProfile> = {
   },
   'Natassia Pina': {
     name: 'Natassia Pina',
-    role: 'Musicoterapeuta, neuropsicopedagoga e autora do Blog TerapeutaAI.',
+    role: 'Musicoterapeuta, Neuropsicopedagoga e autora do Blog TerapeutaAI.',
     credentials: 'Graduanda em Terapia Ocupacional.',
     bio: 'Sua participação no blog é voltada à rotina terapêutica, à comunicação com famílias e ao trabalho em equipes multidisciplinares.',
     image: '/images/foto-natassia-pina.webp',

@@ -24,7 +24,7 @@ const articles = (await getCollection('articles'))
       name: profile.name,
       url: profile.url,
       image: new URL(profile.image, 'https://blog.terapeutaai.com.br').href,
-      jobTitle: 'Musicoterapeuta, neuropsicopedagoga e autora',
+      jobTitle: 'Musicoterapeuta, Neuropsicopedagoga e autora',
       description: profile.credentials + ' ' + profile.bio,
       knowsAbout: profile.knowsAbout
     }
