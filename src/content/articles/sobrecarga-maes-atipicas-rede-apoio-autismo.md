@@ -5,6 +5,7 @@ description: "Como dividir tarefas no cuidado de crianças autistas e alinhar fa
 category: "Desenvolvimento infantil e família"
 categorySlug: "desenvolvimento-infantil-e-familia"
 pubDate: 2026-10-18
+updatedDate: 2026-10-22
 author: "Natassia Pina"
 reviewer: "Juliano Lima"
 reviewerUrl: "https://blog.terapeutaai.com.br/autores/juliano-lima/"
@@ -153,6 +154,8 @@ Grupos de famílias podem ser espaços de troca, mas não substituem serviços d
 Se o sofrimento persistir, se intensificar ou estiver prejudicando o cotidiano, procure avaliação de um profissional de saúde. O mapa de tarefas pode organizar parte da rotina; não substitui esse cuidado.
 
 ## Perguntas frequentes
+
+Para preparar uma consulta sobre dificuldades persistentes de atenção e organização, veja nosso [roteiro sobre TDAH em mulheres adultas](/artigos/tdah-em-mulheres-adultas/). O material organiza relatos para a conversa com profissionais e não permite atribuir a sobrecarga de uma cuidadora ao transtorno.
 
 ### Como ajudar uma mãe de criança autista de forma prática?
 

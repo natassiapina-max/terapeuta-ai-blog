@@ -1,5 +1,10 @@
 export const categories = [
   {
+    name: 'Saúde mental',
+    slug: 'saude-mental',
+    description: 'Informação sobre saúde mental, neurodesenvolvimento e busca de cuidado, com fontes identificadas e orientações para organizar a conversa com profissionais.'
+  },
+  {
     name: 'Desenvolvimento infantil e família',
     slug: 'desenvolvimento-infantil-e-familia',
     description: 'Brincar, telas, rede de apoio e comunicação entre família, escola e equipe de saúde, com orientações contextualizadas e fontes identificadas.'

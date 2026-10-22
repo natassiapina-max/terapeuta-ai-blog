@@ -24,6 +24,7 @@ collections:
         name: "category"
         widget: "select"
         options:
+          - "Saúde mental"
           - "Desenvolvimento infantil e família"
           - "Inteligência Artificial"
           - "Gestão Clínica"
@@ -35,6 +36,7 @@ collections:
         name: "categorySlug"
         widget: "select"
         options:
+          - "saude-mental"
           - "desenvolvimento-infantil-e-familia"
           - "inteligencia-artificial"
           - "gestao-clinica"
