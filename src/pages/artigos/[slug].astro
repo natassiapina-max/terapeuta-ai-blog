@@ -68,8 +68,8 @@ const authorProfile = authorProfiles[data.author] ?? null;
 
       <div class="article-meta">
         <span>Por {authorProfile ? <a href={authorProfile.url}>{data.author}</a> : data.author}</span>
-        <span>Publicado em {published.split('-').reverse().join('/')}</span>
-        {updated && <span>Atualizado em {updated.split('-').reverse().join('/')}</span>}
+        <span>Publicado em <time datetime={published}>{published.split('-').reverse().join('/')}</time></span>
+        {updated && <span>Atualizado em <time datetime={updated}>{updated.split('-').reverse().join('/')}</span>}
         <span>{data.readTime} min de leitura</span>
       </div>
       {data.directAnswer && <p class="direct-answer"><strong>Resposta direta:</strong> {data.directAnswer}</p>}
@@ -119,7 +119,7 @@ const authorProfile = authorProfiles[data.author] ?? null;
           <img width="320" height="320" class="author-photo" src={authorProfile.image} alt={`Foto de ${authorProfile.name}`} loading="lazy" />
         )}
         <div>
-          <span class="eyebrow">Responsabilidade editorial</span>
+          <span class="eyebrow">Sobre a autoria</span>
           {authorProfile ? <h2><a href={authorProfile.url}>{data.author}</a></h2> : <h2>{data.author}</h2>}
           {authorProfile && <strong>{authorProfile.role}</strong>}
           {authorProfile && <p class="author-credentials">{authorProfile.credentials}</p>}
@@ -129,9 +129,12 @@ const authorProfile = authorProfiles[data.author] ?? null;
               {authorProfile.links.map((link) => <a href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>)}
             </div>
           )}
-          {data.reviewer && <p>Revisão: {data.reviewer}</p>}
+          <p>Responsabilidade editorial: <a href="/autores/juliano-lima/">Juliano Lima</a>.</p>
+          {data.reviewer && <p>Revisão indicada neste artigo: {data.reviewer}</p>}
         </div>
       </div>
+
+      <aside class="editorial-note"><p>Este blog utiliza inteligência artificial como apoio à pesquisa, à organização e à produção de conteúdo. A autoria e a responsabilidade editorial estão identificadas nesta página. Consulte nossa <a href="/politica-editorial/">política editorial</a>.</p><p>Conteúdo informativo e educativo. Não substitui avaliação por profissional habilitado nem oferece diagnóstico ou orientação individualizada.</p></aside>
 
       {data.sources?.length > 0 && <section class="sources">
         <span class="eyebrow">Fontes e referências</span>
@@ -142,12 +145,12 @@ const authorProfile = authorProfiles[data.author] ?? null;
       </section>}
 
       <div class="article-cta">
-        <span class="eyebrow">Terapeuta AI</span>
+        <span class="eyebrow">TerapeutaAI</span>
         <h2>Organize sua rotina clínica com mais clareza.</h2>
-        <p>O TerapeutaAI Hub reúne agenda, prontuário, gestão financeira e recursos de inteligência artificial para apoiar profissionais e clínicas na rotina de cuidado.</p>
+        <p>O TerapeutaAI HUB reúne agenda, prontuário, gestão financeira e recursos de inteligência artificial para apoiar profissionais e clínicas na rotina de cuidado.</p>
         <p class="commercial-disclosure">Este blog é mantido pelo TerapeutaAI. Juliano Lima é fundador do Hub, produto apresentado neste espaço.</p>
         <div class="cta-actions">
-          <a class="btn btn-primary" href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">Conheça o TerapeutaAI Hub</a>
+          <a class="btn btn-primary" href="https://terapeutaai.com.br" target="_blank" rel="noreferrer">Conheça o TerapeutaAI HUB</a>
           {nextArticle && <a class="btn btn-secondary" href={`/artigos/${nextArticle.id}/`}>Continuar lendo</a>}
         </div>
       </div>
@@ -186,7 +189,7 @@ const authorProfile = authorProfiles[data.author] ?? null;
     about: data.tags,
     publisher: {
       '@type': 'Organization',
-      name: 'Terapeuta AI',
+      name: 'TerapeutaAI',
       url: 'https://terapeutaai.com.br',
       logo: { '@type': 'ImageObject', url: 'https://blog.terapeutaai.com.br/images/logomarca-terapeuta-ai-2-.png' }
     },
@@ -278,6 +281,7 @@ const authorProfile = authorProfiles[data.author] ?? null;
   border:1px solid var(--border);
   box-shadow:var(--shadow);
 }
+.editorial-note { margin-top:24px; padding:20px; border:1px solid var(--border); border-radius:16px; color:var(--text-soft); font-size:.85rem; }
 .sources { margin-top:54px; padding-top:30px; border-top:1px solid var(--border); }
 .sources h2 { font-size:1.45rem; margin:0 0 12px; }
 .sources ul { margin:0; padding-left:20px; }
