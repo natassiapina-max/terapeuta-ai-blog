@@ -93,7 +93,7 @@ Não é possível decidir isso apenas pelo sintoma. Existem abordagens hormonais
 
 Procure a UBS de referência e explique quais mudanças percebeu e como elas estão afetando sua vida. [Fonte: Ministério das Mulheres](https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2026/setembro-defeso-eleitoral/climaterio-e-menopausa-saiba-quando-e-como-buscar-atendimento-no-sus).
 
----
+## Organização da rotina para profissionais e clínicas
 
 **Para profissionais e clínicas:** conheça o [TerapeutaAI Hub](https://terapeutaai.com.br/) para organizar a rotina de atendimento. O Hub é uma ferramenta de gestão e não substitui avaliação ou tratamento de saúde.
 
