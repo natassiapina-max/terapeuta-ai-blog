@@ -8,7 +8,7 @@ description: Veja como construir uma carreira sustentável na área da saúde co
 category: Carreira e Negócios
 categorySlug: carreira-e-negocios
 pubDate: 2026-10-07
-updatedDate: 2026-10-21
+updatedDate: 2026-10-23
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Uma carreira sustentável na área da saúde combina desenvolvimento técnico, agenda realista, organização financeira, posicionamento profissional e uso responsável de tecnologia. O objetivo é crescer sem depender de sobrecarga constante, mantendo qualidade do cuidado, previsibilidade e condições reais de continuidade."
@@ -27,9 +27,7 @@ sources:
   - label: Ministério da Saúde — Política Nacional de Educação Permanente em Saúde
     url: https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_educacao_permanente_saude.pdf
   - label: Sebrae — Plano de negócio
-    url: https://meuatendimento.sebrae.com.br/sites/PortalSebrae/artigos/como-elaborar-um-plano-de-negocio%2C37d2438af1c92410VgnVCM100000b272010aRCRD
-  - label: Sebrae — Monte um plano de negócio fácil e simples
-    url: https://loja.sebrae.com.br/monte-um-plano-de-negocio-facil-e-simples
+    url: https://sebrae.com.br/sites/PortalSebrae/artigos/como-elaborar-um-plano-de-negocio,37d2438af1c92410VgnVCM100000b272010aRCRD
 faqs:
   - question: "O que é uma carreira sustentável na saúde?"
     answer: "É uma trajetória que equilibra qualidade técnica, rotina possível, organização financeira, posicionamento profissional e saúde do próprio profissional."
@@ -66,7 +64,7 @@ Isso não significa necessariamente trabalhar menos, abrir uma clínica ou ganha
 
 Significa construir uma trajetória que faça sentido para o profissional e que possa continuar evoluindo sem depender permanentemente de excesso de horas, improvisação ou decisões tomadas apenas pela urgência.
 
-Na saúde, essa discussão é especialmente relevante porque o desenvolvimento profissional está ligado às necessidades reais do trabalho e à qualidade do cuidado. O Ministério da Saúde, por exemplo, atribui à Secretaria de Gestão do Trabalho e da Educação na Saúde responsabilidades relacionadas à formação, ao desenvolvimento profissional e à educação permanente em saúde. 
+Na saúde, essa discussão é especialmente relevante porque o desenvolvimento profissional está ligado às necessidades reais do trabalho e à qualidade do cuidado. [O Ministério da Saúde](https://www.gov.br/saude/pt-br/composicao/sgtes/competencias/competencias), por exemplo, atribui à Secretaria de Gestão do Trabalho e da Educação na Saúde responsabilidades relacionadas à formação, ao desenvolvimento profissional e à educação permanente em saúde. 
 
 ## 1. Defina que tipo de profissional você quer se tornar
 
