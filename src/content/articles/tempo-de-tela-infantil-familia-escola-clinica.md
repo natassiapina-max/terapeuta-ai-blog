@@ -151,7 +151,7 @@ Escolha um momento da rotina, ouça os envolvidos e discuta uma mudança viável
 
 ## Organize os combinados da equipe
 
-Para profissionais e gestores que precisam organizar agenda e registros do cuidado, [conheça o TerapeutaAI Hub](https://terapeutaai.com.br/). Avalie os recursos disponíveis conforme as necessidades da sua rotina e as regras da sua profissão.
+Para profissionais e gestores que precisam organizar agenda e registros do cuidado, [conheça o TerapeutaAI HUB](https://terapeutaai.com.br/). Avalie os recursos disponíveis conforme as necessidades da sua rotina e as regras da sua profissão.
 
 **Transparência comercial:** este blog integra o ecossistema TerapeutaAI. O Hub é uma ferramenta de organização e não é apresentado como tratamento para dificuldades relacionadas a telas.
 

@@ -170,7 +170,7 @@ Há usos administrativos e de organização que precisam de avaliação própria
 
 Nossa proposta editorial é abrir espaço para perguntas e conferir o que a tecnologia entrega, em vez de presumir que rapidez equivale a cuidado. Uma clínica também precisa deixar claro quem acolhe a demanda, quem pode avaliá-la e como ocorre o retorno.
 
-Para conhecer a proposta do [TerapeutaAI Hub](https://terapeutaai.com.br/), consulte seus recursos e avalie sua adequação à rotina do serviço. Este blog é mantido pelo fundador da plataforma. Essa relação comercial não constitui evidência de eficácia terapêutica nem torna um sistema substituto de acompanhamento profissional.
+Para conhecer a proposta do [TerapeutaAI HUB](https://terapeutaai.com.br/), consulte seus recursos e avalie sua adequação à rotina do serviço. Este blog é mantido pelo fundador da plataforma. Essa relação comercial não constitui evidência de eficácia terapêutica nem torna um sistema substituto de acompanhamento profissional.
 
 ## Nota metodológica
 

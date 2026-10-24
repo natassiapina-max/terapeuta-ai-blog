@@ -95,6 +95,6 @@ Procure a UBS de referência e explique quais mudanças percebeu e como elas est
 
 ## Organização da rotina para profissionais e clínicas
 
-**Para profissionais e clínicas:** conheça o [TerapeutaAI Hub](https://terapeutaai.com.br/) para organizar a rotina de atendimento. O Hub é uma ferramenta de gestão e não substitui avaliação ou tratamento de saúde.
+**Para profissionais e clínicas:** conheça o [TerapeutaAI HUB](https://terapeutaai.com.br/) para organizar a rotina de atendimento. O Hub é uma ferramenta de gestão e não substitui avaliação ou tratamento de saúde.
 
 *Conteúdo informativo elaborado com apoio de inteligência artificial e aprovado editorialmente por Juliano Lima. Não substitui consulta, diagnóstico ou orientação individual de profissionais habilitados.*

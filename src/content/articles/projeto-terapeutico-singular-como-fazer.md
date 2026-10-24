@@ -156,7 +156,7 @@ A revisão faz parte do processo. Combine seu acompanhamento com a equipe e reto
 
 ## Organize os registros para apoiar o cuidado compartilhado
 
-Precisa organizar agenda e documentação da rotina profissional? [Conheça o TerapeutaAI Hub](https://terapeutaai.com.br/?utm_source=blog&utm_medium=referral&utm_campaign=projeto_terapeutico_singular) e avalie os recursos disponíveis para seu consultório ou clínica.
+Precisa organizar agenda e documentação da rotina profissional? [Conheça o TerapeutaAI HUB](https://terapeutaai.com.br/?utm_source=blog&utm_medium=referral&utm_campaign=projeto_terapeutico_singular) e avalie os recursos disponíveis para seu consultório ou clínica.
 
 **Transparência comercial:** este blog integra o ecossistema TerapeutaAI. O Hub é apresentado como ferramenta de organização; decisões de cuidado pertencem aos profissionais e às pessoas envolvidas.
 

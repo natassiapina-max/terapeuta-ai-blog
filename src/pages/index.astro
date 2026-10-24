@@ -9,12 +9,12 @@ const articles = (await getCollection('articles')).filter((article) => article.d
 const featured = articles.find(a => a.data.featured) ?? articles[0];
 const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
 ---
-<BaseLayout title="Terapeuta AI — Conhecimento para quem cuida de pessoas" description="Conteúdos sobre inteligência artificial, gestão clínica, prontuário, carreira, marketing, ética e tecnologia para profissionais da saúde e das terapias.">
+<BaseLayout title="TerapeutaAI — Conhecimento para quem cuida de pessoas" description="Conteúdos sobre inteligência artificial, gestão clínica, prontuário, carreira, marketing, ética e tecnologia para profissionais da saúde e das terapias.">
   <section class="hero">
     <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
     <div class="container hero-grid">
       <div class="hero-copy">
-        <div class="kicker"><span></span> Blog Terapeuta AI</div>
+        <div class="kicker"><span></span> Blog TerapeutaAI</div>
         <h1>Conhecimento para quem <em>cuida</em> de pessoas.</h1>
         <p>Conteúdo confiável para transformar tecnologia, gestão e conhecimento em decisões melhores na rotina profissional.</p>
         <div class="actions"><a class="btn btn-primary" href="#conteudos">Explorar conteúdos <span>↓</span></a><a class="hero-link" href="#temas">Explorar por tema <span>→</span></a></div>
@@ -67,7 +67,7 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
 
   <section class="container manifesto">
     <div class="manifesto-mark">+</div>
-    <div><p class="eyebrow">Nosso propósito</p><h2>Tecnologia com contexto. Conhecimento com propósito.</h2><p>O Blog Terapeuta AI aproxima informação, prática profissional e tecnologia — sem transformar assuntos complexos em respostas rasas.</p></div>
+    <div><p class="eyebrow">Nosso propósito</p><h2>Tecnologia com contexto. Conhecimento com propósito.</h2><p>O Blog TerapeutaAI aproxima informação, prática profissional e tecnologia — sem transformar assuntos complexos em respostas rasas.</p></div>
   </section>
 </BaseLayout>
 

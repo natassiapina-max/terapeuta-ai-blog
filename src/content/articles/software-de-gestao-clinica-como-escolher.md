@@ -40,7 +40,7 @@ tags:
   - agenda clínica
   - LGPD na clínica
   - tecnologia para saúde
-  - TerapeutaAI Hub
+  - TerapeutaAI HUB
 ---
 
 Software de gestão clínica é uma ferramenta que organiza agenda, cadastro de pacientes, prontuário, documentos, financeiro e indicadores em um só fluxo. Para escolher bem, avalie segurança de dados, facilidade de uso, aderência à rotina, controle de acesso, suporte, integrações e capacidade de reduzir retrabalho sem comprometer a responsabilidade profissional.
@@ -305,15 +305,15 @@ Antes de escolher um software de gestão clínica, revise:
 
 Se várias respostas forem incertas, a decisão ainda não está madura.
 
-## Como o TerapeutaAI Hub se encaixa nessa lógica
+## Como o TerapeutaAI HUB se encaixa nessa lógica
 
-O TerapeutaAI Hub foi pensado para profissionais da saúde que precisam organizar melhor a rotina clínica sem transformar tecnologia em mais uma fonte de sobrecarga.
+O TerapeutaAI HUB foi pensado para profissionais da saúde que precisam organizar melhor a rotina clínica sem transformar tecnologia em mais uma fonte de sobrecarga.
 
 A proposta é apoiar processos como organização de agenda, registros, documentos, gestão e uso responsável de tecnologia na prática profissional.
 
 Para quem atua em saúde mental, neurodesenvolvimento, terapias e atendimentos especializados, a escolha de um sistema deve considerar não apenas controle administrativo, mas continuidade do cuidado, clareza dos registros e proteção de dados sensíveis.
 
-Conheça o [TerapeutaAI Hub](https://terapeutaai.com.br/) e avalie se ele faz sentido para a sua fase de organização clínica.
+Conheça o [TerapeutaAI HUB](https://terapeutaai.com.br/) e avalie se ele faz sentido para a sua fase de organização clínica.
 
 ## Perguntas frequentes sobre software de gestão clínica
 
@@ -335,7 +335,7 @@ Avalie segurança, exportação de dados, facilidade de cadastro, histórico de 
 
 ## Nota metodológica
 
-Este artigo foi produzido com apoio de inteligência artificial e revisão editorial de Juliano Lima, Administrador, musicoterapeuta, ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro *Conexão Autista* e fundador do TerapeutaAI Hub.
+Este artigo foi produzido com apoio de inteligência artificial e revisão editorial de Juliano Lima, Administrador, musicoterapeuta, ABMT 182-PR, pós-graduado em ABA e TEA, coautor do livro *Conexão Autista* e fundador do TerapeutaAI HUB.
 
 As recomendações foram organizadas a partir de prática de gestão clínica, critérios de segurança da informação, princípios da LGPD, legislação brasileira sobre prontuário e referências internacionais sobre saúde digital.
 

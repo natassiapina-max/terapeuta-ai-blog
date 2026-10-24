@@ -1,6 +1,6 @@
-# Blog Terapeuta AI
+# Blog TerapeutaAI
 
-Site editorial oficial do Terapeuta AI.
+Site editorial oficial do TerapeutaAI.
 
 ## Stack
 

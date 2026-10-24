@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { categories } from '../../data/categories';
 const articles = (await getCollection('articles')).filter(a => !a.data.draft).sort((a,b) => b.data.pubDate.getTime()-a.data.pubDate.getTime());
 ---
-<BaseLayout title="Todos os artigos sobre saúde, terapias e gestão | Terapeuta AI" description="Explore os artigos de Natassia Pina e Juliano Lima sobre desenvolvimento infantil, gestão clínica, prontuário, IA, carreira e proteção de dados.">
+<BaseLayout title="Todos os artigos sobre saúde, terapias e gestão | TerapeutaAI" description="Explore os artigos de Natassia Pina e Juliano Lima sobre desenvolvimento infantil, gestão clínica, prontuário, IA, carreira e proteção de dados.">
   <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'CollectionPage',name:'Todos os artigos',url:'https://blog.terapeutaai.com.br/artigos/',mainEntity:{'@type':'ItemList',itemListElement:articles.map((a,i)=>({'@type':'ListItem',position:i+1,name:a.data.title,url:`https://blog.terapeutaai.com.br/artigos/${a.id}/`}))}})} />
   <section class="container archive">
     <p class="eyebrow">Biblioteca do blog</p>

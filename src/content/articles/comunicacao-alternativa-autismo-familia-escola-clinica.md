@@ -177,7 +177,7 @@ Não. O quadro apenas organiza comunicação entre os envolvidos. Ele não selec
 
 Escolher um recurso e combinar seu uso são decisões relacionadas, mas diferentes. Uma equipe precisa saber quais dúvidas estão pendentes, quem pode respondê-las e como a pessoa e a família participarão das próximas escolhas.
 
-Para conhecer a proposta do [TerapeutaAI Hub](https://terapeutaai.com.br/), consulte seus recursos e avalie a adequação à rotina do serviço. O blog é mantido pelo fundador da plataforma. Essa relação comercial não comprova eficácia clínica e o Hub não é apresentado aqui como sistema de CAA.
+Para conhecer a proposta do [TerapeutaAI HUB](https://terapeutaai.com.br/), consulte seus recursos e avalie a adequação à rotina do serviço. O blog é mantido pelo fundador da plataforma. Essa relação comercial não comprova eficácia clínica e o Hub não é apresentado aqui como sistema de CAA.
 
 ## Nota metodológica
 
