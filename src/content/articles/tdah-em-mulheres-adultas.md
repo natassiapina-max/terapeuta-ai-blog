@@ -150,7 +150,7 @@ No SUS, a Unidade Básica de Saúde é um ponto de acesso para acolhimento e ori
 
 Registre o relato da pessoa distinguindo suas palavras, as observações do atendimento e as hipóteses que ainda precisam ser investigadas. Para organizar a documentação, consulte nosso [guia de evolução clínica](/artigos/evolucao-clinica-como-registrar-atendimentos/).
 
-Se a equipe precisa organizar agenda e registros, [conheça o TerapeutaAI Hub](https://terapeutaai.com.br/?utm_source=blog&utm_medium=referral&utm_campaign=tdah_mulheres_adultas) e avalie sua adequação à rotina do serviço.
+Se a equipe precisa organizar agenda e registros, [conheça o TerapeutaAI HUB](https://terapeutaai.com.br/?utm_source=blog&utm_medium=referral&utm_campaign=tdah_mulheres_adultas) e avalie sua adequação à rotina do serviço.
 
 ## Perguntas frequentes
 

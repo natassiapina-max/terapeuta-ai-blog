@@ -105,7 +105,7 @@ O prontuário concentra informações importantes para a continuidade do cuidado
 
 Anamnese, registros de atendimento, evoluções, documentos e outras informações precisam estar organizados de maneira que o profissional consiga consultar aquilo que é necessário para o acompanhamento do paciente.
 
-Para aprofundar esse assunto, veja também o artigo do Blog Terapeuta AI sobre [prontuário eletrônico para profissionais da saúde](/artigos/prontuario-eletronico-para-profissionais-da-saude/).
+Para aprofundar esse assunto, veja também o artigo do Blog TerapeutaAI sobre [prontuário eletrônico para profissionais da saúde](/artigos/prontuario-eletronico-para-profissionais-da-saude/).
 
 ### 3. Organização da equipe
 

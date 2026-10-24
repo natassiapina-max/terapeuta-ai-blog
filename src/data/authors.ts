@@ -13,7 +13,7 @@ export interface AuthorProfile {
 export const authorProfiles: Record<string, AuthorProfile> = {
   'Juliano Lima': {
     name: 'Juliano Lima',
-    role: 'Musicoterapeuta (ABMT 182-PR), escritor e fundador do TerapeutaAI Hub.',
+    role: 'Musicoterapeuta (ABMT 182-PR), escritor e fundador do TerapeutaAI HUB.',
     credentials: 'Administrador, pós-graduado em ABA e TEA e coautor do livro Conexão Autista.',
     bio: 'Atua desde 2019 com saúde mental, neurodesenvolvimento, TDAH e tecnologia aplicada à rotina clínica. Escreve sobre gestão, ética, carreira e inovação para profissionais da saúde.',
     image: '/images/foto-rosto-juliano-lima.webp',
@@ -22,9 +22,9 @@ export const authorProfiles: Record<string, AuthorProfile> = {
     links: [
       { label: 'Instagram', url: 'https://www.instagram.com/julianolima.mt/' },
       { label: 'LinkedIn', url: 'https://www.linkedin.com/in/julianolimamt/' },
-      { label: 'TerapeutaAI Hub', url: 'https://terapeutaai.com.br' }
+      { label: 'TerapeutaAI HUB', url: 'https://terapeutaai.com.br' }
     ],
-    knowsAbout: ['Musicoterapia', 'ABA', 'TEA', 'TDAH', 'Saúde mental', 'Neurodesenvolvimento', 'Conexão Autista', 'TerapeutaAI Hub', 'Tecnologia para profissionais da saúde']
+    knowsAbout: ['Musicoterapia', 'ABA', 'TEA', 'TDAH', 'Saúde mental', 'Neurodesenvolvimento', 'Conexão Autista', 'TerapeutaAI HUB', 'Tecnologia para profissionais da saúde']
   },
   'Natassia Pina': {
     name: 'Natassia Pina',

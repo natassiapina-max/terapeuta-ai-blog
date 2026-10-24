@@ -146,7 +146,7 @@ Escolha poucas mudanças e acompanhe um período definido. Trinta dias podem ser
 
 No primeiro período, uma clínica teve 90 atendimentos realizados e 10 faltas: taxa de 10%. No segundo, teve 95 realizados e 5 faltas: taxa de 5%. A diferença é de **5 pontos percentuais**, equivalente a uma redução relativa de 50% nesse exemplo.
 
-Esses números são didáticos, não resultados do TerapeutaAI Hub. A comparação isolada não prova que os lembretes causaram a mudança. Feriados, perfil dos pacientes e alterações da equipe também podem influenciar o resultado.
+Esses números são didáticos, não resultados do TerapeutaAI HUB. A comparação isolada não prova que os lembretes causaram a mudança. Feriados, perfil dos pacientes e alterações da equipe também podem influenciar o resultado.
 
 Se os cancelamentos antecipados aumentarem e as faltas caírem, investigue se o canal ficou mais fácil de usar. Um cancelamento comunicado pode abrir espaço para outra pessoa, mesmo sem aumentar a ocupação em todos os dias.
 
@@ -186,9 +186,9 @@ Antes de contratar ou configurar uma ferramenta, descreva quem envia o lembrete,
 
 O guia sobre [como escolher um software de gestão clínica](/artigos/software-de-gestao-clinica-como-escolher/) ajuda a comparar recursos com necessidades reais.
 
-Quer organizar sua agenda e acompanhar a rotina dos atendimentos? Conheça o [TerapeutaAI Hub](https://terapeutaai.com.br/?utm_source=blog&utm_medium=organic&utm_campaign=reduzir_faltas) e avalie os recursos disponíveis para seu consultório ou clínica.
+Quer organizar sua agenda e acompanhar a rotina dos atendimentos? Conheça o [TerapeutaAI HUB](https://terapeutaai.com.br/?utm_source=blog&utm_medium=organic&utm_campaign=reduzir_faltas) e avalie os recursos disponíveis para seu consultório ou clínica.
 
-**Transparência:** este blog é mantido pelo TerapeutaAI. Juliano Lima é fundador do TerapeutaAI Hub.
+**Transparência:** este blog é mantido pelo TerapeutaAI. Juliano Lima é fundador do TerapeutaAI HUB.
 
 ## Nota metodológica
 

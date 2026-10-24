@@ -181,8 +181,8 @@ Não. É um modelo editorial para facilitar conversas e combinar responsabilidad
 
 Para a família, o ponto de partida pode ser uma tarefa compartilhada com clareza. Para a clínica, pode ser revisar um pedido que exige trabalho desnecessário do cuidador.
 
-Se você gerencia um serviço, [conheça o TerapeutaAI Hub](https://terapeutaai.com.br/) e avalie sua adequação à rotina administrativa da equipe. A escolha de um software exige análise das necessidades do serviço; ele não substitui acolhimento, cuidado profissional ou rede de apoio.
+Se você gerencia um serviço, [conheça o TerapeutaAI HUB](https://terapeutaai.com.br/) e avalie sua adequação à rotina administrativa da equipe. A escolha de um software exige análise das necessidades do serviço; ele não substitui acolhimento, cuidado profissional ou rede de apoio.
 
-*Transparência comercial: Juliano Lima, responsável editorial do blog, é fundador do TerapeutaAI Hub.*
+*Transparência comercial: Juliano Lima, responsável editorial do blog, é fundador do TerapeutaAI HUB.*
 
 *Nota de método: texto preparado com apoio de inteligência artificial e fontes consultadas em 18 de outubro de 2026, com revisão editorial de Juliano Lima antes da publicação. Os modelos de organização são propostas do blog, sem validação clínica. A capa é ilustrativa e foi gerada por IA; não retrata uma família atendida pelo serviço.*

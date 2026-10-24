@@ -31,7 +31,7 @@ export async function GET({ site }) {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Blog Terapeuta AI</title>
+    <title>Blog TerapeutaAI</title>
     <description>Conhecimento para quem cuida de pessoas.</description>
     <link>${escapeXml(baseUrl)}</link>
     <language>pt-BR</language>

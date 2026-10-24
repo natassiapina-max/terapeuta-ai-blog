@@ -201,9 +201,9 @@ Inclua esse tempo no planejamento da clínica. O artigo sobre [agenda sustentáv
 
 Uma decisão precisa continuar acessível depois que as pessoas saem da sala. Confira onde ficam agenda, registros e documentos e quem pode acessá-los.
 
-Conheça o [TerapeutaAI Hub](https://terapeutaai.com.br/?utm_source=blog&utm_medium=organic&utm_campaign=reuniao_multidisciplinar) e avalie os recursos disponíveis para organizar a rotina de sua clínica. Ao comparar ferramentas, use o guia sobre [como escolher um software de gestão clínica](/artigos/software-de-gestao-clinica-como-escolher/).
+Conheça o [TerapeutaAI HUB](https://terapeutaai.com.br/?utm_source=blog&utm_medium=organic&utm_campaign=reuniao_multidisciplinar) e avalie os recursos disponíveis para organizar a rotina de sua clínica. Ao comparar ferramentas, use o guia sobre [como escolher um software de gestão clínica](/artigos/software-de-gestao-clinica-como-escolher/).
 
-**Transparência:** este blog é mantido pelo TerapeutaAI. Juliano Lima é fundador do TerapeutaAI Hub.
+**Transparência:** este blog é mantido pelo TerapeutaAI. Juliano Lima é fundador do TerapeutaAI HUB.
 
 ## Nota metodológica
 

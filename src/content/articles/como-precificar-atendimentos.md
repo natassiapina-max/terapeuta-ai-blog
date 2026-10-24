@@ -218,7 +218,7 @@ Comece pelos gastos reais, construa uma agenda viável e teste o cálculo em dif
 
 Para ampliar esse planejamento, leia também [Como construir uma carreira sustentável na área da saúde](https://blog.terapeutaai.com.br/artigos/como-construir-uma-carreira-sustentavel-na-area-da-saude/).
 
-Quer conhecer uma ferramenta para apoiar a organização da sua rotina? [Conheça o Terapeuta AI Hub](https://terapeutaai.com.br) e avalie os recursos apresentados para o seu contexto de trabalho.
+Quer conhecer uma ferramenta para apoiar a organização da sua rotina? [Conheça o TerapeutaAI HUB](https://terapeutaai.com.br) e avalie os recursos apresentados para o seu contexto de trabalho.
 
 ## Nota metodológica
 

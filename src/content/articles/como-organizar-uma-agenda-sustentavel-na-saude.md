@@ -296,7 +296,7 @@ Uma agenda bem organizada protege o paciente, o profissional e o serviço. Ela r
 
 Comece identificando onde a rotina está apertada demais. Depois, transforme pausas, registros e administração em partes visíveis da agenda.
 
-Quer organizar melhor sua rotina de atendimentos? [Conheça o Terapeuta AI Hub](https://terapeutaai.com.br) e veja como a tecnologia pode apoiar agenda, registros e gestão do consultório.
+Quer organizar melhor sua rotina de atendimentos? [Conheça o TerapeutaAI HUB](https://terapeutaai.com.br) e veja como a tecnologia pode apoiar agenda, registros e gestão do consultório.
 
 ## Nota metodológica
 

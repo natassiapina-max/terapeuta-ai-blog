@@ -144,7 +144,7 @@ As propostas deste texto são de convivência e preparação para o diálogo com
 
 ## Organize a comunicação para apoiar o cuidado
 
-Para profissionais e gestores que precisam organizar agenda e registros da rotina, [conheça o TerapeutaAI Hub](https://terapeutaai.com.br/?utm_source=blog&utm_medium=referral&utm_campaign=brincar_desenvolvimento_infantil). Avalie os recursos disponíveis conforme as necessidades do seu consultório ou clínica.
+Para profissionais e gestores que precisam organizar agenda e registros da rotina, [conheça o TerapeutaAI HUB](https://terapeutaai.com.br/?utm_source=blog&utm_medium=referral&utm_campaign=brincar_desenvolvimento_infantil). Avalie os recursos disponíveis conforme as necessidades do seu consultório ou clínica.
 
 **Transparência comercial:** este blog integra o ecossistema TerapeutaAI. O Hub é uma ferramenta de organização profissional e não é apresentado como intervenção para o desenvolvimento infantil.
 

@@ -322,15 +322,15 @@ Antes de finalizar o registro, revise:
 
 Esse checklist simples evita dois extremos: evolução superficial demais e evolução longa demais.
 
-## Onde o TerapeutaAI Hub entra nessa rotina?
+## Onde o TerapeutaAI HUB entra nessa rotina?
 
-O TerapeutaAI Hub foi pensado para ajudar profissionais e clínicas a organizarem agenda, prontuário, evoluções, documentos e rotina administrativa em um ambiente mais integrado.
+O TerapeutaAI HUB foi pensado para ajudar profissionais e clínicas a organizarem agenda, prontuário, evoluções, documentos e rotina administrativa em um ambiente mais integrado.
 
 Na prática, o objetivo é reduzir o tempo perdido com informações espalhadas e facilitar uma rotina de registro mais consistente.
 
 Um bom prontuário não precisa ser complicado. Ele precisa ser claro, seguro e fácil de manter na rotina.
 
-Conheça o [TerapeutaAI Hub](https://terapeutaai.com.br/) e veja como organizar documentação clínica, agenda e gestão em um só lugar.
+Conheça o [TerapeutaAI HUB](https://terapeutaai.com.br/) e veja como organizar documentação clínica, agenda e gestão em um só lugar.
 
 ## Perguntas frequentes
 
