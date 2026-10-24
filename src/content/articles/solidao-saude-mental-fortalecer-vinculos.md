@@ -8,7 +8,7 @@ pubDate: 2026-10-24
 author: "Natassia Pina"
 readTime: 7
 featured: false
-draft: true
+draft: false
 image: "/images/solidao-vinculos-comunidade.webp"
 imageAlt: "Três adultos participam de uma atividade criativa e conversam em um espaço comunitário acolhedor."
 directAnswer: "Solidão é a sensação de que os vínculos disponíveis não correspondem aos desejados; não é sinônimo de morar só. No Panorama da Saúde Mental 2026, 36,5% dos participantes relataram solidão ao menos uma vez nas duas semanas anteriores. Para acolher, explore vínculos, barreiras e apoios escolhidos pela pessoa."
