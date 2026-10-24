@@ -45,6 +45,8 @@ A [OMS, em seu marco de 2010 sobre educação interprofissional e prática colab
 
 Ter profissionais de várias áreas na mesma instituição não garante integração. Para este guia, o foco é tornar explícito o que precisa ser coordenado entre eles, respeitando a responsabilidade de cada um.
 
+Quando vínculos e convivência aparecem entre as necessidades relatadas, a equipe também pode acolher essa experiência sem presumir o que a pessoa precisa. Veja o guia [Solidão e saúde mental: como acolher e fortalecer vínculos](/artigos/solidao-saude-mental-fortalecer-vinculos/), com perguntas abertas e limites de interpretação.
+
 ## Separe reunião administrativa de discussão de casos
 
 Uma dúvida de agenda não exige, necessariamente, a presença de toda a equipe assistencial. Da mesma forma, uma discussão clínica não deve expor informações a pessoas sem necessidade de acesso.
