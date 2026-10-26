@@ -9,7 +9,7 @@ const articles = (await getCollection('articles')).filter((article) => article.d
 const featured = articles.find(a => a.data.featured) ?? articles[0];
 const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
 ---
-<BaseLayout title="TerapeutaAI — Conhecimento para quem cuida de pessoas" description="Conteúdos sobre inteligência artificial, gestão clínica, prontuário, carreira, marketing, ética e tecnologia para profissionais da saúde e das terapias." image="/images/logomarca-terapeuta-ai-2-.png" imageAlt="Logomarca TerapeutaAI HUB">
+<BaseLayout title="TerapeutaAI — Conhecimento para quem cuida de pessoas" description="Conteúdos sobre inteligência artificial, gestão clínica, prontuário, carreira, marketing, ética e tecnologia para profissionais da saúde e das terapias." image="/images/blog-social-og.png" imageAlt="Imagem social do Blog TerapeutaAI: Conhecimento para quem cuida de pessoas">
   <section class="hero">
     <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
     <div class="container hero-grid">
