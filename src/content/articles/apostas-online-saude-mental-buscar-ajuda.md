@@ -59,7 +59,7 @@ Depois, escute. Pergunte o que está mais difícil e que tipo de ajuda seria ace
 4. Ofereça uma ação concreta, como procurar uma UBS ou acessar juntos o Meu SUS Digital.
 5. Procure orientação para você também se a situação estiver afetando seu bem-estar.
 
-Esse roteiro é uma sugestão de conversa, não um instrumento clínico. A família pode oferecer apoio, mas não precisa assumir sozinha a responsabilidade pelo cuidado. Para explorar outros conteúdos sobre cuidado e acolhimento, consulte a área de [Saúde mental](/saude-mental/).
+Esse roteiro é uma sugestão de conversa, não um instrumento clínico. A família pode oferecer apoio, mas não precisa assumir sozinha a responsabilidade pelo cuidado. Para pensar em acolhimento e vínculos de forma mais ampla, leia também [Solidão e saúde mental: como acolher e fortalecer vínculos](https://blog.terapeutaai.com.br/artigos/solidao-saude-mental-fortalecer-vinculos/).
 
 ## Onde buscar ajuda pelo SUS?
 
