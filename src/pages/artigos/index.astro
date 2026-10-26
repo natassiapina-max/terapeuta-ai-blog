@@ -17,6 +17,7 @@ const articles = (await getCollection('articles')).filter(a => !a.data.draft).so
       <p>{a.data.description}</p>
       <small>{a.data.author} · <time datetime={a.data.pubDate.toISOString()}>{a.data.pubDate.toLocaleDateString('pt-BR', {timeZone:'UTC'})}</time> · {a.data.readTime} min</small>
     </article>)}</div>
+    <p>Para aplicar os conceitos, consulte também nossas <a href="/recursos/">ferramentas para a rotina da clínica</a>.</p>
   </section>
 </BaseLayout>
 <style>
