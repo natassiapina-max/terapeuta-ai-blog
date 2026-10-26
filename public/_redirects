@@ -1,4 +1,5 @@
 # Permanent canonical URLs; placeholders never match a slash.
+/artigos/chatgpt-substitui-terapia-limites-da-ia-na-saude-mental/ /artigos/chatgpt-substitui-terapia-saude-mental/ 301
 /artigos/:slug /artigos/:slug/ 301
 /autores/:author /autores/:author/ 301
 /inteligencia-artificial /inteligencia-artificial/ 301
@@ -11,3 +12,4 @@
 /fontes /fontes/ 301
 /politica-editorial /politica-editorial/ 301
 /privacidade /privacidade/ 301
+/sitemap.xml /sitemap-index.xml 301
