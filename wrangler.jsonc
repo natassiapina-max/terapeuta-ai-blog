@@ -4,12 +4,14 @@
   "compatibility_date": "2026-09-18",
   "workers_dev": false,
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS"
   },
   "routes": [
     {
       "pattern": "blog.terapeutaai.com.br",
       "custom_domain": true
     }
-  ]
+  ],
+  "main": "src/worker.js"
 }
