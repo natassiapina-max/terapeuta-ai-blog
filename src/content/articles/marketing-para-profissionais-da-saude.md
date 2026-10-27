@@ -5,7 +5,7 @@ description: "Entenda como construir uma presença digital profissional na saúd
 category: "Marketing"
 categorySlug: "marketing"
 pubDate: 2026-10-03
-updatedDate: 2026-10-12
+updatedDate: 2026-10-27
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Marketing para profissionais da saúde é o conjunto de ações para construir presença, autoridade e relacionamento com o público sem prometer resultados ou ferir limites éticos. O foco deve ser educação, clareza, confiança e comunicação responsável, respeitando as regras do conselho profissional aplicável."
@@ -69,6 +69,8 @@ Um potencial paciente pode procurar:
 Quando o profissional não possui nenhuma presença digital organizada, outra pessoa ou empresa pode ocupar esse espaço na busca.
 
 Marketing, portanto, não precisa ser entendido apenas como propaganda. Ele também pode ser uma forma de **facilitar o acesso a informações profissionais confiáveis**.
+
+Na comunicação sobre saúde mental, essa responsabilidade também envolve linguagem, fontes e cuidado para não incentivar autodiagnóstico. Veja [como falar de saúde mental nas redes sociais com responsabilidade](/artigos/comunicacao-responsavel-saude-mental-redes-sociais/).
 
 ## Marketing na saúde é diferente de marketing tradicional
 
@@ -343,4 +345,3 @@ No fim, um bom marketing na saúde não começa pela pergunta “o que devo post
 Começa por outra:
 
 **“Como posso comunicar meu trabalho de forma clara, útil e responsável para as pessoas que precisam conhecê-lo?”**
-
