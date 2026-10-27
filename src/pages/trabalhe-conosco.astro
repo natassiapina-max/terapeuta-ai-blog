@@ -21,6 +21,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <label for="phone">Telefone com DDD</label>
       <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="25" placeholder="(44) 99999-9999" required />
 
+      <label for="message">Mensagem (opcional)</label>
+      <textarea id="message" name="message" rows="5" maxlength="2000"></textarea>
+
       <label for="resume">Currículo (PDF, DOC ou DOCX; até 5 MB)</label>
       <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required />
 
@@ -30,7 +33,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <label class="consent"><input type="checkbox" name="consent" required />
-        <span>Autorizo o uso dos dados e do currículo para avaliação desta candidatura e contato sobre oportunidades. Consulte a <a href="/privacidade/">Política de Privacidade</a>. Para solicitar acesso ou exclusão, escreva para <a href="mailto:contato@terapeutaai.com.br">contato@terapeutaai.com.br</a>.</span>
+        <span>Autorizo o uso dos dados, da mensagem e do currículo para avaliação desta candidatura e contato sobre oportunidades. Consulte a <a href="/privacidade/">Política de Privacidade</a>. Para solicitar acesso ou exclusão, escreva para <a href="mailto:contato@terapeutaai.com.br">contato@terapeutaai.com.br</a>.</span>
       </label>
 
       <button class="btn btn-primary" type="submit">Enviar candidatura</button>
@@ -66,5 +69,5 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
-.page-hero{padding:90px 0 70px;background:linear-gradient(180deg,#faf7ff,#fff)}.page-hero h1{max-width:900px}.page-hero>div>p:last-child{max-width:720px;color:var(--muted);font-size:1.08rem;margin-top:25px}.careers-wrap{max-width:760px;padding:30px 0 80px}.careers-form{display:grid;gap:12px;padding:34px;border:1px solid var(--border);border-radius:22px;background:white;box-shadow:var(--shadow)}.careers-form>label:not(.consent){margin-top:7px;color:var(--deep);font-size:.85rem;font-weight:600}.careers-form input:not([type=checkbox]){width:100%;min-height:48px;padding:12px 14px;border:1px solid var(--border);border-radius:10px;background:white;color:var(--deep);font:inherit}.careers-form input[type=file]{padding:10px}.consent{display:flex;align-items:flex-start;gap:10px;margin:12px 0;color:var(--muted);font-size:.78rem;line-height:1.6}.consent input{margin-top:4px;flex:0 0 auto}.consent a{color:var(--violet);font-weight:600}.careers-form button{justify-self:start;min-height:46px;padding:0 22px}.careers-form button:disabled{opacity:.6;cursor:wait}.form-status{min-height:1.5em;margin:0;color:var(--muted);font-size:.85rem}.form-status[data-state=success]{color:#18794e}.form-status[data-state=error]{color:#b42318}.trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}@media(max-width:560px){.careers-form{padding:24px 18px}.careers-form button{width:100%}}
+.page-hero{padding:90px 0 70px;background:linear-gradient(180deg,#faf7ff,#fff)}.page-hero h1{max-width:900px}.page-hero>div>p:last-child{max-width:720px;color:var(--muted);font-size:1.08rem;margin-top:25px}.careers-wrap{max-width:760px;padding:30px 0 80px}.careers-form{display:grid;gap:12px;padding:34px;border:1px solid var(--border);border-radius:22px;background:white;box-shadow:var(--shadow)}.careers-form>label:not(.consent){margin-top:7px;color:var(--deep);font-size:.85rem;font-weight:600}.careers-form input:not([type=checkbox]),.careers-form textarea{width:100%;min-height:48px;padding:12px 14px;border:1px solid var(--border);border-radius:10px;background:white;color:var(--deep);font:inherit}.careers-form textarea{min-height:130px;resize:vertical}.careers-form input[type=file]{padding:10px}.consent{display:flex;align-items:flex-start;gap:10px;margin:12px 0;color:var(--muted);font-size:.78rem;line-height:1.6}.consent input{margin-top:4px;flex:0 0 auto}.consent a{color:var(--violet);font-weight:600}.careers-form button{justify-self:start;min-height:46px;padding:0 22px}.careers-form button:disabled{opacity:.6;cursor:wait}.form-status{min-height:1.5em;margin:0;color:var(--muted);font-size:.85rem}.form-status[data-state=success]{color:#18794e}.form-status[data-state=error]{color:#b42318}.trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}@media(max-width:560px){.careers-form{padding:24px 18px}.careers-form button{width:100%}}
 </style>
