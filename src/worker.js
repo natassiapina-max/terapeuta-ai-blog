@@ -1,4 +1,5 @@
 const MAX_FILE_BYTES = 5 * 1024 * 1024;
+const MAX_MESSAGE_LENGTH = 2000;
 const ALLOWED_TYPES = new Set([
   'application/pdf',
   'application/msword',
@@ -47,6 +48,7 @@ async function handleCareerApplication(request, env) {
 
   const name = String(form.get('name') || '').trim();
   const phone = String(form.get('phone') || '').trim();
+  const message = String(form.get('message') || '').replace(/\0/g, '').trim().slice(0, MAX_MESSAGE_LENGTH);
   const consent = form.get('consent') === 'on';
   const cv = form.get('resume');
   if (name.length < 2 || name.length > 120) return json({ error: 'Informe seu nome (até 120 caracteres).' }, 400);
@@ -71,7 +73,7 @@ async function handleCareerApplication(request, env) {
     from: 'TerapeutaAI <contato@terapeutaai.com.br>',
     to: ['contato@terapeutaai.com.br'],
     subject: `Candidatura recebida — ${safeName}`,
-    text: `Nova candidatura pelo blog TerapeutaAI.\n\nNome: ${safeName}\nTelefone: ${safePhone}\nCurrículo anexado: ${filename}\n\nO candidato autorizou o uso desses dados para análise da candidatura.`,
+    text: `Nova candidatura pelo blog TerapeutaAI.\n\nNome: ${safeName}\nTelefone: ${safePhone}\n\nMensagem:\n${message || '—'}\n\nCurrículo anexado: ${filename}\n\nO candidato autorizou o uso desses dados para análise da candidatura.`,
     attachments: [{ filename, content: base64 }]
   };
 
