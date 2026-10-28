@@ -199,6 +199,10 @@ Somente após avaliar a adequação do uso, os dados envolvidos, a base legal, a
 
 Inclua esse tempo no planejamento da clínica. O artigo sobre [agenda sustentável na saúde](/artigos/como-organizar-uma-agenda-sustentavel-na-saude/) ajuda a considerar o trabalho que acontece fora das sessões.
 
+
+
+Para equipes da Atenção Primária do SUS, o alinhamento entre profissionais também é importante no cuidado domiciliar à pessoa idosa. Veja o guia sobre [PADI Brasil e atenção domiciliar multiprofissional à pessoa idosa](/artigos/padi-brasil-atencao-domiciliar-pessoa-idosa-sus/).
+
 ## Organize também o trabalho entre os encontros
 
 Uma decisão precisa continuar acessível depois que as pessoas saem da sala. Confira onde ficam agenda, registros e documentos e quem pode acessá-los.
