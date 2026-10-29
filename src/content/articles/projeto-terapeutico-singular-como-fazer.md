@@ -95,6 +95,8 @@ Deixe indicado quando ou em quais situações a equipe retomará o acordo. Na re
 
 Para organizar o encontro entre profissionais, veja o [roteiro de reunião multidisciplinar](/artigos/reuniao-equipe-multidisciplinar-clinica/).
 
+Quando a dificuldade envolve frequentar a escola, este guia pode ajudar a organizar a conversa entre família e escola: [Criança não quer ir à escola? Como entender e ajudar](/artigos/crianca-nao-quer-ir-a-escola-como-ajudar/).
+
 ## Modelo de PTS: quadro para preparar a conversa
 
 Use os campos abaixo como ponto de partida editorial. Eles não são um formulário oficial do Ministério da Saúde e devem ser adaptados às exigências do serviço e da profissão.

@@ -131,6 +131,8 @@ Se a família percebe sofrimento persistente ou mudanças importantes no sono, n
 
 Evite usar expressões como “vício” como diagnóstico informal ou presumir que toda dificuldade de desenvolvimento resulta de dispositivos digitais.
 
+Se a preocupação também envolver dificuldade persistente para frequentar a escola, veja o guia sobre [como entender e apoiar uma criança que não quer ir à escola](/artigos/crianca-nao-quer-ir-a-escola-como-ajudar/).
+
 ## Perguntas frequentes
 
 ### Contar minutos é suficiente para avaliar o uso de telas?
