@@ -207,6 +207,8 @@ A ANPD estabelece critérios para avaliar quando um incidente deve ser comunicad
 
 Diante de um incidente, a clínica deve avaliar o ocorrido, registrar as informações relevantes, adotar medidas para reduzir os danos e verificar as obrigações de comunicação aplicáveis ao caso.
 
+Se a clínica precisar de um roteiro para agir diante de uma ocorrência, consulte também [como responder a um incidente de segurança com dados pessoais](/artigos/incidente-seguranca-dados-clinica-o-que-fazer/).
+
 ## Pequenas clínicas também precisam se preocupar com LGPD?
 
 Sim.
