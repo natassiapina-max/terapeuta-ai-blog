@@ -5,7 +5,7 @@ description: "Como dividir tarefas no cuidado de crianças autistas e alinhar fa
 category: "Desenvolvimento infantil e família"
 categorySlug: "desenvolvimento-infantil-e-familia"
 pubDate: 2026-10-18
-updatedDate: 2026-10-22
+updatedDate: 2026-10-31
 author: "Natassia Pina"
 reviewer: "Juliano Lima"
 reviewerUrl: "https://blog.terapeutaai.com.br/autores/juliano-lima/"
@@ -48,7 +48,7 @@ O mapa apresentado a seguir é uma **proposta editorial de organização**, não
 
 “Mãe atípica” é uma expressão usada por parte das famílias para falar de experiências de maternidade relacionadas a deficiências e outras necessidades de desenvolvimento. Aqui, o recorte são as demandas de cuidado de crianças autistas. A expressão não é utilizada como diagnóstico nem como identidade obrigatória.
 
-Há mães que se reconhecem nela e outras que preferem não usá-la. Pais, avós, responsáveis e outros cuidadores também podem precisar de suporte.
+Há mães que se reconhecem nela e outras que preferem não usá-la. Pais, avós, responsáveis e outros cuidadores também podem precisar de suporte.\n\nPara mulheres cuidadoras que queiram conhecer uma opção gratuita de acolhimento psicológico remoto, veja [como solicitar o Acolhe Mais pelo Meu SUS Digital](/artigos/acolhe-mais-teleatendimento-psicologico-meu-sus-digital/).
 
 A criança não deve ser apresentada como culpada pelo desgaste familiar. A conversa proposta neste texto olha para tarefas, barreiras de acesso e responsabilidades que podem ser compartilhadas. A saúde de quem cuida merece atenção por si mesma.
 
