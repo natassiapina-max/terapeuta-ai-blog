@@ -124,6 +124,8 @@ O exemplo não representa um atendimento realizado por Natassia ou Juliano. Ele 
 
 Se vários adultos participam do cuidado, o [mapa de rede de apoio](/artigos/sobrecarga-maes-atipicas-rede-apoio-autismo/) pode ajudar a discutir disponibilidade. Quando as orientações vêm de diferentes profissionais, o [roteiro de reunião multidisciplinar](/artigos/reuniao-equipe-multidisciplinar-clinica/) pode apoiar o alinhamento.
 
+Quando a equipe combina orientações para o cotidiano entre atendimentos, veja também este guia sobre [como orientar famílias entre sessões sem sobrecarregar a rotina](/artigos/orientacao-familias-entre-sessoes-terapeutas/).
+
 ## Perguntas frequentes sobre brincar e desenvolvimento infantil
 
 ### Preciso comprar brinquedos educativos caros?
