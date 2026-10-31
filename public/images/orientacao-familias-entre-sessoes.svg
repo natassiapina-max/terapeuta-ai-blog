@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Orientação viável para a rotina familiar</title>
+<desc id="desc">Ilustração editorial em tons de lavanda de uma terapeuta e uma cuidadora conversando diante de um cartão de planejamento semanal.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FBF8FF"/><stop offset="1" stop-color="#EEE6FB"/></linearGradient>
+  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#922FD0"/><stop offset="1" stop-color="#5E26D6"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#5E26D6" flood-opacity=".14"/></filter>
+</defs>
+<rect width="1200" height="630" rx="32" fill="url(#bg)"/>
+<circle cx="1010" cy="80" r="160" fill="#DCCBF5" opacity=".35"/>
+<circle cx="150" cy="570" r="180" fill="#E8DAF8" opacity=".48"/>
+<rect x="85" y="82" width="1030" height="466" rx="32" fill="#fff" opacity=".52"/>
+<!-- table -->
+<path d="M255 443h690l-39 29H294z" fill="#D9C9EF"/>
+<path d="M315 468v65m572-65v65" stroke="#A985E0" stroke-width="14" stroke-linecap="round"/>
+<!-- caregiver -->
+<path d="M335 366c12-91 58-136 132-136 73 0 119 50 128 136v73H335z" fill="#E6D5F6"/>
+<path d="M376 239c0-61 37-98 91-98 55 0 94 40 94 99v40H376z" fill="#362A68"/>
+<ellipse cx="468" cy="183" rx="63" ry="70" fill="#B9785C"/>
+<path d="M405 176c4-59 35-87 80-87 47 0 76 34 77 79-20-5-34-19-45-37-22 26-62 40-112 45z" fill="#362A68"/>
+<path d="M426 202h4m72 0h4" stroke="#382768" stroke-width="7" stroke-linecap="round"/>
+<path d="M450 230c11 9 26 9 37 0" fill="none" stroke="#8D4D54" stroke-width="5" stroke-linecap="round"/>
+<!-- therapist -->
+<path d="M643 366c10-91 58-136 132-136 73 0 119 50 128 136v73H643z" fill="#CBB8EE"/>
+<path d="M687 238c0-61 37-98 91-98 55 0 94 40 94 99v40H687z" fill="#4B387A"/>
+<ellipse cx="779" cy="183" rx="63" ry="70" fill="#DBA27E"/>
+<path d="M716 176c4-59 35-87 80-87 47 0 76 34 77 79-20-5-34-19-45-37-22 26-62 40-112 45z" fill="#4B387A"/>
+<path d="M737 202h4m72 0h4" stroke="#382768" stroke-width="7" stroke-linecap="round"/>
+<path d="M761 230c11 9 26 9 37 0" fill="none" stroke="#A45F61" stroke-width="5" stroke-linecap="round"/>
+<!-- planning card -->
+<g filter="url(#shadow)">
+<rect x="443" y="274" width="316" height="186" rx="20" fill="#fff"/>
+<rect x="443" y="274" width="316" height="48" rx="20" fill="url(#purple)"/>
+<path d="M443 303h316v19H443z" fill="url(#purple)"/>
+<text x="466" y="305" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">COMBINADO DA SEMANA</text>
+<circle cx="478" cy="357" r="13" fill="#EEE6FB"/><path d="m472 357 5 5 9-11" fill="none" stroke="#6D2CC8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="505" y="349" width="214" height="12" rx="6" fill="#D9D0E9"/>
+<circle cx="478" cy="397" r="13" fill="#EEE6FB"/><path d="m472 397 5 5 9-11" fill="none" stroke="#6D2CC8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="505" y="389" width="177" height="12" rx="6" fill="#D9D0E9"/>
+<rect x="465" y="426" width="272" height="18" rx="9" fill="#F4EFFA"/>
+</g>
+<!-- chat marks -->
+<circle cx="940" cy="195" r="35" fill="#fff" opacity=".9"/><path d="M925 195h30m-15-15v30" stroke="#922FD0" stroke-width="5" stroke-linecap="round"/>
+<circle cx="266" cy="228" r="26" fill="#fff" opacity=".85"/><path d="M255 228h22" stroke="#A985E0" stroke-width="5" stroke-linecap="round"/>
+<text x="600" y="585" text-anchor="middle" fill="#4B3E7D" font-family="Arial,sans-serif" font-size="19" font-weight="600">Uma combinação possível, construída em conjunto</text>
+</svg>
