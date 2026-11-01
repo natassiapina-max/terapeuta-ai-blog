@@ -10,8 +10,8 @@ directAnswer: "A Política Nacional de Informação e Saúde Digital organiza a 
 readTime: 9
 featured: false
 draft: false
-image: "/images/politica-saude-digital-clinicas-terapeutaai.svg"
-imageAlt: "Ilustração de uma clínica conectando registros digitais com segurança e supervisão humana"
+image: "/images/politica-nacional-saude-digital-clinicas.webp"
+imageAlt: "Equipe multidisciplinar de terapeutas reunida em uma clínica para planejar o cuidado com apoio de uma agenda digital"
 sources:
   - label: "Ministério da Saúde — Política Nacional de Informação e Saúde Digital, notícia de 29/10/2026"
     url: "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/outubro/brasil-institui-politica-nacional-de-informacao-e-saude-digital-e-consolida-transformacao-digital-do-sus"
