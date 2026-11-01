@@ -256,6 +256,8 @@ Um sistema de gestão clínica pode reunir agenda, informações dos pacientes, 
 
 A tecnologia também pode reduzir tarefas repetitivas e facilitar a localização de informações.
 
+A nova [Política Nacional de Informação e Saúde Digital](/artigos/politica-nacional-saude-digital-clinicas-profissionais/) consolida diretrizes de transformação digital no SUS. Veja o que ela estabelece e como clínicas podem acompanhar o tema sem presumir que todos os fluxos do sistema público se aplicam automaticamente ao setor privado.
+
 A inteligência artificial é outra possibilidade, especialmente para atividades de apoio, organização e geração de conteúdos administrativos ou documentais. Mas seu uso precisa considerar privacidade, segurança, revisão humana e responsabilidade profissional.
 
 Se quiser entender melhor esse tema, leia também nosso [guia sobre inteligência artificial para profissionais da saúde](/artigos/inteligencia-artificial-para-profissionais-da-saude/).
