@@ -11,8 +11,8 @@ reviewerUrl: "https://blog.terapeutaai.com.br/autores/juliano-lima/"
 readTime: 7
 featured: false
 draft: false
-image: "/images/orientacao-familias-entre-sessoes.svg"
-imageAlt: "Ilustração de uma terapeuta e uma cuidadora conversando diante de um cartão de planejamento semanal"
+image: "/images/orientacao-familias-entre-sessoes-foto.webp"
+imageAlt: "Terapeuta conversa com dois cuidadores sobre uma rotina possível entre sessões em uma sala acolhedora"
 directAnswer: "Para orientar uma família entre sessões, combine uma prática viável, ligada a uma rotina que já existe, explique o que observar e retome a experiência no próximo encontro. A proposta deve respeitar o contexto familiar e a participação da criança; não deve transformar a casa em extensão obrigatória da clínica."
 tags:
   - orientação para famílias
