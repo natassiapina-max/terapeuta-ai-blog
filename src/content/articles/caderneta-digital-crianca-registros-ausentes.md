@@ -42,13 +42,13 @@ faqs:
 
 **Se uma vacina, consulta ou informação de crescimento não aparece na Caderneta Digital da Criança, isso não confirma que o atendimento ou a aplicação não aconteceu. Os dados dependem do registro e do envio feito pelo serviço de saúde aos sistemas integrados ao SUS. Confira a caderneta impressa e procure a unidade responsável para verificar qualquer ausência ou divergência.**
 
-A Caderneta Digital da Criança, disponível no Meu SUS Digital, reúne informações como vacinação, crescimento, desenvolvimento, saúde bucal e atendimentos registrados nos sistemas integrados. Ela ajuda responsáveis a consultar esses dados pelo celular ou computador, mas a própria orientação do Ministério da Saúde informa que a versão digital complementa a caderneta impressa. [Confira a apresentação oficial da Caderneta Digital](https://www.gov.br/saude/pt-br/assuntos/noticias/2026/outubro/quer-acompanhar-a-saude-da-crianca-pelo-celular-saiba-como-acessar-a-caderneta-digital-no-meu-sus-digital). citeturn183search0turn183search8
+A Caderneta Digital da Criança, disponível no Meu SUS Digital, reúne informações como vacinação, crescimento, desenvolvimento, saúde bucal e atendimentos registrados nos sistemas integrados. Ela ajuda responsáveis a consultar esses dados pelo celular ou computador, mas a própria orientação do Ministério da Saúde informa que a versão digital complementa a caderneta impressa. [Confira a apresentação oficial da Caderneta Digital](https://www.gov.br/saude/pt-br/assuntos/noticias/2026/outubro/quer-acompanhar-a-saude-da-crianca-pelo-celular-saiba-como-acessar-a-caderneta-digital-no-meu-sus-digital).
 
 ## Por que um dado pode não aparecer?
 
 O Ministério da Saúde explica que a caderneta exibe informações enviadas pelos estabelecimentos de saúde à Rede Nacional de Dados em Saúde (RNDS) e a outros sistemas integrados. Por isso, pode haver registros que ainda não foram enviados ou integrados à plataforma.
 
-Na área de vacinação, o sistema pode separar vacinas aplicadas e registradas, vacinas sem registro na base e doses futuras previstas conforme a idade. “Não registrada” descreve o que aparece na base consultada; não confirma, por si só, o que ocorreu no atendimento. citeturn183search2turn183search7
+Na área de vacinação, o sistema pode separar vacinas aplicadas e registradas, vacinas sem registro na base e doses futuras previstas conforme a idade. “Não registrada” descreve o que aparece na base consultada; não confirma, por si só, o que ocorreu no atendimento.
 
 ## O que fazer quando há uma divergência
 
@@ -58,13 +58,13 @@ Na área de vacinação, o sistema pode separar vacinas aplicadas e registradas,
 4. **Procure a unidade onde ocorreu o atendimento ou a vacinação** e peça que verifique o registro.
 5. Se a unidade não conseguir orientar, **consulte a Secretaria de Saúde do município** sobre o canal adequado.
 
-O Ministério informa que registros de vacinação são feitos pelos serviços de saúde e que inclusões ou correções devem ser solicitadas a um estabelecimento de saúde — não diretamente pelo aplicativo. [Veja as orientações oficiais para dados incompletos ou ausentes](https://www.gov.br/saude/pt-br/acesso-a-informacao/sic/dados-em-transparencia-ativa/seidigi). citeturn183search1turn183search10
+O Ministério informa que registros de vacinação são feitos pelos serviços de saúde e que inclusões ou correções devem ser solicitadas a um estabelecimento de saúde — não diretamente pelo aplicativo. [Veja as orientações oficiais para dados incompletos ou ausentes](https://www.gov.br/saude/pt-br/acesso-a-informacao/sic/dados-em-transparencia-ativa/seidigi).
 
 ## Não tome decisões sobre doses apenas pela tela
 
 Se a caderneta digital não mostrar uma vacina, não conclua automaticamente que a criança precisa repetir a dose. Confirme o histórico com a unidade de saúde e peça orientação sobre a situação vacinal. Para conferir as recomendações vigentes por faixa etária, consulte o [Calendário Nacional de Vacinação da Criança do Ministério da Saúde](https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca/view), atualizado em 28 de outubro de 2026.
 
-A caderneta impressa continua sendo utilizada pelos serviços de saúde. Se houver dúvida sobre uma dose ou sobre o próximo passo, leve-a à unidade junto com os registros disponíveis. citeturn183search0turn183search3
+A caderneta impressa continua sendo utilizada pelos serviços de saúde. Se houver dúvida sobre uma dose ou sobre o próximo passo, leve-a à unidade junto com os registros disponíveis.
 
 ## E quando faltam dados de crescimento ou desenvolvimento?
 
@@ -97,7 +97,7 @@ Não necessariamente. O Ministério da Saúde informa que alguns registros podem
 
 ### Posso corrigir o registro pelo Meu SUS Digital?
 
-As orientações oficiais dizem que inclusões e alterações são realizadas pelos estabelecimentos de saúde. Procure a unidade responsável ou a Secretaria de Saúde do município. citeturn183search1turn183search10
+As orientações oficiais dizem que inclusões e alterações são realizadas pelos estabelecimentos de saúde. Procure a unidade responsável ou a Secretaria de Saúde do município.
 
 ### A versão digital substitui a caderneta impressa?
 
