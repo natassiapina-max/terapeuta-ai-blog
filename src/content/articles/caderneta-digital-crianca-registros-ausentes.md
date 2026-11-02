@@ -11,8 +11,8 @@ reviewerUrl: "https://blog.terapeutaai.com.br/autores/juliano-lima/"
 readTime: 6
 featured: false
 draft: false
-image: "/images/caderneta-digital-crianca-registros-ausentes.webp"
-imageAlt: "Responsável e profissional de saúde conferem juntos a caderneta de uma criança"
+image: "/images/caderneta-digital-crianca-registros-ausentes-foto.webp"
+imageAlt: "Pai e filha conferem uma caderneta infantil impressa ao lado de um celular em casa"
 directAnswer: "Se uma vacina, consulta ou informação de crescimento não aparece na Caderneta Digital da Criança, isso não confirma que o atendimento ou a aplicação não aconteceu. Confira a caderneta impressa e procure a unidade responsável para verificar o registro, pois os dados dependem do envio e da integração pelos serviços de saúde."
 tags:
   - "Caderneta Digital da Criança"
