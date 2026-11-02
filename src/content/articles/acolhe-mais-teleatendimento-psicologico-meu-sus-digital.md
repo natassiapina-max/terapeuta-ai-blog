@@ -65,6 +65,8 @@ Isso pode incluir mães, avós, tias, irmãs e outras familiares que assumem ati
 
 Segundo a AgSUS, parceira responsável pela operação do serviço, não é necessário apresentar documento que comprove a violência ou a condição de cuidadora, nem obter encaminhamento prévio de uma unidade de saúde. A solicitação passa por um cadastro e acolhimento inicial.
 
+O Meu SUS Digital também oferece a Caderneta Digital da Criança. Se você percebeu que alguma vacina ou outro dado infantil não aparece, veja nosso guia sobre [o que fazer quando faltam registros na Caderneta Digital da Criança](https://blog.terapeutaai.com.br/artigos/caderneta-digital-crianca-registros-ausentes/).
+
 ## Como acessar pelo Meu SUS Digital
 
 O caminho informado pelo Ministério da Saúde é:
