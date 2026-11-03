@@ -46,10 +46,10 @@ const searchIndex = JSON.stringify(articles.map(article => ({
   const normalize = (value) => value
     .toLocaleLowerCase('pt-BR')
     .normalize('NFD')
-    .replace(/[\\u0300-\\u036f]/g, '');
+    .replace(/[\u0300-\u036f]/g, '');
 
   const renderResults = () => {
-    const terms = normalize(input.value).trim().split(/\\s+/).filter(Boolean);
+    const terms = normalize(input.value).trim().split(/\s+/).filter(Boolean);
     results.replaceChildren();
     emptyState.hidden = true;
     initialState.hidden = true;
