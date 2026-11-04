@@ -105,6 +105,8 @@ Comece perguntando, sem culpabilizar: “O que dificultou?”. Talvez a instruç
 
 A ausência de uma atividade em casa, por si só, não permite concluir falta de interesse ou comprometimento. É uma oportunidade para compreender o contexto e revisar o acordo.
 
+Quando o desafio envolve sons do cotidiano, veja também [como acolher a sensibilidade a sons em crianças](https://blog.terapeutaai.com.br/artigos/sensibilidade-a-sons-criancas-como-ajudar/).
+
 ## Perguntas frequentes
 
 ### Toda família precisa receber atividades entre sessões?
