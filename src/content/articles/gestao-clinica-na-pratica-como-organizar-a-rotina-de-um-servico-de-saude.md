@@ -321,6 +321,9 @@ Para transformar o alinhamento entre áreas em ações verificáveis, consulte o
 - [Como organizar uma agenda sustentável na saúde](/artigos/como-organizar-uma-agenda-sustentavel-na-saude/)
 - [LGPD na clínica](/artigos/lgpd-na-clinica-como-proteger-os-dados-dos-pacientes-na-rotina-profissional/)
 
+
+Na gestão de pessoas e da rotina, também vale entender [como a NR-1 trata os fatores psicossociais relacionados ao trabalho em clínicas](/artigos/nr1-clinicas-riscos-psicossociais/).
+
 ## Conclusão
 
 Gestão clínica não precisa significar uma rotina burocrática e cheia de planilhas.
