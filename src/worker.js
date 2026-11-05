@@ -1,5 +1,10 @@
+import { CHECKLIST_PDF_BASE64 } from './data/lead-magnet-pdf.js';
 const MAX_FILE_BYTES = 5 * 1024 * 1024;
 const MAX_MESSAGE_LENGTH = 2000;
+const LEAD_WINDOW_MS = 10 * 60 * 1000;
+const LEAD_MAX_SUBMISSIONS = 5;
+// Best-effort per-isolate protection for this pilot.
+const leadAttempts = new Map();
 const ALLOWED_TYPES = new Set([
   'application/pdf',
   'application/msword',
@@ -18,9 +23,173 @@ export default {
       }
       return handleCareerApplication(request, env);
     }
+    if (url.pathname === '/api/lead-magnet') {
+      if (request.method !== 'POST') return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'POST', 'Cache-Control': 'no-store' } });
+      return handleLeadMagnet(request, env);
+    }
+    if (url.pathname === '/api/lead-magnet/download') {
+      if (request.method !== 'GET') return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'GET', 'Cache-Control': 'no-store' } });
+      return handleLeadMagnetDownload(request, env);
+    }
     return env.ASSETS.fetch(request);
   }
 };
+
+async function handleLeadMagnet(request, env) {
+  const json = (body, status = 200) => new Response(JSON.stringify(body), {
+    status,
+    headers: {
+      'Content-Type': 'application/json; charset=utf-8',
+      'Cache-Control': 'no-store',
+      'X-Content-Type-Options': 'nosniff'
+    }
+  });
+
+  const leadSecret = env.LEAD_DOWNLOAD_SECRET || env.RESEND_API_KEY;
+  if (!env.RESEND_API_KEY || !leadSecret) {
+    return json({ error: 'O formulário está temporariamente indisponível.' }, 503);
+  }
+  if (Number(request.headers.get('content-length') || 0) > 12_000) {
+    return json({ error: 'Os dados enviados excedem o limite permitido.' }, 413);
+  }
+
+  let data;
+  try {
+    data = await request.json();
+  } catch {
+    return json({ error: 'Não foi possível ler os dados do formulário.' }, 400);
+  }
+
+  const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
+  const now = Date.now();
+  const attempts = (leadAttempts.get(ip) || []).filter((time) => now - time < LEAD_WINDOW_MS);
+  if (attempts.length >= LEAD_MAX_SUBMISSIONS) {
+    return json({ error: 'Muitas tentativas em pouco tempo. Aguarde alguns minutos e tente novamente.' }, 429);
+  }
+  attempts.push(now);
+  leadAttempts.set(ip, attempts);
+
+  // Honeypot: return an indistinguishable successful response without mailing.
+  if (String(data.website || '').trim()) {
+    return json({ ok: true, downloadToken: await createDownloadToken(leadSecret) });
+  }
+
+  const name = String(data.name || '').trim();
+  const email = String(data.email || '').trim().toLowerCase();
+  const whatsapp = String(data.whatsapp || '').trim();
+  const digits = whatsapp.replace(/\D/g, '');
+  if (name.length < 2 || name.length > 100 || /[<>\r\n]/.test(name)) {
+    return json({ error: 'Informe seu nome com até 100 caracteres.' }, 400);
+  }
+  if (email.length > 160 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return json({ error: 'Confira o e-mail informado.' }, 400);
+  }
+  if (digits.length < 10 || digits.length > 15 || !/^[+\d() .-]{8,25}$/.test(whatsapp)) {
+    return json({ error: 'Confira o WhatsApp com DDD.' }, 400);
+  }
+  if (data.consent !== true) {
+    return json({ error: 'É necessário autorizar o uso dos dados para receber o material.' }, 400);
+  }
+
+  const safeName = name.replace(/[<>\r\n]/g, '').slice(0, 100);
+  const safeEmail = email.replace(/[<>\r\n]/g, '').slice(0, 160);
+  const safeWhatsapp = whatsapp.replace(/[<>\r\n]/g, '').slice(0, 25);
+  const emailMessage = {
+    from: 'TerapeutaAI Blog <contato@terapeutaai.com.br>',
+    to: ['contato@terapeutaai.com.br'],
+    subject: `Novo lead do checklist — ${safeName}`,
+    text: [
+      'Novo pedido do checklist Clínica multidisciplinar em ordem.',
+      '',
+      `Nome: ${safeName}`,
+      `E-mail: ${safeEmail}`,
+      `WhatsApp: ${safeWhatsapp}`,
+      `Autorizou novidades por e-mail/WhatsApp: ${data.marketingConsent === true ? 'Sim' : 'Não'}`,
+      '',
+      'Consentimento para processar o pedido e disponibilizar o material: Sim.'
+    ].join('\n')
+  };
+
+  let response;
+  try {
+    response = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(emailMessage)
+    });
+  } catch {
+    return json({ error: 'Falha temporária ao registrar o pedido. Tente novamente.' }, 502);
+  }
+  if (!response.ok) return json({ error: 'Não foi possível registrar seu pedido agora. Tente novamente.' }, 502);
+
+  return json({ ok: true, downloadToken: await createDownloadToken(leadSecret) });
+}
+
+async function handleLeadMagnetDownload(request, env) {
+  const leadSecret = env.LEAD_DOWNLOAD_SECRET || env.RESEND_API_KEY;
+  const authorization = request.headers.get('Authorization') || '';
+  const token = authorization.startsWith('Bearer ') ? authorization.slice(7) : '';
+  if (!leadSecret || !(await verifyDownloadToken(token, leadSecret))) {
+    return new Response('Link de download inválido ou expirado.', {
+      status: 403,
+      headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' }
+    });
+  }
+
+  const binary = atob(CHECKLIST_PDF_BASE64);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new Response(bytes, {
+    headers: {
+      'Content-Type': 'application/pdf',
+      'Content-Disposition': 'attachment; filename="Clinica_Multidisciplinar_em_Ordem_TerapeutaAI.pdf"',
+      'Cache-Control': 'private, no-store, max-age=0',
+      'X-Content-Type-Options': 'nosniff'
+    }
+  });
+}
+
+async function createDownloadToken(secret) {
+  const payload = new TextEncoder().encode(JSON.stringify({ exp: Date.now() + 15 * 60 * 1000 }));
+  const key = await crypto.subtle.importKey(
+    'raw', new TextEncoder().encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
+  );
+  const signature = new Uint8Array(await crypto.subtle.sign('HMAC', key, payload));
+  return `${toBase64Url(payload)}.${toBase64Url(signature)}`;
+}
+
+async function verifyDownloadToken(token, secret) {
+  try {
+    const [payloadPart, signaturePart] = token.split('.');
+    if (!payloadPart || !signaturePart) return false;
+    const payload = fromBase64Url(payloadPart);
+    const signature = fromBase64Url(signaturePart);
+    const key = await crypto.subtle.importKey(
+      'raw', new TextEncoder().encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['verify']
+    );
+    if (!(await crypto.subtle.verify('HMAC', key, signature, payload))) return false;
+    const decoded = JSON.parse(new TextDecoder().decode(payload));
+    return Number.isFinite(decoded.exp) && decoded.exp > Date.now();
+  } catch {
+    return false;
+  }
+}
+
+function toBase64Url(bytes) {
+  let binary = '';
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+}
+
+function fromBase64Url(value) {
+  const base64 = value.replace(/-/g, '+').replace(/_/g, '/') + '='.repeat((4 - value.length % 4) % 4);
+  const binary = atob(base64);
+  return Uint8Array.from(binary, (char) => char.charCodeAt(0));
+}
+
 
 async function handleCareerApplication(request, env) {
   const json = (body, status = 200) => new Response(JSON.stringify(body), {
