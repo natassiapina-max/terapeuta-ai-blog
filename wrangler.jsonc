@@ -3,9 +3,24 @@
   "name": "terapeuta-ai-blog",
   "compatibility_date": "2026-09-18",
   "workers_dev": false,
+  "preview_urls": true,
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS"
+  },
+  "r2_buckets": [
+    {
+      "binding": "LEAD_MAGNETS",
+      "bucket_name": "terapeutaai-lead-magnets"
+    }
+  ],
+  "previews": {
+    "r2_buckets": [
+      {
+        "binding": "LEAD_MAGNETS",
+        "bucket_name": "terapeutaai-lead-magnets"
+      }
+    ]
   },
   "routes": [
     {
