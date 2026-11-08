@@ -13,6 +13,14 @@
       "bucket_name": "terapeutaai-lead-magnets"
     }
   ],
+  "previews": {
+    "r2_buckets": [
+      {
+        "binding": "LEAD_MAGNETS",
+        "bucket_name": "terapeutaai-lead-magnets"
+      }
+    ]
+  },
   "routes": [
     {
       "pattern": "blog.terapeutaai.com.br",
