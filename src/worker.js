@@ -202,7 +202,7 @@ function fromBase64Url(value) {
 }
 
 
-const AGENDA_PDF_KEY = 'agenda-clinica-sem-gargalos-terapeutaai.pdf';
+const AGENDA_PDF_KEY = 'Agenda clínica sem gargalos.pdf';
 const AGENDA_RESOURCE_ID = 'agenda-clinica-sem-gargalos';
 
 async function handleAgendaLead(request, env) {
