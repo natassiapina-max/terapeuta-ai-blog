@@ -231,13 +231,14 @@ async function handleAgendaLead(request, env) {
   }
 
   const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
+  const rateLimitKey = AGENDA_RESOURCE_ID + ':' + ip;
   const now = Date.now();
-  const attempts = (leadAttempts.get(ip) || []).filter((time) => now - time < LEAD_WINDOW_MS);
+  const attempts = (leadAttempts.get(rateLimitKey) || []).filter((time) => now - time < LEAD_WINDOW_MS);
   if (attempts.length >= LEAD_MAX_SUBMISSIONS) {
     return json({ error: 'Muitas tentativas em pouco tempo. Aguarde alguns minutos e tente novamente.' }, 429);
   }
   attempts.push(now);
-  leadAttempts.set(ip, attempts);
+  leadAttempts.set(rateLimitKey, attempts);
 
   if (String(data.website || '').trim()) {
     return json({ ok: true, downloadToken: await createDownloadToken(leadSecret, AGENDA_RESOURCE_ID, true) });
