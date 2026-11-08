@@ -35,8 +35,6 @@ faqs:
   - question: "A clínica deve aumentar os preços em 2027?"
     answer: "Não existe um reajuste automático que sirva para todas as clínicas. Antes de rever valores, é necessário analisar regime tributário, custos, créditos aplicáveis, contratos e composição da receita com apoio contábil."
 ---
-# Reforma tributária para clínicas: o que organizar antes de 2027
-
 A Reforma Tributária já começou a entrar na rotina das empresas. Para clínicas e consultórios, 2027 será um marco importante: começa uma nova etapa de cobrança da Contribuição sobre Bens e Serviços (CBS) e do Imposto sobre Bens e Serviços (IBS), enquanto a transição para o novo modelo continua nos anos seguintes.
 
 Isso não significa que toda clínica precise mudar de regime, aumentar os preços ou refazer a operação de uma só vez. O passo mais útil agora é transformar a mudança em uma pauta objetiva de gestão: confirmar as escolhas tributárias feitas, conferir a emissão de notas e entender como cada serviço prestado será tratado.
