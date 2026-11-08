@@ -6,6 +6,8 @@ category: "Gestão Clínica"
 categorySlug: "gestao-clinica"
 pubDate: 2026-11-08
 author: "Juliano Lima"
+image: "/images/reforma-tributaria-clinicas-2027.webp"
+imageAlt: "Gestora de clínica multidisciplinar analisa documentos de planejamento financeiro em um consultório iluminado, com detalhes roxos."
 readTime: 9
 featured: false
 draft: false
