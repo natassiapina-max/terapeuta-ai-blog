@@ -187,7 +187,7 @@ const isDemo = import.meta.env.DEV;
       window.setTimeout(() => URL.revokeObjectURL(objectUrl), 30000);
       submitButton.textContent = 'Guia baixado';
       form.reset();
-      syncButton();
+      submitButton.disabled = true;
     } catch (error) {
       status.textContent = error instanceof Error ? error.message : 'Ocorreu um erro. Tente novamente.';
       status.dataset.state = 'error';
