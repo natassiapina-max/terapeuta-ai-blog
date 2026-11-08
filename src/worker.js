@@ -336,7 +336,7 @@ async function handleAgendaDownload(request, env) {
     headers: {
       'Content-Type': 'application/pdf',
       'Content-Length': String(pdf.size),
-      'Content-Disposition': 'attachment; filename="agenda-clinica-sem-gargalos-terapeutaai.pdf"',
+      'Content-Disposition': "attachment; filename=\"Agenda clinica sem gargalos.pdf\"; filename*=UTF-8''Agenda%20cl%C3%ADnica%20sem%20gargalos.pdf",
       'Cache-Control': 'private, no-store, max-age=0',
       'X-Content-Type-Options': 'nosniff'
     }
