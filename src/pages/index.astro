@@ -20,11 +20,7 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
         <div class="actions"><a class="btn btn-primary" href="#conteudos">Explorar conteúdos <span>↓</span></a><a class="hero-link" href="#temas">Explorar por tema <span>→</span></a></div>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="ring ring-a"></div><div class="ring ring-b"></div>
-        <div class="core"><div class="core-inner">+</div></div>
-        <div class="float float-a"><b>IA</b><span>mais prática</span></div>
-        <div class="float float-b"><b>ROTINA</b><span>mais clara</span></div>
-        <div class="mini-dot dot-a"></div><div class="mini-dot dot-b"></div>
+        <img src="/images/home-terapeuta-ai-hero.webp" alt="" width="1000" height="728" fetchpriority="high" decoding="async" />
       </div>
     </div>
     <div class="topic-bar"><div class="container topic-inner"><span>Inteligência Artificial</span><i>•</i><span>Gestão Clínica</span><i>•</i><span>Prontuário</span><i>•</i><span>Marketing</span><i>•</i><span>Carreira</span><i>•</i><span>Ética & LGPD</span></div></div>
@@ -79,13 +75,8 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
 .hero h1{max-width:780px;color:var(--deep)} .hero h1 em{font-style:normal;color:var(--purple)}
 .hero-copy>p{max-width:650px;margin:28px 0 34px;color:var(--muted);font-size:1.04rem}
 .actions{display:flex;align-items:center;gap:25px}.hero-link{color:var(--deep);text-decoration:none;font-size:.8rem;font-weight:700}.hero-link span{margin-left:7px}
-.hero-visual{position:relative;width:min(100%,500px);aspect-ratio:1;justify-self:end}
-.core{position:absolute;width:61%;aspect-ratio:1;left:19.5%;top:19.5%;border-radius:50%;background:linear-gradient(145deg,var(--purple),var(--violet));box-shadow:0 35px 90px rgba(94,38,214,.28)}
-.core::after{content:'';position:absolute;inset:13%;border:1px solid rgba(255,255,255,.32);border-radius:50%}
-.core-inner{height:100%;display:grid;place-items:center;color:white;font-size:7rem;font-weight:300}
-.ring{position:absolute;border:1px solid rgba(146,47,208,.2);border-radius:50%}.ring-a{inset:7%;transform:rotate(23deg)}.ring-b{inset:18%;transform:rotate(-31deg);border-color:rgba(94,38,214,.2)}
-.float{position:absolute;display:flex;flex-direction:column;gap:2px;padding:14px 17px;border:1px solid var(--border);border-radius:15px;background:rgba(255,255,255,.93);box-shadow:0 15px 40px rgba(94,38,214,.1)}.float b{color:var(--purple);font-size:.6rem;letter-spacing:.12em}.float span{color:var(--deep);font-size:.8rem;font-weight:600}.float-a{top:20%;left:0}.float-b{right:1%;bottom:19%}
-.mini-dot{position:absolute;border-radius:50%}.dot-a{width:22px;height:22px;right:13%;top:15%;background:var(--lavender)}.dot-b{width:10px;height:10px;left:15%;bottom:20%;background:var(--purple)}
+.hero-visual{position:relative;width:min(100%,500px);aspect-ratio:1.37;justify-self:end;overflow:hidden;border:1px solid rgba(146,47,208,.16);border-radius:28px;background:#f7f2fc;box-shadow:0 28px 70px rgba(94,38,214,.14)}
+.hero-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .hero-glow{position:absolute;border-radius:50%;filter:blur(4px);pointer-events:none}.glow-one{width:400px;height:400px;right:-120px;top:70px;background:rgba(146,47,208,.08)}.glow-two{width:280px;height:280px;left:-150px;bottom:100px;background:rgba(94,38,214,.06)}
 .topic-bar{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(255,255,255,.7);position:relative;z-index:3}.topic-inner{min-height:55px;display:flex;justify-content:center;align-items:center;gap:13px;flex-wrap:wrap;color:var(--muted);font-size:.66rem;font-weight:600}.topic-inner i{font-style:normal;color:var(--purple)}
 .featured{padding:105px 0 55px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}.section-head h2{max-width:700px;color:var(--deep)}.section-head>p{max-width:260px;margin:0;color:var(--muted);font-size:.75rem;text-align:right}
