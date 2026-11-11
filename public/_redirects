@@ -1,4 +1,5 @@
 # Permanent canonical URLs; placeholders never match a slash.
+/artigos/musicoterapia-nova-definicao-mundial-2026/ /artigos/musicoterapia-2027-profissionais-wfmt/ 301
 /artigos/chatgpt-substitui-terapia-limites-da-ia-na-saude-mental/ /artigos/chatgpt-substitui-terapia-saude-mental/ 301
 /artigos/:slug /artigos/:slug/ 301
 /autores/:author /autores/:author/ 301
