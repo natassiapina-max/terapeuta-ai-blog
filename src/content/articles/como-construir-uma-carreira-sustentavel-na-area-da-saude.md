@@ -8,7 +8,7 @@ description: Veja como construir uma carreira sustentável na área da saúde co
 category: Carreira e Negócios
 categorySlug: carreira-e-negocios
 pubDate: 2026-10-07
-updatedDate: 2026-10-23
+updatedDate: 2026-11-13
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Uma carreira sustentável na área da saúde combina desenvolvimento técnico, agenda realista, organização financeira, posicionamento profissional e uso responsável de tecnologia. O objetivo é crescer sem depender de sobrecarga constante, mantendo qualidade do cuidado, previsibilidade e condições reais de continuidade."
@@ -312,6 +312,8 @@ Por exemplo:
 - participar de um evento;
 - buscar supervisão;
 - estudar uma nova ferramenta.
+
+Para quem administra consultório ou clínica, o [plano de ação para 2027](/artigos/planejamento-clinica-2027-prioridades-plano-acao/) oferece uma matriz prática para transformar prioridades de gestão em responsáveis, prazos e indicadores.
 
 ### 5. Como vou saber se estou avançando?
 
