@@ -36,7 +36,7 @@ faqs:
     answer: "A Nota Informativa nº 1/2026 do Ministério da Saúde recomenda reaplicação no mínimo anual para pontuação de 0 a 6 e no mínimo semestral para pontuação acima de 6. Mudanças importantes, como queda, internação ou piora funcional, também podem indicar nova aplicação."
 ---
 
-# IVCF-20: como a avaliação funcional fortalece o cuidado multiprofissional da pessoa idosa
+**Resposta direta:** O IVCF-20 é um instrumento inicial para identificar necessidades e risco de vulnerabilidade clínico-funcional da pessoa idosa. Ele ajuda a equipe a planejar o acompanhamento, mas não substitui avaliação ampliada nem julgamento clínico.
 
 Uma visita domiciliar pode revelar algo que não aparece em uma lista de diagnósticos: a pessoa passou a ter dificuldade para caminhar, deixou de fazer uma atividade de que gostava ou está precisando de ajuda em tarefas que antes realizava sozinha. Registrar e compartilhar essas mudanças ajuda a equipe a agir com mais contexto.
 
