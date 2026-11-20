@@ -66,7 +66,7 @@ A OMS também descreve o uso de brincadeiras e rotinas diárias em seu guia para
 
 ### 3. Explique o que fazer e o que observar
 
-“Estimule a comunicação” pode ser amplo demais. A família precisa entender qual situação foi combinada, qual é o papel do adulto e o que vale observar. Por exemplo: “Nesta semana, observe em que momentos a criança consegue indicar uma escolha e o que parece facilitar essa comunicação.” A observação não deve virar um teste ou uma cobrança por desempenho.
+“Estimule a comunicação” pode ser amplo demais. A família precisa entender qual situação foi combinada, qual é o papel do adulto e o que vale observar. Por exemplo: “Nesta semana, observe em que momentos a criança consegue indicar uma escolha e o que parece facilitar essa comunicação.” A observação não deve virar um teste ou uma cobrança por desempenho. Para incluir a voz da criança nessa combinação, veja também [como oferecer escolhas reais durante a sessão terapêutica](https://blog.terapeutaai.com.br/artigos/participacao-crianca-escolhas-sessao-terapeutica/).
 
 ### 4. Combine uma alternativa e um limite
 
