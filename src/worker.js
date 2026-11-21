@@ -47,6 +47,18 @@ export default {
       if (request.method !== 'GET') return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'GET', 'Cache-Control': 'no-store' } });
       return handleFirstContactDownload(request, env);
     }
+    if (url.pathname === '/api/lead-magnet/fechamento-financeiro') {
+      if (request.method !== 'POST') return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'POST', 'Cache-Control': 'no-store' } });
+      return handleFinanceLead(request, env);
+    }
+    if (url.pathname === '/api/lead-magnet/fechamento-financeiro/download/pdf') {
+      if (request.method !== 'GET') return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'GET', 'Cache-Control': 'no-store' } });
+      return handleFinanceDownload(request, env, 'pdf');
+    }
+    if (url.pathname === '/api/lead-magnet/fechamento-financeiro/download/planilha') {
+      if (request.method !== 'GET') return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'GET', 'Cache-Control': 'no-store' } });
+      return handleFinanceDownload(request, env, 'planilha');
+    }
     return env.ASSETS.fetch(request);
   }
 };
@@ -214,6 +226,9 @@ const FIRST_CONTACT_PDF_KEY = 'guia-primeiro-contato-terapeutaai.pdf';
 const FIRST_CONTACT_RESOURCE_ID = 'primeiro-contato-agendamento';
 const AGENDA_PDF_KEY = 'Agenda clínica sem gargalos.pdf';
 const AGENDA_RESOURCE_ID = 'agenda-clinica-sem-gargalos';
+const FINANCE_PDF_KEY = 'guia-fechamento-financeiro-clinica.pdf';
+const FINANCE_XLSX_KEY = 'fechamento-financeiro-clinica.xlsx';
+const FINANCE_RESOURCE_ID = 'fechamento-financeiro-clinica';
 
 async function handleAgendaLead(request, env) {
   const json = (body, status = 200) => new Response(JSON.stringify(body), {
@@ -489,6 +504,38 @@ async function handleFirstContactDownload(request, env) {
       'X-Content-Type-Options': 'nosniff'
     }
   });
+}
+
+async function handleFinanceLead(request, env) {
+ const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+ const secret=env.LEAD_DOWNLOAD_SECRET||env.RESEND_API_KEY;
+ if(!env.RESEND_API_KEY||!secret||!env.LEAD_MAGNETS)return json({error:'O formulário está temporariamente indisponível.'},503);
+ if(Number(request.headers.get('content-length')||0)>12000)return json({error:'Os dados enviados excedem o limite permitido.'},413);
+ let data;try{data=await request.json();}catch{return json({error:'Não foi possível ler os dados do formulário.'},400);}
+ const ip=request.headers.get('CF-Connecting-IP')||'unknown',key=FINANCE_RESOURCE_ID+':'+ip,now=Date.now();
+ const attempts=(leadAttempts.get(key)||[]).filter(t=>now-t<LEAD_WINDOW_MS);
+ if(attempts.length>=LEAD_MAX_SUBMISSIONS)return json({error:'Muitas tentativas em pouco tempo. Aguarde alguns minutos e tente novamente.'},429);
+ attempts.push(now);leadAttempts.set(key,attempts);
+ if(String(data.website||'').trim())return json({ok:true,downloadToken:await createDownloadToken(secret,FINANCE_RESOURCE_ID,true)});
+ const name=String(data.name||'').trim(),email=String(data.email||'').trim().toLowerCase(),whatsapp=String(data.whatsapp||'').trim(),digits=whatsapp.replace(/\D/g,'');
+ if(name.length<2||name.length>100||/[<>\r\n]/.test(name))return json({error:'Informe seu nome com até 100 caracteres.'},400);
+ if(email.length>160||!/^\S+@\S+\.\S+$/.test(email))return json({error:'Confira o e-mail informado.'},400);
+ if(digits.length<10||digits.length>15||! /^[+\d() .-]{8,25}$/.test(whatsapp))return json({error:'Confira o WhatsApp com DDD.'},400);
+ if(data.consent!==true)return json({error:'É necessário autorizar o uso dos dados para receber os materiais.'},400);
+ try{const [pdf,xlsx]=await Promise.all([env.LEAD_MAGNETS.head(FINANCE_PDF_KEY),env.LEAD_MAGNETS.head(FINANCE_XLSX_KEY)]);if(!pdf||!xlsx)return json({error:'Os arquivos estão temporariamente indisponíveis. Tente novamente mais tarde.'},503);}catch{return json({error:'Os arquivos estão temporariamente indisponíveis. Tente novamente mais tarde.'},503);}
+ const clean=v=>String(v).replace(/[<>\r\n]/g,'').slice(0,160);
+ const mail={from:'TerapeutaAI Blog <contato@terapeutaai.com.br>',to:['contato@terapeutaai.com.br'],subject:'Novo pedido da planilha de fechamento financeiro da clínica',text:['Novo lead da página de materiais gratuitos: Fechamento financeiro da clínica.','', 'Nome: '+clean(name),'E-mail: '+clean(email),'WhatsApp: '+clean(whatsapp),'Autorizou receber conteúdos e novidades: '+(data.marketingConsent===true?'Sim':'Não'),'','Consentimento para processar o pedido e disponibilizar os materiais: Sim.'].join('\n')};
+ let response;try{response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:'Bearer '+env.RESEND_API_KEY,'Content-Type':'application/json'},body:JSON.stringify(mail)});}catch{return json({error:'Falha temporária ao registrar o pedido. Tente novamente.'},502);}
+ if(!response.ok)return json({error:'Não foi possível registrar seu pedido agora. Tente novamente.'},502);
+ return json({ok:true,downloadToken:await createDownloadToken(secret,FINANCE_RESOURCE_ID)});
+}
+async function handleFinanceDownload(request,env,format){
+ const secret=env.LEAD_DOWNLOAD_SECRET||env.RESEND_API_KEY,auth=request.headers.get('Authorization')||'',token=auth.startsWith('Bearer ')?auth.slice(7):'';
+ if(!secret||!env.LEAD_MAGNETS||!(await verifyDownloadTokenForResource(token,secret,FINANCE_RESOURCE_ID)))return new Response('Link de download inválido ou expirado.',{status:403,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+ const pdf=format==='pdf',key=pdf?FINANCE_PDF_KEY:FINANCE_XLSX_KEY;let object;
+ try{object=await env.LEAD_MAGNETS.get(key);}catch{return new Response('O arquivo está temporariamente indisponível.',{status:503,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}
+ if(!object)return new Response('O arquivo está temporariamente indisponível.',{status:503,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+ return new Response(object.body,{headers:{'Content-Type':pdf?'application/pdf':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','Content-Length':String(object.size),'Content-Disposition':pdf?'attachment; filename="guia-fechamento-financeiro-clinica.pdf"':'attachment; filename="fechamento-financeiro-clinica.xlsx"','Cache-Control':'private, no-store, max-age=0','X-Content-Type-Options':'nosniff'}});
 }
 
 async function verifyDownloadTokenForResource(token, secret, resource) {
