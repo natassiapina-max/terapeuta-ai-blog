@@ -226,7 +226,7 @@ const FIRST_CONTACT_PDF_KEY = 'guia-primeiro-contato-terapeutaai.pdf';
 const FIRST_CONTACT_RESOURCE_ID = 'primeiro-contato-agendamento';
 const AGENDA_PDF_KEY = 'Agenda clínica sem gargalos.pdf';
 const AGENDA_RESOURCE_ID = 'agenda-clinica-sem-gargalos';
-const FINANCE_PDF_KEY = 'fechamento-financeiro-clinica.pdf';
+const FINANCE_PDF_KEY = 'guia-fechamento-financeiro-clinica.pdf';
 const FINANCE_XLSX_KEY = 'fechamento-financeiro-clinica.xlsx';
 const FINANCE_RESOURCE_ID = 'fechamento-financeiro-clinica';
 
