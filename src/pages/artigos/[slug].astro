@@ -176,11 +176,6 @@ const authorProfile = authorProfiles[data.author] ?? null;
       sameAs: authorProfile?.sameAs,
       knowsAbout: authorProfile?.knowsAbout
     },
-    reviewedBy: data.reviewer ? {
-      '@type': 'Person',
-      name: data.reviewer,
-      url: data.reviewerUrl ?? (data.reviewer ? authorProfiles[data.reviewer]?.url : undefined)
-    } : undefined,
     citation: data.sources?.map((source) => ({
       '@type': 'CreativeWork',
       name: source.label,
