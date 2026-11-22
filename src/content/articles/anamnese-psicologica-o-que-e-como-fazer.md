@@ -10,6 +10,8 @@ reviewer: "psicóloga revisora (identificação preservada a pedido)"
 readTime: 6
 featured: false
 draft: false
+image: "/images/lei-15413-saude-mental-infantojuvenil.webp"
+imageAlt: "Profissional de saúde mental conversa com uma criança e sua responsável durante uma consulta"
 directAnswer: "A anamnese psicológica é uma entrevista que ajuda a compreender a demanda e o contexto da pessoa atendida. O roteiro deve ser adaptado à finalidade do atendimento e não substitui o processo de avaliação psicológica."
 tags:
   - anamnese psicológica
