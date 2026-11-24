@@ -38,9 +38,6 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
         <p>Conteúdo confiável para transformar tecnologia, gestão e conhecimento em decisões melhores na rotina profissional.</p>
         <div class="actions"><a class="btn btn-primary" href="#conteudos">Explorar conteúdos <span>↓</span></a><a class="hero-link" href="#temas">Explorar por tema <span>→</span></a></div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <img src="/images/home-terapeuta-ai-hero.webp" alt="" width="1000" height="728" fetchpriority="high" decoding="async" />
-      </div>
     </div>
     <div class="topic-bar"><div class="container topic-inner"><span>Inteligência Artificial</span><i>•</i><span>Gestão Clínica</span><i>•</i><span>Prontuário</span><i>•</i><span>Marketing</span><i>•</i><span>Carreira</span><i>•</i><span>Ética & LGPD</span></div></div>
   </section>
@@ -104,10 +101,10 @@ const latest = articles.filter(a => a.id !== featured?.id).slice(0,4);
 .hub-banner-badge{position:absolute;right:15px;bottom:15px;display:flex;align-items:center;gap:8px;padding:10px 13px;border:1px solid rgba(255,255,255,.72);border-radius:12px;background:rgba(255,255,255,.92);color:var(--deep);font-size:.66rem;font-weight:700;box-shadow:0 8px 22px rgba(20,9,66,.12);backdrop-filter:blur(12px)}
 .hub-banner-badge b{color:var(--purple);font-size:.95rem}
 .hero{position:relative;overflow:hidden;padding:90px 0 0;background:linear-gradient(180deg,#fbf8ff 0%,#fff 100%)}
-.hero-grid{min-height:575px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:40px;position:relative;z-index:2}
+.hero-grid{min-height:360px;display:grid;grid-template-columns:1fr;align-items:center;gap:40px;position:relative;z-index:2}
 .kicker{display:flex;align-items:center;gap:11px;margin-bottom:22px;color:var(--purple);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .kicker span{width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--violet));box-shadow:0 0 0 7px #efe5ff}
-.hero h1{max-width:780px;color:var(--deep)} .hero h1 em{font-style:normal;color:var(--purple)}
+.hero-copy{max-width:920px}.hero h1{max-width:900px;color:var(--deep)} .hero h1 em{font-style:normal;color:var(--purple)}
 .hero-copy>p{max-width:650px;margin:28px 0 34px;color:var(--muted);font-size:1.04rem}
 .actions{display:flex;align-items:center;gap:25px}.hero-link{color:var(--deep);text-decoration:none;font-size:.8rem;font-weight:700}.hero-link span{margin-left:7px}
 .hero-visual{position:relative;width:min(100%,500px);aspect-ratio:1.37;justify-self:end;overflow:hidden;border:1px solid rgba(146,47,208,.16);border-radius:28px;background:#f7f2fc;box-shadow:0 28px 70px rgba(94,38,214,.14)}
