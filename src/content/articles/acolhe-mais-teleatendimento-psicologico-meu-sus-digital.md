@@ -1,7 +1,7 @@
 ---
-title: "Acolhe Mais pelo Meu SUS Digital: como solicitar atendimento psicológico"
-seoTitle: "Acolhe Mais: como solicitar teleatendimento pelo SUS"
-description: "Saiba quem pode solicitar o Acolhe Mais, como acessar o teleatendimento psicológico gratuito pelo Meu SUS Digital e onde buscar ajuda em situações urgentes."
+title: "Acolhe Mais: como pedir atendimento pelo Meu SUS Digital"
+seoTitle: "Acolhe Mais: como pedir atendimento pelo Meu SUS Digital"
+description: "Veja quem pode solicitar atendimento psicológico gratuito pelo Acolhe Mais e como fazer o pedido pelo Meu SUS Digital, sem encaminhamento prévio."
 category: "Saúde mental"
 categorySlug: "saude-mental"
 pubDate: 2026-10-31

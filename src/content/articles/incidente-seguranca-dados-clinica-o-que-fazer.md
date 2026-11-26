@@ -1,7 +1,7 @@
 ---
-title: "Vazamento de Dados em Clínica: O Que Fazer e Quando Comunicar"
-seoTitle: "Vazamento de dados em clínica: o que fazer"
-description: "Saiba como clínicas devem responder a incidentes com dados pessoais, conter a exposição, avaliar riscos e identificar quando comunicar a ANPD e os pacientes."
+title: "Vazamento de dados na clínica: o que fazer"
+seoTitle: "Vazamento de dados na clínica: o que fazer"
+description: "Entenda como conter um vazamento de dados na clínica, registrar o incidente e avaliar se é preciso comunicar a ANPD e as pessoas afetadas."
 category: "Ética e LGPD"
 categorySlug: "etica-e-lgpd"
 pubDate: 2026-10-30
