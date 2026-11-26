@@ -1,7 +1,7 @@
 ---
-title: "Como reduzir faltas em consultas: 7 ações para clínicas"
-seoTitle: "Como reduzir faltas em consultas: 7 ações"
-description: "Aprenda a medir faltas, organizar confirmações, facilitar remarcações e aproveitar a lista de espera com cuidado na comunicação e na proteção de dados."
+title: "Como evitar no-show em clínicas: guia completo para reduzir faltas"
+seoTitle: "Como evitar no-show em clínicas e reduzir faltas"
+description: "Aprenda como evitar no-show em clínicas com confirmações simples, lembretes, remarcações acessíveis e lista de espera, preservando os dados dos pacientes."
 category: "Gestão Clínica"
 categorySlug: "gestao-clinica"
 pubDate: 2026-10-15
@@ -12,7 +12,7 @@ featured: false
 draft: false
 image: "/images/reduzir-faltas-consultas-recepcao-terapeuta-ai.webp"
 imageAlt: "Recepcionista organizando horários de atendimento em uma recepção de clínica acolhedora"
-directAnswer: "Para reduzir faltas em consultas, combine lembretes claros, confirmação simples, cancelamento acessível e uma lista de espera organizada. Acompanhe a taxa de faltas e teste mudanças na sua rotina. Na comunicação, use apenas os dados necessários e preserve a privacidade dos pacientes."
+directAnswer: "Para reduzir o no-show em clínicas, combine lembretes claros, confirmação simples, remarcação acessível e uma lista de espera organizada. Meça faltas sem aviso e preserve a privacidade dos pacientes."
 sources:
   - label: "Werner et al. (2023) — Revisão sistemática sobre intervenções para reduzir faltas"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10594857/"
@@ -23,14 +23,17 @@ sources:
   - label: "ANPD — Guia de segurança da informação para agentes de pequeno porte"
     url: "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-sobre-seguranca-da-informacao-para-agentes-de-tratamento-de-pequeno-porte"
 tags:
-  - como reduzir faltas em consultas
+  - como evitar no-show em clínicas
+  - reduzir faltas em consultas
   - confirmação de consulta
   - absenteísmo em clínicas
   - lembrete de consulta
   - lista de espera
 ---
 
-Para reduzir faltas em consultas, combine lembretes claros, confirmação simples, cancelamento acessível e uma lista de espera organizada. Acompanhe a taxa de faltas e teste mudanças na sua rotina. Na comunicação, use apenas os dados necessários e preserve a privacidade dos pacientes.
+Para reduzir o no-show em clínicas, combine lembretes claros, confirmação simples, remarcação acessível e uma lista de espera organizada. Meça as faltas sem aviso e preserve a privacidade dos pacientes.
+
+Neste guia, usamos “no-show” para falar da ausência sem aviso prévio. Cancelamentos comunicados e remarcações devem ser registrados separadamente; cada clínica precisa definir e aplicar seus critérios de forma consistente.
 
 Uma agenda cheia de nomes não mostra, sozinha, quantos atendimentos acontecerão. Entre o agendamento e a sessão podem surgir esquecimento, dificuldade de transporte, imprevistos familiares, barreiras de acessibilidade ou dúvidas sobre local e horário.
 
@@ -150,7 +153,7 @@ Esses números são didáticos, não resultados do TerapeutaAI HUB. A comparaç�
 
 Se os cancelamentos antecipados aumentarem e as faltas caírem, investigue se o canal ficou mais fácil de usar. Um cancelamento comunicado pode abrir espaço para outra pessoa, mesmo sem aumentar a ocupação em todos os dias.
 
-## Checklist para começar nesta semana
+## Plano de 30 dias para reduzir no-show
 
 - Defina os status de presença, falta, cancelamento e remarcação.
 - Confira os contatos e a forma segura de comunicação.
@@ -163,6 +166,10 @@ Se os cancelamentos antecipados aumentarem e as faltas caírem, investigue se o 
 Esse trabalho fica mais consistente quando faz parte da [gestão clínica na prática](/artigos/gestao-clinica-na-pratica-como-organizar-a-rotina-de-um-servico-de-saude/), com tarefas distribuídas e registros acessíveis à equipe autorizada.
 
 ## Perguntas frequentes sobre faltas em consultas
+
+### O que significa no-show em uma clínica?
+
+No-show é a ausência a um atendimento agendado sem aviso prévio, conforme o critério definido pela clínica. Um cancelamento feito antes do horário é outra situação e deve ser acompanhado separadamente. A definição operacional precisa ser estável para que os indicadores façam sentido.
 
 ### Confirmar a consulta garante que o paciente compareça?
 
