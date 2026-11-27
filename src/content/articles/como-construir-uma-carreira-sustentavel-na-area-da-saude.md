@@ -8,7 +8,7 @@ description: Veja como construir uma carreira sustentável na área da saúde co
 category: Carreira e Negócios
 categorySlug: carreira-e-negocios
 pubDate: 2026-10-07
-updatedDate: 2026-11-13
+updatedDate: 2026-11-27
 author: "Juliano Lima"
 reviewer: "Juliano Lima"
 directAnswer: "Uma carreira sustentável na área da saúde combina desenvolvimento técnico, agenda realista, organização financeira, posicionamento profissional e uso responsável de tecnologia. O objetivo é crescer sem depender de sobrecarga constante, mantendo qualidade do cuidado, previsibilidade e condições reais de continuidade."
@@ -26,8 +26,8 @@ sources:
     url: https://www.gov.br/saude/pt-br/composicao/sgtes/competencias/competencias
   - label: Ministério da Saúde — Política Nacional de Educação Permanente em Saúde
     url: https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_educacao_permanente_saude.pdf
-  - label: Sebrae — Plano de negócio
-    url: https://sebrae.com.br/sites/PortalSebrae/artigos/como-elaborar-um-plano-de-negocio,37d2438af1c92410VgnVCM100000b272010aRCRD
+  - label: Sebrae — Ferramentas para você criar seu plano de negócio (atualizado em 01/08/2026)
+    url: https://meuatendimento.sebrae.com.br/sites/PortalSebrae/ufs/df/sebraeaz/ferramentas-para-voce-criar-seu-plano-de-negocio%2C31f40d58df4f5410VgnVCM2000003c74010aRCRD
 faqs:
   - question: "O que é uma carreira sustentável na saúde?"
     answer: "É uma trajetória que equilibra qualidade técnica, rotina possível, organização financeira, posicionamento profissional e saúde do próprio profissional."
